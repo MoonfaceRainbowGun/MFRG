@@ -20,10 +20,9 @@ class MFSynthesizer {
     // to fill the buffers in time. A setting of 1024 represents about 23ms of
     // samples.
     
-    // 80ms here
-    let samplesPerBuffer: AVAudioFrameCount = 3260
+    let samplesPerBuffer: AVAudioFrameCount = 2000
     let audioEngine = AVAudioEngine()
-    let playerNode = AVAudioPlayerNode()
+    var playerNodesPool = [AVAudioPlayerNode]()
     let audioFormat = AVAudioFormat(standardFormatWithSampleRate: 44100.0, channels: 2)
     var audioBuffers = [AVAudioPCMBuffer]()
     var bufferIndex = 0
@@ -31,8 +30,13 @@ class MFSynthesizer {
     
     init() {
         audioBuffers = [AVAudioPCMBuffer](repeating: AVAudioPCMBuffer(pcmFormat: audioFormat, frameCapacity: UInt32(samplesPerBuffer)), count: 2)
-        audioEngine.attach(playerNode)
-        audioEngine.connect(playerNode, to: audioEngine.mainMixerNode, format: audioFormat)
+        for _ in 0..<10 {
+            let node = AVAudioPlayerNode()
+            playerNodesPool.append(node)
+            audioEngine.attach(node)
+            audioEngine.connect(node, to: audioEngine.mainMixerNode, format: audioFormat)
+        }
+
         
         do {
             try audioEngine.start()
@@ -44,7 +48,17 @@ class MFSynthesizer {
     }
     
     func play(frequency: Float32, force: Int) {
-        playerNode.stop()
+        var playerNode: AVAudioPlayerNode? = nil
+        while playerNode == nil {
+            for node in playerNodesPool {
+                print(node.isPlaying)
+                if !node.isPlaying {
+                    playerNode = node
+                    break
+                }
+            }
+        }
+        
         let unitVelocity = Float32(2.0 * Double.pi / audioFormat.sampleRate)
         let carrierVelocity = frequency * unitVelocity
         audioQueue.async() {
@@ -65,13 +79,16 @@ class MFSynthesizer {
             
             // Schedule the buffer for playback and release it for reuse after
             // playback has finished.
-            self.playerNode.scheduleBuffer(audioBuffer)
+            playerNode?.scheduleBuffer(audioBuffer) {
+                playerNode?.stop()
+                return
+            }
             
             self.bufferIndex = (self.bufferIndex + 1) % self.audioBuffers.count
         }
         
-        playerNode.pan = 0
-        playerNode.play()
+        playerNode?.pan = 0
+        playerNode?.play()
         
     }
     
