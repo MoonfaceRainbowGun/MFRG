@@ -16,32 +16,17 @@ enum InputRuleType: String {
     
     static func getInputRuleType(_ type: String) -> InputRuleType {
         switch type {
-        case "keyCode":
+        case InputRuleType.keyCode.rawValue:
             return InputRuleType.keyCode
-        case "string":
+        case InputRuleType.string.rawValue:
             return InputRuleType.string
-        case "frequency":
+        case InputRuleType.frequency.rawValue:
             return InputRuleType.frequency
         default:
             return InputRuleType.null
         }
     }
 }
-
-//class Rule {
-//    var input: RuleInput
-//    var output = NSDictionary()
-//    
-//    init(input: RuleInput, output: NSDictionary) {
-//        self.input = input
-//        self.output = output
-//    }
-//    
-//    init(input: RuleInput, source: String) {
-//        self.input = input
-//        self.output = NSDictionary(dictionary: ["source" : source])
-//    }
-//}
 
 class RuleItem {
     var input: RuleInput

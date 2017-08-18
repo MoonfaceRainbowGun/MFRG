@@ -74,14 +74,4 @@ class MFBuffer: NSObject {
 		NotificationCenter.default.post(name: notificationName, object: self,
 		                                userInfo: ["value":"Character"])
 	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 }

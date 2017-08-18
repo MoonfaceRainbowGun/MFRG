@@ -36,9 +36,6 @@ class Rule {
     func add(_ newRuleItem: RuleItem) {
         if newRuleItem.input.type.rawValue == self.type.rawValue {
             list.append(newRuleItem)
-//            return true
-//        } else {
-//            return false
         }
         
     }
