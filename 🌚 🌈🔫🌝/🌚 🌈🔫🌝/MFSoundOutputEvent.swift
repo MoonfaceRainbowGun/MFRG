@@ -24,7 +24,7 @@ class MFSoundOutputEvent: MFOutputEvent {
         }
     }
     
-    override func run(_ userInfo: Dictionary<String, Any>) {
+    override func run(_ userInfo: [String: Any]) {
         if let fileName = userInfo["filename"] as? String {
             if let player = self.playerDicts[fileName] {
                 player.play()

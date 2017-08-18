@@ -31,6 +31,7 @@
 		626F7D291F46DAC10058BFAA /* keyboard.wav in Resources */ = {isa = PBXBuildFile; fileRef = 626F7D281F46DAC10058BFAA /* keyboard.wav */; };
 		626F7D2D1F46DFBD0058BFAA /* keyboard1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 626F7D2C1F46DFBD0058BFAA /* keyboard1.wav */; };
 		626F7D311F46E4B50058BFAA /* MFSoundPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626F7D301F46E4B50058BFAA /* MFSoundPlayer.swift */; };
+		626F7D351F47359D0058BFAA /* MFSynthesizerOutputEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626F7D341F47359D0058BFAA /* MFSynthesizerOutputEvent.swift */; };
 		6AAC040E1F46E6DA00F1FD58 /* MFConfigManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AAC040B1F46E6DA00F1FD58 /* MFConfigManager.swift */; };
 		6AAC040F1F46E6DA00F1FD58 /* MFRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AAC040C1F46E6DA00F1FD58 /* MFRule.swift */; };
 		6AAC04101F46E6DA00F1FD58 /* MFRuleItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AAC040D1F46E6DA00F1FD58 /* MFRuleItem.swift */; };
@@ -80,6 +81,7 @@
 		626F7D281F46DAC10058BFAA /* keyboard.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = keyboard.wav; path = Sound/keyboard.wav; sourceTree = "<group>"; };
 		626F7D2C1F46DFBD0058BFAA /* keyboard1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = keyboard1.wav; path = Sound/keyboard1.wav; sourceTree = "<group>"; };
 		626F7D301F46E4B50058BFAA /* MFSoundPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MFSoundPlayer.swift; sourceTree = "<group>"; };
+		626F7D341F47359D0058BFAA /* MFSynthesizerOutputEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MFSynthesizerOutputEvent.swift; sourceTree = "<group>"; };
 		6AAC040B1F46E6DA00F1FD58 /* MFConfigManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MFConfigManager.swift; sourceTree = "<group>"; };
 		6AAC040C1F46E6DA00F1FD58 /* MFRule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MFRule.swift; sourceTree = "<group>"; };
 		6AAC040D1F46E6DA00F1FD58 /* MFRuleItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MFRuleItem.swift; sourceTree = "<group>"; };
@@ -254,6 +256,7 @@
 				BFFA0FA71F46BAA6008E8C9C /* MFOutputManager.swift */,
 				626BF1C41F46D10900EDDD05 /* MFOutputEvent.swift */,
 				626BF1C61F46D2F200EDDD05 /* MFSoundOutputEvent.swift */,
+				626F7D341F47359D0058BFAA /* MFSynthesizerOutputEvent.swift */,
 				626F7D301F46E4B50058BFAA /* MFSoundPlayer.swift */,
 			);
 			name = "Output Handlers";
@@ -360,6 +363,7 @@
 				BF03E88A1F46F7AB0070D6FD /* FISound.m in Sources */,
 				0C19C89A1F46FE3D008EBD75 /* Token.swift in Sources */,
 				6AAC040F1F46E6DA00F1FD58 /* MFRule.swift in Sources */,
+				626F7D351F47359D0058BFAA /* MFSynthesizerOutputEvent.swift in Sources */,
 				BF03E8891F46F7AB0070D6FD /* FISampleFormat.m in Sources */,
 				0C19C89C1F46FE3D008EBD75 /* TrieConfig.swift in Sources */,
 				0C19C8971F46FE3D008EBD75 /* FragmentToken.swift in Sources */,
