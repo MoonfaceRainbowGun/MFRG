@@ -9,11 +9,16 @@
 import Cocoa
 
 class MFBuffer: NSObject {
-	var keyQueue: [Int]
-	var charQueue: [Character]
-	override init() {
+    
+	fileprivate var keyQueue: [Int]
+	fileprivate var charQueue: [Character]
+    
+    override init() {
 		keyQueue = [Int]()
 		charQueue = [Character]()
+        super.init()
+        MFKeyboardEventManager.sharedInstance.addBuffer(buffer: self)
+        MFCharacterEventManager.sharedInstance.addBuffer(buffer: self)
 	}
 	func pushKeyCode(keycode: Int) {
 		keyQueue.append(keycode)
@@ -59,12 +64,14 @@ class MFBuffer: NSObject {
 	}
 	
 	func notifyKeycode() {
+        print(self.keyQueue)
 		let notificationName = Notification.Name(rawValue: "GetKeycodeNotification")
 		NotificationCenter.default.post(name: notificationName, object: self,
 		                                userInfo: ["value":"Keycode"])
 	}
 	
 	func notifyCharcode() {
+        print(self.charQueue)
 		let notificationName = Notification.Name(rawValue: "GetCharacterNotification")
 		NotificationCenter.default.post(name: notificationName, object: self,
 		                                userInfo: ["value":"Character"])
