@@ -7,9 +7,12 @@
 //
 
 
-//Try to push something
 import Cocoa
 
 class MFProcessor: NSObject {
-
+	func generateTrie(allRules: [String]) {
+		for i in 0 ..< allRules.count{
+			print(i)
+		}
+	}
 }
