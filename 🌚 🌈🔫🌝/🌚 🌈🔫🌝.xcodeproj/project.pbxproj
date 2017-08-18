@@ -79,7 +79,6 @@
 		626F7D931F478C4B0058BFAA /* voice.plist in Resources */ = {isa = PBXBuildFile; fileRef = 626F7D901F478C4B0058BFAA /* voice.plist */; };
 		626F7D941F478C4B0058BFAA /* git.plist in Resources */ = {isa = PBXBuildFile; fileRef = 626F7D911F478C4B0058BFAA /* git.plist */; };
 		626F7D951F478C4B0058BFAA /* string-config.plist in Resources */ = {isa = PBXBuildFile; fileRef = 626F7D921F478C4B0058BFAA /* string-config.plist */; };
-		626F7D971F4792D80058BFAA /* A.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 626F7D961F4792D80058BFAA /* A.m4a */; };
 		6AAC040E1F46E6DA00F1FD58 /* MFConfigManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AAC040B1F46E6DA00F1FD58 /* MFConfigManager.swift */; };
 		6AAC040F1F46E6DA00F1FD58 /* MFRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AAC040C1F46E6DA00F1FD58 /* MFRule.swift */; };
 		6AAC04101F46E6DA00F1FD58 /* MFRuleItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AAC040D1F46E6DA00F1FD58 /* MFRuleItem.swift */; };
@@ -177,7 +176,6 @@
 		626F7D901F478C4B0058BFAA /* voice.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = voice.plist; sourceTree = "<group>"; };
 		626F7D911F478C4B0058BFAA /* git.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = git.plist; sourceTree = "<group>"; };
 		626F7D921F478C4B0058BFAA /* string-config.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "string-config.plist"; sourceTree = "<group>"; };
-		626F7D961F4792D80058BFAA /* A.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = A.m4a; path = Sound/A.m4a; sourceTree = "<group>"; };
 		6AAC040B1F46E6DA00F1FD58 /* MFConfigManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MFConfigManager.swift; sourceTree = "<group>"; };
 		6AAC040C1F46E6DA00F1FD58 /* MFRule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MFRule.swift; sourceTree = "<group>"; };
 		6AAC040D1F46E6DA00F1FD58 /* MFRuleItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MFRuleItem.swift; sourceTree = "<group>"; };
@@ -305,7 +303,6 @@
 		626F7D251F46D7B50058BFAA /* Sound */ = {
 			isa = PBXGroup;
 			children = (
-				626F7D961F4792D80058BFAA /* A.m4a */,
 				626F7D3A1F478BF40058BFAA /* 0.wav */,
 				626F7D3B1F478BF40058BFAA /* 1.wav */,
 				626F7D3C1F478BF40058BFAA /* 2.wav */,
@@ -488,7 +485,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				626F7D971F4792D80058BFAA /* A.m4a in Resources */,
 				626F7D7D1F478BF40058BFAA /* J.wav in Resources */,
 				626F7D8B1F478BF40058BFAA /* X.wav in Resources */,
 				626F7D6B1F478BF40058BFAA /* 6.wav in Resources */,
