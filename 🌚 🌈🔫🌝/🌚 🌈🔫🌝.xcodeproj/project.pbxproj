@@ -186,19 +186,14 @@
 				0C19C87C1F46FE3D008EBD75 /* ACAutoMaton */,
 				BF03E8641F46F7AB0070D6FD /* Finch */,
 				626F7D251F46D7B50058BFAA /* Sound */,
-				626BF1B11F46B8FE00EDDD05 /* AppDelegate.swift */,
-				626BF1B31F46B8FE00EDDD05 /* ViewController.swift */,
-				626BF1B51F46B8FE00EDDD05 /* Assets.xcassets */,
 				6AAC040B1F46E6DA00F1FD58 /* MFConfigManager.swift */,
 				6AAC040C1F46E6DA00F1FD58 /* MFRules.swift */,
 				6AAC040D1F46E6DA00F1FD58 /* MFRule.swift */,
-				626BF1B71F46B8FE00EDDD05 /* Main.storyboard */,
-				626BF1BA1F46B8FE00EDDD05 /* Info.plist */,
 				BFFA0FA31F46BA75008E8C9C /* MFBuffer.swift */,
 				BFFA0FA51F46BA93008E8C9C /* MFProcessor.swift */,
 				BF03E8951F470E580070D6FD /* Input Events */,
 				BF03E8961F470E720070D6FD /* Output Handlers */,
-				BF03E8601F46F79D0070D6FD /* 🌚 🌈🔫🌝-Bridging-Header.h */,
+				BF03E8971F4717C50070D6FD /* Others */,
 			);
 			path = "🌚 🌈🔫🌝";
 			sourceTree = "<group>";
@@ -256,6 +251,19 @@
 				626F7D301F46E4B50058BFAA /* MFSoundPlayer.swift */,
 			);
 			name = "Output Handlers";
+			sourceTree = "<group>";
+		};
+		BF03E8971F4717C50070D6FD /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				626BF1B51F46B8FE00EDDD05 /* Assets.xcassets */,
+				626BF1BA1F46B8FE00EDDD05 /* Info.plist */,
+				626BF1B71F46B8FE00EDDD05 /* Main.storyboard */,
+				BF03E8601F46F79D0070D6FD /* 🌚 🌈🔫🌝-Bridging-Header.h */,
+				626BF1B11F46B8FE00EDDD05 /* AppDelegate.swift */,
+				626BF1B31F46B8FE00EDDD05 /* ViewController.swift */,
+			);
+			name = Others;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
