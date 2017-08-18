@@ -19,7 +19,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 		let mainBuffer : MFBuffer = MFBuffer()
         
         MFOutputManager.sharedInstance.prepareOutput(type: .mechanicKeyboardSound, userInfos: [["filename": "keyboard1.wav"]])
-//		mainProcesser = MFProcessor(keyEventBuffer: mainBuffer)
+		mainProcesser = MFProcessor(keyEventBuffer: mainBuffer)
     }
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {

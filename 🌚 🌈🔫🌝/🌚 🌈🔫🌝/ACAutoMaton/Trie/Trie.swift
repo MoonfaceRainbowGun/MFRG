@@ -3,7 +3,10 @@ import Foundation
 public struct Trie {
     private var config: TrieConfig
     private let rootState: State = State()
-
+	var globalState : State
+	public mutating func setInit(){
+		globalState = rootState
+	}
     private func add(keyword: String) {
         guard !keyword.isEmpty else { return }
 
@@ -82,6 +85,13 @@ public struct Trie {
         return collectedEmits;
     }
 
+	public mutating func parseByChar(char: Character) -> [Emit] {
+		
+		let collectedEmits = collectEmitsByChar(char: char)
+				
+		return collectedEmits;
+	}
+	
     public func containsMatch(text: String) -> Bool {
         let firstMatch = self.firstMatch(text: text)
         return firstMatch != nil
@@ -104,12 +114,22 @@ public struct Trie {
             let newEmits = storeEmits(position: position, currentState: currentState)
             if newEmits.count > 0 && config.stopOnHit {
                 return newEmits
-            }
+			}else if newEmits.count > 0 {
+			}
             storedEmits += newEmits
         }
         return storedEmits
     }
-
+	
+	private mutating func collectEmitsByChar(char : Character) -> [Emit] {
+		globalState = getState(currentState: globalState, character: char)
+		let newEmits = storeEmits(position: 0, currentState: globalState)
+		if newEmits.count > 0 && config.stopOnHit {
+			return newEmits
+		}
+		return newEmits
+	}
+	
     public func firstMatch(text: String) -> Emit? {
         if config.removeOverlaps {
             let parseText = self.parse(text: text)
@@ -223,7 +243,7 @@ public struct Trie {
         var storedEmits = [Emit]()
 
         for emit in emits {
-            storedEmits.append(Emit(start: position - emit.characters.count + 1, end: position, keyword: emit))
+			storedEmits.append(Emit(start: position - emit.characters.count + 1, end: position, keyword: emit))
         }
 
         return storedEmits
@@ -231,15 +251,17 @@ public struct Trie {
 
     init() {
         config = TrieConfig()
+		globalState = rootState
     }
 
     public init(config: TrieConfig, keywords: [String]) {
-        self.config = config
+		globalState = rootState
+		self.config = config
 
         for keyword in keywords {
             add(keyword: keyword)
         }
-
+		
         constructFailureStates()
     }
 
