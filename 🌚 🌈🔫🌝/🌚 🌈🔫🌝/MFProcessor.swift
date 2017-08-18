@@ -25,18 +25,23 @@ class MFProcessor: NSObject {
 		
 		
 	}
-	func generateTrie(allStringMatchRules: [String]) {
+	func generateTrieForChars(allStringMatchRules: [String]) {
 		for i in 0 ..< allStringMatchRules.count{
 			print(i)
 		}
 	}
 
+	func generateTrieForKeycodes(allKeycodes: [[Int]]) {
+		for i in 0 ..< allKeycodes.count{
+			print(i)
+		}
+	}
+	
 	func processKeycodeEvent(notification: Notification) {
 		let keycode : Int? = buffer.getKeyCode()
 		if keycode == nil {
 			return
 		}
-		print(keycode!)
 	}
 	
 	func processCharacterEvent(notification: Notification) {
@@ -44,7 +49,6 @@ class MFProcessor: NSObject {
 		if char == nil {
 			return
 		}
-		print(char!)
 		
 	}
 }
