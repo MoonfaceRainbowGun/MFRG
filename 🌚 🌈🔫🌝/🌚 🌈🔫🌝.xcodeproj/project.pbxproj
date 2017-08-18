@@ -29,7 +29,6 @@
 		626BF1C51F46D10900EDDD05 /* MFOutputEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626BF1C41F46D10900EDDD05 /* MFOutputEvent.swift */; };
 		626BF1C71F46D2F200EDDD05 /* MFSoundOutputEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626BF1C61F46D2F200EDDD05 /* MFSoundOutputEvent.swift */; };
 		626F7D291F46DAC10058BFAA /* keyboard.wav in Resources */ = {isa = PBXBuildFile; fileRef = 626F7D281F46DAC10058BFAA /* keyboard.wav */; };
-		626F7D2B1F46DC2D0058BFAA /* MFSoundPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626F7D2A1F46DC2D0058BFAA /* MFSoundPlayer.swift */; };
 		626F7D2D1F46DFBD0058BFAA /* keyboard1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 626F7D2C1F46DFBD0058BFAA /* keyboard1.wav */; };
 		626F7D311F46E4B50058BFAA /* MFFastSoundPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626F7D301F46E4B50058BFAA /* MFFastSoundPlayer.swift */; };
 		6AAC040E1F46E6DA00F1FD58 /* MFConfigManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AAC040B1F46E6DA00F1FD58 /* MFConfigManager.swift */; };
@@ -77,7 +76,6 @@
 		626BF1C41F46D10900EDDD05 /* MFOutputEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MFOutputEvent.swift; sourceTree = "<group>"; };
 		626BF1C61F46D2F200EDDD05 /* MFSoundOutputEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MFSoundOutputEvent.swift; sourceTree = "<group>"; };
 		626F7D281F46DAC10058BFAA /* keyboard.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = keyboard.wav; path = Sound/keyboard.wav; sourceTree = "<group>"; };
-		626F7D2A1F46DC2D0058BFAA /* MFSoundPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MFSoundPlayer.swift; sourceTree = "<group>"; };
 		626F7D2C1F46DFBD0058BFAA /* keyboard1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = keyboard1.wav; path = Sound/keyboard1.wav; sourceTree = "<group>"; };
 		626F7D301F46E4B50058BFAA /* MFFastSoundPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MFFastSoundPlayer.swift; sourceTree = "<group>"; };
 		6AAC040B1F46E6DA00F1FD58 /* MFConfigManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MFConfigManager.swift; sourceTree = "<group>"; };
@@ -204,7 +202,6 @@
 				626BF1C41F46D10900EDDD05 /* MFOutputEvent.swift */,
 				626BF1C61F46D2F200EDDD05 /* MFSoundOutputEvent.swift */,
 				BF03E8271F46D1E90070D6FD /* MFCharacterEventManager.swift */,
-				626F7D2A1F46DC2D0058BFAA /* MFSoundPlayer.swift */,
 				626F7D301F46E4B50058BFAA /* MFFastSoundPlayer.swift */,
 				BF03E8601F46F79D0070D6FD /* 🌚 🌈🔫🌝-Bridging-Header.h */,
 			);
@@ -333,7 +330,6 @@
 				626F7D311F46E4B50058BFAA /* MFFastSoundPlayer.swift in Sources */,
 				BF03E8871F46F7AB0070D6FD /* FISampleDecoder.m in Sources */,
 				626BF1C11F46BEDA00EDDD05 /* MFSynthesizer.swift in Sources */,
-				626F7D2B1F46DC2D0058BFAA /* MFSoundPlayer.swift in Sources */,
 				BF03E88B1F46F7AB0070D6FD /* FISoundContext.m in Sources */,
 				BFFA0FAA1F46BB2C008E8C9C /* MFKeyboardEventManager.swift in Sources */,
 				0C19C8991F46FE3D008EBD75 /* State.swift in Sources */,

@@ -12,7 +12,7 @@ class MFSoundOutputEvent: MFOutputEvent {
     override class func run(_ userInfo: Dictionary<String, Any>) {
         if let fileName = userInfo["filename"] {
             print(fileName)
-            MFFastSoundPlayer.sharedInstance.playSound(fileName as! String)
+            MFSoundPlayer.sharedInstance.playSound(fileName as! String)
         }
     }
 }

@@ -9,14 +9,18 @@
 import Cocoa
 import AudioToolbox
 
-class MFFastSoundPlayer: NSObject {
-    static let sharedInstance: MFFastSoundPlayer = MFFastSoundPlayer()
+class MFSoundPlayer: NSObject {
+    static let sharedInstance = MFSoundPlayer(sound: "keyboard1")
     var sound: FISound?
     
+    init(sound: String) {
+        super.init()
+        self.prepareSound(sound);
+    }
     
-    func prepareSound() {
+    fileprivate func prepareSound(_ fileName: String) {
         if let soundEngine = FISoundEngine.shared() {
-            self.sound = try! soundEngine.soundNamed("keyboard1.wav", maxPolyphony: 4)
+            self.sound = try? soundEngine.soundNamed(fileName, maxPolyphony: 4)
         }
     }
     
