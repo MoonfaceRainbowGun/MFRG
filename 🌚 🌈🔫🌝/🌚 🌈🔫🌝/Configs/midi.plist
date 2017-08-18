@@ -390,6 +390,25 @@
 				<key>InputType</key>
 				<string>KeyCode</string>
 				<key>InputValue</key>
+				<string>-1</string>
+			</dict>
+			<key>Output</key>
+			<dict>
+				<key>OutputType</key>
+				<string>SynthesizeSound</string>
+				<key>OutputUserInfo</key>
+				<dict>
+					<key>MIDINote</key>
+					<integer>65</integer>
+				</dict>
+			</dict>
+		</dict>
+		<dict>
+			<key>Input</key>
+			<dict>
+				<key>InputType</key>
+				<string>KeyCode</string>
+				<key>InputValue</key>
 				<string>124</string>
 			</dict>
 			<key>Output</key>

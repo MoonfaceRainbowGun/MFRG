@@ -74,7 +74,8 @@ class MFKeycodeMapping: NSObject {
             kVK_LeftArrow: 30,
             kVK_RightArrow: 22,
             kVK_DownArrow: 31,
-            kVK_UpArrow: 23
+            kVK_UpArrow: 23,
+            -1: 5
         ]
         
 
