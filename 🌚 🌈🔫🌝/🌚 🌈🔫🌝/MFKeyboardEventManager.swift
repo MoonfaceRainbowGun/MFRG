@@ -66,7 +66,6 @@ fileprivate func didReceiveKeyboardEvent(proxy: CGEventTapProxy, type: CGEventTy
     if type == .keyDown {
         manager.didReceiveKeyDownEvent(event: event);
     } else if type == .flagsChanged {
-        print(event.flags)
         if event.flags.rawValue > previousFlag {
             manager.didReceiveFlagsChangedEvent(event: event)
         } else if capsOn {
