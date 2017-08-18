@@ -14,7 +14,7 @@ class MFOutputEvent: NSObject {
         fatalError("不支持🌚")
     }
     
-    func run(_ userInfo: Dictionary<String, Any>) {
+    func run(_ userInfo: [String: Any]) {
         fatalError("不支持🌚")
     }
     

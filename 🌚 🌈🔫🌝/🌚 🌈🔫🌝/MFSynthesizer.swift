@@ -51,7 +51,6 @@ class MFSynthesizer {
         var playerNode: AVAudioPlayerNode? = nil
         while playerNode == nil {
             for node in playerNodesPool {
-                print(node.isPlaying)
                 if !node.isPlaying {
                     playerNode = node
                     break

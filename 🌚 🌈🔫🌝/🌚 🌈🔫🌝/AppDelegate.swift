@@ -13,52 +13,70 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
 	var mainProcesser : MFProcessor?
     let statusItem = NSStatusBar.system().statusItem(withLength: 40)
+    var themeMenu: NSMenu!
+    let configs = ["", "", ""]
+    let titles = ["Synthesised Sound", "Mechanical Keyboard", "Easter Eggs"]
+    var selected = [false, false, false]
 
 	
     func applicationWillFinishLaunching(_ notification: Notification) {
-        
+        self.configureMenu()
+
+		MFKeyboardEventManager.sharedInstance.startListening()
+		MFCharacterEventManager.sharedInstance.startListening()
+		let mainBuffer : MFBuffer = MFBuffer()
+		
+		MFOutputManager.sharedInstance.prepareOutput(type: .mechanicKeyboardSound, userInfos: [["filename": "keyboard1.wav"]])
+		let rule = Config.configManager.loadRule("keyCode")
+		mainProcesser = MFProcessor(keyEventBuffer: mainBuffer, rule: rule!)
+		
+//        Config.testConfig()
+        Config.testReadConfig()
+    }
+    
+    func configureMenu() {
         if let button = statusItem.button {
             button.image = NSImage(named: "ic_keyboard")
         }
         
         let menu = NSMenu()
         
+        menu.addItem(self.getThemeMenuItem())
+        menu.addItem(self.getQuitMenuItem())
+
+        statusItem.menu = menu
+    }
+    
+    func getQuitMenuItem() -> NSMenuItem {
+        let quit = NSMenuItem(title: "Quit", action: #selector(terminateApplication), keyEquivalent: "Q")
+        return quit;
+    }
+    
+    func getThemeMenuItem() -> NSMenuItem {
         let themeItem = NSMenuItem()
         themeItem.title = "Theme"
-        let themeMenu = NSMenu()
-        themeMenu.addItem(NSMenuItem(title: "Blue Switch", action: #selector(themeDidSelect(sender:)), keyEquivalent: "1"))
-        themeMenu.addItem(NSMenuItem(title: "Brown Switch", action: #selector(themeDidSelect(sender:)), keyEquivalent: "2"))
         
+        let themeMenu = NSMenu()
+        
+        for (index, title) in titles.enumerated() {
+            let item = NSMenuItem(title: title, action: #selector(themeDidSelect(sender:)), keyEquivalent: "\(index + 1)")
+            item.tag = index;
+            themeMenu.addItem(item)
+        }
         
         themeItem.submenu = themeMenu
-        
-        
-        menu.addItem(themeItem)
-        
-        let quit = NSMenuItem(title: "Quit", action: #selector(terminateApplication), keyEquivalent: "Q")
-        menu.addItem(quit)
-        
-        
-        
-        statusItem.menu = menu
-        
-        
-        
-        MFKeyboardEventManager.sharedInstance.startListening()
-        MFCharacterEventManager.sharedInstance.startListening()
-		let mainBuffer : MFBuffer = MFBuffer()
-        
-        MFOutputManager.sharedInstance.prepareOutput(type: .mechanicKeyboardSound, userInfos: [["filename": "keyboard1.wav"]])
-		let rule = Config.configManager.loadRule("keyCode")
-		mainProcesser = MFProcessor(keyEventBuffer: mainBuffer, rule: rule!)
 		
-		
-//        Config.testConfig()
-        Config.testReadConfig()
+        self.themeMenu = themeMenu
+        return themeItem;
     }
 
-    func themeDidSelect(sender: Any) {
-        print(sender)
+    func themeDidSelect(sender: NSMenuItem) {
+        for menuItem in self.themeMenu.items {
+            if menuItem == sender {
+                self.selected[menuItem.tag] = !self.selected[menuItem.tag]
+                menuItem.state = self.selected[menuItem.tag] ? NSOnState : NSOffState
+            }
+        }
     }
     
     func terminateApplication() {

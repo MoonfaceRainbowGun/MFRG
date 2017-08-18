@@ -9,7 +9,7 @@
 import Foundation
 
 enum InputRuleType: String {
-    case keyCode = "keyCode"
+    case keyCode = "keycode"
     case string = "string"
     case frequency = "frequency"
     case null = ""
