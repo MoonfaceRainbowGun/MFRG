@@ -11,6 +11,9 @@
 		626BF1B41F46B8FE00EDDD05 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626BF1B31F46B8FE00EDDD05 /* ViewController.swift */; };
 		626BF1B61F46B8FE00EDDD05 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 626BF1B51F46B8FE00EDDD05 /* Assets.xcassets */; };
 		626BF1B91F46B8FE00EDDD05 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 626BF1B71F46B8FE00EDDD05 /* Main.storyboard */; };
+		626BF1C11F46BEDA00EDDD05 /* MFSynthesizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626BF1C01F46BEDA00EDDD05 /* MFSynthesizer.swift */; };
+		626BF1C51F46D10900EDDD05 /* MFOutputEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626BF1C41F46D10900EDDD05 /* MFOutputEvent.swift */; };
+		626BF1C71F46D2F200EDDD05 /* MFSoundOutputEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626BF1C61F46D2F200EDDD05 /* MFSoundOutputEvent.swift */; };
 		BFFA0FA41F46BA75008E8C9C /* MFBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFFA0FA31F46BA75008E8C9C /* MFBuffer.swift */; };
 		BFFA0FA61F46BA93008E8C9C /* MFProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFFA0FA51F46BA93008E8C9C /* MFProcessor.swift */; };
 		BFFA0FA81F46BAA6008E8C9C /* MFOutputManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFFA0FA71F46BAA6008E8C9C /* MFOutputManager.swift */; };
@@ -24,6 +27,9 @@
 		626BF1B51F46B8FE00EDDD05 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		626BF1B81F46B8FE00EDDD05 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		626BF1BA1F46B8FE00EDDD05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		626BF1C01F46BEDA00EDDD05 /* MFSynthesizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MFSynthesizer.swift; sourceTree = "<group>"; };
+		626BF1C41F46D10900EDDD05 /* MFOutputEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MFOutputEvent.swift; sourceTree = "<group>"; };
+		626BF1C61F46D2F200EDDD05 /* MFSoundOutputEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MFSoundOutputEvent.swift; sourceTree = "<group>"; };
 		BFFA0FA31F46BA75008E8C9C /* MFBuffer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MFBuffer.swift; sourceTree = "<group>"; };
 		BFFA0FA51F46BA93008E8C9C /* MFProcessor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MFProcessor.swift; sourceTree = "<group>"; };
 		BFFA0FA71F46BAA6008E8C9C /* MFOutputManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MFOutputManager.swift; sourceTree = "<group>"; };
@@ -67,8 +73,11 @@
 				626BF1BA1F46B8FE00EDDD05 /* Info.plist */,
 				BFFA0FA31F46BA75008E8C9C /* MFBuffer.swift */,
 				BFFA0FA51F46BA93008E8C9C /* MFProcessor.swift */,
-				BFFA0FA71F46BAA6008E8C9C /* MFOutputManager.swift */,
 				BFFA0FA91F46BB2C008E8C9C /* MFKeyboardEventManager.swift */,
+				626BF1C01F46BEDA00EDDD05 /* MFSynthesizer.swift */,
+				BFFA0FA71F46BAA6008E8C9C /* MFOutputManager.swift */,
+				626BF1C41F46D10900EDDD05 /* MFOutputEvent.swift */,
+				626BF1C61F46D2F200EDDD05 /* MFSoundOutputEvent.swift */,
 			);
 			path = "🌚 🌈🔫🌝";
 			sourceTree = "<group>";
@@ -146,9 +155,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				626BF1B41F46B8FE00EDDD05 /* ViewController.swift in Sources */,
+				626BF1C11F46BEDA00EDDD05 /* MFSynthesizer.swift in Sources */,
 				BFFA0FAA1F46BB2C008E8C9C /* MFKeyboardEventManager.swift in Sources */,
 				BFFA0FA61F46BA93008E8C9C /* MFProcessor.swift in Sources */,
 				BFFA0FA41F46BA75008E8C9C /* MFBuffer.swift in Sources */,
+				626BF1C71F46D2F200EDDD05 /* MFSoundOutputEvent.swift in Sources */,
+				626BF1C51F46D10900EDDD05 /* MFOutputEvent.swift in Sources */,
 				626BF1B21F46B8FE00EDDD05 /* AppDelegate.swift in Sources */,
 				BFFA0FA81F46BAA6008E8C9C /* MFOutputManager.swift in Sources */,
 			);

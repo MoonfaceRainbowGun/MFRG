@@ -8,6 +8,17 @@
 
 import Cocoa
 
+enum OutputEventType {
+    case mechanicKeyboardSound
+}
+
 class MFOutputManager: NSObject {
-    
+    func executeEvent(type: OutputEventType, userInfo: Dictionary<String, Any>) {
+        switch type {
+        case .mechanicKeyboardSound:
+            print("I'm gonna play sound")
+            MFSoundOutputEvent.run(userInfo)
+            break
+        }
+    }
 }
