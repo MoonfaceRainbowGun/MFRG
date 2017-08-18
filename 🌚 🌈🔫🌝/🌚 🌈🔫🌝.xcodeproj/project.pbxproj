@@ -19,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0C19C86F1F46F373008EBD75 /* 🌚 🌈🔫🌝-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "🌚 🌈🔫🌝-Bridging-Header.h"; sourceTree = "<group>"; };
 		626BF1AE1F46B8FE00EDDD05 /* 🌚 🌈🔫🌝.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "🌚 🌈🔫🌝.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		626BF1B11F46B8FE00EDDD05 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		626BF1B31F46B8FE00EDDD05 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -72,6 +73,7 @@
 				BFFA0FA71F46BAA6008E8C9C /* MFOutputManager.swift */,
 				BFFA0FA91F46BB2C008E8C9C /* MFKeyboardEventManager.swift */,
 				BF03E8271F46D1E90070D6FD /* MFCharacterEventManager.swift */,
+				0C19C86F1F46F373008EBD75 /* 🌚 🌈🔫🌝-Bridging-Header.h */,
 			);
 			path = "🌚 🌈🔫🌝";
 			sourceTree = "<group>";
@@ -109,6 +111,7 @@
 				TargetAttributes = {
 					626BF1AD1F46B8FE00EDDD05 = {
 						CreatedOnToolsVersion = 8.3.3;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -268,11 +271,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = "🌚 🌈🔫🌝/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.mfrg.---------";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "🌚 🌈🔫🌝/🌚 🌈🔫🌝-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -281,11 +287,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = "🌚 🌈🔫🌝/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.mfrg.---------";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "🌚 🌈🔫🌝/🌚 🌈🔫🌝-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
