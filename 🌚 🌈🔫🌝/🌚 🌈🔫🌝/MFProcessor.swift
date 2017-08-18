@@ -10,14 +10,14 @@
 import Cocoa
 
 class MFProcessor: NSObject {
-
+	var slidingWindow  = [Character]()
 	var trieForKeycode : Trie
 	var trieForChar : Trie
 	var keycodeRuleMap = [String : RuleOutput]()
 	var charRuleMap = [String : RuleOutput]()
 	var rateRuleMap = [Double : RuleOutput]()
 	var defaultKeycode : RuleOutput?
-	var regularExpression = [NSRegularExpression?]()
+	var regularExpression = [NSRegularExpression : RuleOutput]()
 	fileprivate var buffer : MFBuffer
 	init(keyEventBuffer : MFBuffer, rule: Rule){
 		
@@ -41,7 +41,14 @@ class MFProcessor: NSObject {
 				rateRuleMap[ruleItem.input.valueDouble!] = ruleItem.output
 				break
             case InputRuleType.regex:
-                //TODO: 曹神靠你了
+				do {
+					let dateRegex =  try NSRegularExpression(pattern: ruleItem.input.valueString!,
+					                    options: [])
+					regularExpression[dateRegex] = ruleItem.output
+					
+				}catch {
+					print("Wrong regex")
+				}
                 break
 			}
 		}
@@ -105,6 +112,38 @@ class MFProcessor: NSObject {
 		let char : Character? = buffer.getChar()
 		if char == nil {
 			return
+		}
+		if slidingWindow.count == 20{
+			slidingWindow.removeFirst()
+		}
+		slidingWindow.append(char!)
+		var current = ""
+		var n = 0
+//		for char in slidingWindow.reversed(){
+//			n+=1
+//			current = String(char) + current
+//			//if n == slidingWindow.count{
+//				print("Debug")
+//				print(current)
+//				for regex in regularExpression{
+//					if regex.key.matches(in: current, options: [], range: NSRange(location: 0,length: n) ).count > 0{
+//						print("Regex matches!")
+//						MFOutputManager.sharedInstance.executeEvent(regex.value)
+//					}
+//				}
+//			//}
+//		}
+		for regex in regularExpression{
+			var n = 0
+			for char in slidingWindow.reversed(){
+				n+=1
+				current = String(char) + current
+				if regex.key.matches(in: current, options: [], range: NSRange(location: 0,length: n) ).count > 0{
+					print("Regex matches!")
+					MFOutputManager.sharedInstance.executeEvent(regex.value)
+					break;
+				}
+			}
 		}
 		let emits = trieForChar.parseByChar(char: char!)
 		if emits.count > 0 {

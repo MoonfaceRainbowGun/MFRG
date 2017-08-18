@@ -21,6 +21,7 @@
 		0C19C89A1F46FE3D008EBD75 /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C19C88C1F46FE3D008EBD75 /* Token.swift */; };
 		0C19C89B1F46FE3D008EBD75 /* Trie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C19C88D1F46FE3D008EBD75 /* Trie.swift */; };
 		0C19C89C1F46FE3D008EBD75 /* TrieConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C19C88E1F46FE3D008EBD75 /* TrieConfig.swift */; };
+		0C7E87C31F4792E700A80E32 /* command-line.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0C7E87C21F4792E700A80E32 /* command-line.plist */; };
 		626BF1B21F46B8FE00EDDD05 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626BF1B11F46B8FE00EDDD05 /* AppDelegate.swift */; };
 		626BF1B41F46B8FE00EDDD05 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626BF1B31F46B8FE00EDDD05 /* ViewController.swift */; };
 		626BF1B61F46B8FE00EDDD05 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 626BF1B51F46B8FE00EDDD05 /* Assets.xcassets */; };
@@ -116,6 +117,7 @@
 		0C19C88C1F46FE3D008EBD75 /* Token.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Token.swift; sourceTree = "<group>"; };
 		0C19C88D1F46FE3D008EBD75 /* Trie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Trie.swift; sourceTree = "<group>"; };
 		0C19C88E1F46FE3D008EBD75 /* TrieConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrieConfig.swift; sourceTree = "<group>"; };
+		0C7E87C21F4792E700A80E32 /* command-line.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "command-line.plist"; sourceTree = "<group>"; };
 		626BF1AE1F46B8FE00EDDD05 /* 🌚 🌈🔫🌝.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "🌚 🌈🔫🌝.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		626BF1B11F46B8FE00EDDD05 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		626BF1B31F46B8FE00EDDD05 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -420,6 +422,7 @@
 				626F7D381F477D810058BFAA /* midi.plist */,
 				BF03E89E1F4774CA0070D6FD /* mechanical-keyboard.plist */,
 				BF03E89D1F4774CA0070D6FD /* easter-eggs.plist */,
+				0C7E87C21F4792E700A80E32 /* command-line.plist */,
 			);
 			path = Configs;
 			sourceTree = "<group>";
@@ -505,6 +508,7 @@
 				626F7D861F478BF40058BFAA /* S.wav in Resources */,
 				626F7D7E1F478BF40058BFAA /* K.wav in Resources */,
 				626F7D931F478C4B0058BFAA /* voice.plist in Resources */,
+				0C7E87C31F4792E700A80E32 /* command-line.plist in Resources */,
 				626F7D391F477D810058BFAA /* midi.plist in Resources */,
 				626F7D7C1F478BF40058BFAA /* I.wav in Resources */,
 				626F7D811F478BF40058BFAA /* N.wav in Resources */,
