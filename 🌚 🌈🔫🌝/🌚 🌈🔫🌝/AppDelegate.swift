@@ -12,8 +12,16 @@ import Cocoa
 class AppDelegate: NSObject, NSApplicationDelegate {
 
 	var mainProcesser : MFProcessor?
+    let statusItem = NSStatusBar.system().statusItem(withLength: 40)
+
 	
     func applicationWillFinishLaunching(_ notification: Notification) {
+        
+        if let button = statusItem.button {
+            button.image = NSImage(named: "ic_keyboard")
+        }
+        
+        
         MFKeyboardEventManager.sharedInstance.startListening()
         MFCharacterEventManager.sharedInstance.startListening()
 		let mainBuffer : MFBuffer = MFBuffer()
