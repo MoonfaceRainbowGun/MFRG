@@ -1,0 +1,435 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		626BF1B21F46B8FE00EDDD05 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626BF1B11F46B8FE00EDDD05 /* AppDelegate.swift */; };
+		626BF1B41F46B8FE00EDDD05 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626BF1B31F46B8FE00EDDD05 /* ViewController.swift */; };
+		626BF1B61F46B8FE00EDDD05 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 626BF1B51F46B8FE00EDDD05 /* Assets.xcassets */; };
+		626BF1B91F46B8FE00EDDD05 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 626BF1B71F46B8FE00EDDD05 /* Main.storyboard */; };
+		626BF1C11F46BEDA00EDDD05 /* MFSynthesizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626BF1C01F46BEDA00EDDD05 /* MFSynthesizer.swift */; };
+		626BF1C51F46D10900EDDD05 /* MFOutputEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626BF1C41F46D10900EDDD05 /* MFOutputEvent.swift */; };
+		626BF1C71F46D2F200EDDD05 /* MFSoundOutputEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626BF1C61F46D2F200EDDD05 /* MFSoundOutputEvent.swift */; };
+		626F7D291F46DAC10058BFAA /* keyboard.wav in Resources */ = {isa = PBXBuildFile; fileRef = 626F7D281F46DAC10058BFAA /* keyboard.wav */; };
+		626F7D2B1F46DC2D0058BFAA /* MFSoundPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626F7D2A1F46DC2D0058BFAA /* MFSoundPlayer.swift */; };
+		626F7D2D1F46DFBD0058BFAA /* keyboard1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 626F7D2C1F46DFBD0058BFAA /* keyboard1.wav */; };
+		626F7D311F46E4B50058BFAA /* MFFastSoundPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626F7D301F46E4B50058BFAA /* MFFastSoundPlayer.swift */; };
+		6AAC040E1F46E6DA00F1FD58 /* MFConfigManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AAC040B1F46E6DA00F1FD58 /* MFConfigManager.swift */; };
+		6AAC040F1F46E6DA00F1FD58 /* MFRules.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AAC040C1F46E6DA00F1FD58 /* MFRules.swift */; };
+		6AAC04101F46E6DA00F1FD58 /* MFRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AAC040D1F46E6DA00F1FD58 /* MFRule.swift */; };
+		BF03E8281F46D1E90070D6FD /* MFCharacterEventManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF03E8271F46D1E90070D6FD /* MFCharacterEventManager.swift */; };
+		BF03E8841F46F7AB0070D6FD /* FIError.m in Sources */ = {isa = PBXBuildFile; fileRef = BF03E8661F46F7AB0070D6FD /* FIError.m */; };
+		BF03E8851F46F7AB0070D6FD /* FISampleBuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = BF03E8681F46F7AB0070D6FD /* FISampleBuffer.m */; };
+		BF03E8871F46F7AB0070D6FD /* FISampleDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = BF03E86B1F46F7AB0070D6FD /* FISampleDecoder.m */; };
+		BF03E8891F46F7AB0070D6FD /* FISampleFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = BF03E86E1F46F7AB0070D6FD /* FISampleFormat.m */; };
+		BF03E88A1F46F7AB0070D6FD /* FISound.m in Sources */ = {isa = PBXBuildFile; fileRef = BF03E8701F46F7AB0070D6FD /* FISound.m */; };
+		BF03E88B1F46F7AB0070D6FD /* FISoundContext.m in Sources */ = {isa = PBXBuildFile; fileRef = BF03E8721F46F7AB0070D6FD /* FISoundContext.m */; };
+		BF03E88D1F46F7AB0070D6FD /* FISoundDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = BF03E8751F46F7AB0070D6FD /* FISoundDevice.m */; };
+		BF03E88F1F46F7AB0070D6FD /* FISoundEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = BF03E8781F46F7AB0070D6FD /* FISoundEngine.m */; };
+		BF03E8901F46F7AB0070D6FD /* FISoundSource.m in Sources */ = {isa = PBXBuildFile; fileRef = BF03E87A1F46F7AB0070D6FD /* FISoundSource.m */; };
+		BFFA0FA41F46BA75008E8C9C /* MFBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFFA0FA31F46BA75008E8C9C /* MFBuffer.swift */; };
+		BFFA0FA61F46BA93008E8C9C /* MFProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFFA0FA51F46BA93008E8C9C /* MFProcessor.swift */; };
+		BFFA0FA81F46BAA6008E8C9C /* MFOutputManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFFA0FA71F46BAA6008E8C9C /* MFOutputManager.swift */; };
+		BFFA0FAA1F46BB2C008E8C9C /* MFKeyboardEventManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFFA0FA91F46BB2C008E8C9C /* MFKeyboardEventManager.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		626BF1AE1F46B8FE00EDDD05 /* 🌚 🌈🔫🌝.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "🌚 🌈🔫🌝.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		626BF1B11F46B8FE00EDDD05 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		626BF1B31F46B8FE00EDDD05 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		626BF1B51F46B8FE00EDDD05 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		626BF1B81F46B8FE00EDDD05 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		626BF1BA1F46B8FE00EDDD05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		626BF1C01F46BEDA00EDDD05 /* MFSynthesizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MFSynthesizer.swift; sourceTree = "<group>"; };
+		626BF1C41F46D10900EDDD05 /* MFOutputEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MFOutputEvent.swift; sourceTree = "<group>"; };
+		626BF1C61F46D2F200EDDD05 /* MFSoundOutputEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MFSoundOutputEvent.swift; sourceTree = "<group>"; };
+		626F7D281F46DAC10058BFAA /* keyboard.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = keyboard.wav; path = Sound/keyboard.wav; sourceTree = "<group>"; };
+		626F7D2A1F46DC2D0058BFAA /* MFSoundPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MFSoundPlayer.swift; sourceTree = "<group>"; };
+		626F7D2C1F46DFBD0058BFAA /* keyboard1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = keyboard1.wav; path = Sound/keyboard1.wav; sourceTree = "<group>"; };
+		626F7D301F46E4B50058BFAA /* MFFastSoundPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MFFastSoundPlayer.swift; sourceTree = "<group>"; };
+		6AAC040B1F46E6DA00F1FD58 /* MFConfigManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MFConfigManager.swift; sourceTree = "<group>"; };
+		6AAC040C1F46E6DA00F1FD58 /* MFRules.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MFRules.swift; sourceTree = "<group>"; };
+		6AAC040D1F46E6DA00F1FD58 /* MFRule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MFRule.swift; sourceTree = "<group>"; };
+		BF03E8271F46D1E90070D6FD /* MFCharacterEventManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MFCharacterEventManager.swift; sourceTree = "<group>"; };
+		BF03E8601F46F79D0070D6FD /* 🌚 🌈🔫🌝-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "🌚 🌈🔫🌝-Bridging-Header.h"; sourceTree = "<group>"; };
+		BF03E8651F46F7AB0070D6FD /* FIError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FIError.h; sourceTree = "<group>"; };
+		BF03E8661F46F7AB0070D6FD /* FIError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FIError.m; sourceTree = "<group>"; };
+		BF03E8671F46F7AB0070D6FD /* FISampleBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FISampleBuffer.h; sourceTree = "<group>"; };
+		BF03E8681F46F7AB0070D6FD /* FISampleBuffer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FISampleBuffer.m; sourceTree = "<group>"; };
+		BF03E86A1F46F7AB0070D6FD /* FISampleDecoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FISampleDecoder.h; sourceTree = "<group>"; };
+		BF03E86B1F46F7AB0070D6FD /* FISampleDecoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FISampleDecoder.m; sourceTree = "<group>"; };
+		BF03E86D1F46F7AB0070D6FD /* FISampleFormat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FISampleFormat.h; sourceTree = "<group>"; };
+		BF03E86E1F46F7AB0070D6FD /* FISampleFormat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FISampleFormat.m; sourceTree = "<group>"; };
+		BF03E86F1F46F7AB0070D6FD /* FISound.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FISound.h; sourceTree = "<group>"; };
+		BF03E8701F46F7AB0070D6FD /* FISound.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FISound.m; sourceTree = "<group>"; };
+		BF03E8711F46F7AB0070D6FD /* FISoundContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FISoundContext.h; sourceTree = "<group>"; };
+		BF03E8721F46F7AB0070D6FD /* FISoundContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FISoundContext.m; sourceTree = "<group>"; };
+		BF03E8741F46F7AB0070D6FD /* FISoundDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FISoundDevice.h; sourceTree = "<group>"; };
+		BF03E8751F46F7AB0070D6FD /* FISoundDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FISoundDevice.m; sourceTree = "<group>"; };
+		BF03E8771F46F7AB0070D6FD /* FISoundEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FISoundEngine.h; sourceTree = "<group>"; };
+		BF03E8781F46F7AB0070D6FD /* FISoundEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FISoundEngine.m; sourceTree = "<group>"; };
+		BF03E8791F46F7AB0070D6FD /* FISoundSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FISoundSource.h; sourceTree = "<group>"; };
+		BF03E87A1F46F7AB0070D6FD /* FISoundSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FISoundSource.m; sourceTree = "<group>"; };
+		BFFA0FA31F46BA75008E8C9C /* MFBuffer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MFBuffer.swift; sourceTree = "<group>"; };
+		BFFA0FA51F46BA93008E8C9C /* MFProcessor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MFProcessor.swift; sourceTree = "<group>"; };
+		BFFA0FA71F46BAA6008E8C9C /* MFOutputManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MFOutputManager.swift; sourceTree = "<group>"; };
+		BFFA0FA91F46BB2C008E8C9C /* MFKeyboardEventManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MFKeyboardEventManager.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		626BF1AB1F46B8FE00EDDD05 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		626BF1A51F46B8FE00EDDD05 = {
+			isa = PBXGroup;
+			children = (
+				626BF1B01F46B8FE00EDDD05 /* 🌚 🌈🔫🌝 */,
+				626BF1AF1F46B8FE00EDDD05 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		626BF1AF1F46B8FE00EDDD05 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				626BF1AE1F46B8FE00EDDD05 /* 🌚 🌈🔫🌝.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		626BF1B01F46B8FE00EDDD05 /* 🌚 🌈🔫🌝 */ = {
+			isa = PBXGroup;
+			children = (
+				BF03E8641F46F7AB0070D6FD /* Finch */,
+				626F7D251F46D7B50058BFAA /* Sound */,
+				626BF1B11F46B8FE00EDDD05 /* AppDelegate.swift */,
+				626BF1B31F46B8FE00EDDD05 /* ViewController.swift */,
+				626BF1B51F46B8FE00EDDD05 /* Assets.xcassets */,
+				6AAC040B1F46E6DA00F1FD58 /* MFConfigManager.swift */,
+				6AAC040C1F46E6DA00F1FD58 /* MFRules.swift */,
+				6AAC040D1F46E6DA00F1FD58 /* MFRule.swift */,
+				626BF1B71F46B8FE00EDDD05 /* Main.storyboard */,
+				626BF1BA1F46B8FE00EDDD05 /* Info.plist */,
+				BFFA0FA31F46BA75008E8C9C /* MFBuffer.swift */,
+				BFFA0FA51F46BA93008E8C9C /* MFProcessor.swift */,
+				BFFA0FA91F46BB2C008E8C9C /* MFKeyboardEventManager.swift */,
+				626BF1C01F46BEDA00EDDD05 /* MFSynthesizer.swift */,
+				BFFA0FA71F46BAA6008E8C9C /* MFOutputManager.swift */,
+				626BF1C41F46D10900EDDD05 /* MFOutputEvent.swift */,
+				626BF1C61F46D2F200EDDD05 /* MFSoundOutputEvent.swift */,
+				BF03E8271F46D1E90070D6FD /* MFCharacterEventManager.swift */,
+				626F7D2A1F46DC2D0058BFAA /* MFSoundPlayer.swift */,
+				626F7D301F46E4B50058BFAA /* MFFastSoundPlayer.swift */,
+				BF03E8601F46F79D0070D6FD /* 🌚 🌈🔫🌝-Bridging-Header.h */,
+			);
+			path = "🌚 🌈🔫🌝";
+			sourceTree = "<group>";
+		};
+		626F7D251F46D7B50058BFAA /* Sound */ = {
+			isa = PBXGroup;
+			children = (
+				626F7D2C1F46DFBD0058BFAA /* keyboard1.wav */,
+				626F7D281F46DAC10058BFAA /* keyboard.wav */,
+			);
+			name = Sound;
+			sourceTree = "<group>";
+		};
+		BF03E8641F46F7AB0070D6FD /* Finch */ = {
+			isa = PBXGroup;
+			children = (
+				BF03E8651F46F7AB0070D6FD /* FIError.h */,
+				BF03E8661F46F7AB0070D6FD /* FIError.m */,
+				BF03E8671F46F7AB0070D6FD /* FISampleBuffer.h */,
+				BF03E8681F46F7AB0070D6FD /* FISampleBuffer.m */,
+				BF03E86A1F46F7AB0070D6FD /* FISampleDecoder.h */,
+				BF03E86B1F46F7AB0070D6FD /* FISampleDecoder.m */,
+				BF03E86D1F46F7AB0070D6FD /* FISampleFormat.h */,
+				BF03E86E1F46F7AB0070D6FD /* FISampleFormat.m */,
+				BF03E86F1F46F7AB0070D6FD /* FISound.h */,
+				BF03E8701F46F7AB0070D6FD /* FISound.m */,
+				BF03E8711F46F7AB0070D6FD /* FISoundContext.h */,
+				BF03E8721F46F7AB0070D6FD /* FISoundContext.m */,
+				BF03E8741F46F7AB0070D6FD /* FISoundDevice.h */,
+				BF03E8751F46F7AB0070D6FD /* FISoundDevice.m */,
+				BF03E8771F46F7AB0070D6FD /* FISoundEngine.h */,
+				BF03E8781F46F7AB0070D6FD /* FISoundEngine.m */,
+				BF03E8791F46F7AB0070D6FD /* FISoundSource.h */,
+				BF03E87A1F46F7AB0070D6FD /* FISoundSource.m */,
+			);
+			path = Finch;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		626BF1AD1F46B8FE00EDDD05 /* 🌚 🌈🔫🌝 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 626BF1BD1F46B8FE00EDDD05 /* Build configuration list for PBXNativeTarget "🌚 🌈🔫🌝" */;
+			buildPhases = (
+				626BF1AA1F46B8FE00EDDD05 /* Sources */,
+				626BF1AB1F46B8FE00EDDD05 /* Frameworks */,
+				626BF1AC1F46B8FE00EDDD05 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "🌚 🌈🔫🌝";
+			productName = "🌚 🌈🔫🌝";
+			productReference = 626BF1AE1F46B8FE00EDDD05 /* 🌚 🌈🔫🌝.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		626BF1A61F46B8FE00EDDD05 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = MF;
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = MFRG;
+				TargetAttributes = {
+					626BF1AD1F46B8FE00EDDD05 = {
+						CreatedOnToolsVersion = 8.3.3;
+						LastSwiftMigration = 0830;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 626BF1A91F46B8FE00EDDD05 /* Build configuration list for PBXProject "🌚 🌈🔫🌝" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 626BF1A51F46B8FE00EDDD05;
+			productRefGroup = 626BF1AF1F46B8FE00EDDD05 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				626BF1AD1F46B8FE00EDDD05 /* 🌚 🌈🔫🌝 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		626BF1AC1F46B8FE00EDDD05 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				626F7D291F46DAC10058BFAA /* keyboard.wav in Resources */,
+				626BF1B61F46B8FE00EDDD05 /* Assets.xcassets in Resources */,
+				626BF1B91F46B8FE00EDDD05 /* Main.storyboard in Resources */,
+				626F7D2D1F46DFBD0058BFAA /* keyboard1.wav in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		626BF1AA1F46B8FE00EDDD05 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF03E88A1F46F7AB0070D6FD /* FISound.m in Sources */,
+				6AAC040F1F46E6DA00F1FD58 /* MFRules.swift in Sources */,
+				BF03E8891F46F7AB0070D6FD /* FISampleFormat.m in Sources */,
+				BF03E8851F46F7AB0070D6FD /* FISampleBuffer.m in Sources */,
+				626BF1B41F46B8FE00EDDD05 /* ViewController.swift in Sources */,
+				626F7D311F46E4B50058BFAA /* MFFastSoundPlayer.swift in Sources */,
+				BF03E8871F46F7AB0070D6FD /* FISampleDecoder.m in Sources */,
+				626BF1C11F46BEDA00EDDD05 /* MFSynthesizer.swift in Sources */,
+				626F7D2B1F46DC2D0058BFAA /* MFSoundPlayer.swift in Sources */,
+				BF03E88B1F46F7AB0070D6FD /* FISoundContext.m in Sources */,
+				BFFA0FAA1F46BB2C008E8C9C /* MFKeyboardEventManager.swift in Sources */,
+				BFFA0FA61F46BA93008E8C9C /* MFProcessor.swift in Sources */,
+				BFFA0FA41F46BA75008E8C9C /* MFBuffer.swift in Sources */,
+				BF03E8901F46F7AB0070D6FD /* FISoundSource.m in Sources */,
+				626BF1C71F46D2F200EDDD05 /* MFSoundOutputEvent.swift in Sources */,
+				BF03E88F1F46F7AB0070D6FD /* FISoundEngine.m in Sources */,
+				626BF1C51F46D10900EDDD05 /* MFOutputEvent.swift in Sources */,
+				6AAC040E1F46E6DA00F1FD58 /* MFConfigManager.swift in Sources */,
+				626BF1B21F46B8FE00EDDD05 /* AppDelegate.swift in Sources */,
+				BF03E8281F46D1E90070D6FD /* MFCharacterEventManager.swift in Sources */,
+				BF03E8841F46F7AB0070D6FD /* FIError.m in Sources */,
+				6AAC04101F46E6DA00F1FD58 /* MFRule.swift in Sources */,
+				BFFA0FA81F46BAA6008E8C9C /* MFOutputManager.swift in Sources */,
+				BF03E88D1F46F7AB0070D6FD /* FISoundDevice.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		626BF1B71F46B8FE00EDDD05 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				626BF1B81F46B8FE00EDDD05 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		626BF1BB1F46B8FE00EDDD05 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		626BF1BC1F46B8FE00EDDD05 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+			};
+			name = Release;
+		};
+		626BF1BE1F46B8FE00EDDD05 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "🌚 🌈🔫🌝/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mfrg.---------";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "🌚 🌈🔫🌝/🌚 🌈🔫🌝-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		626BF1BF1F46B8FE00EDDD05 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "🌚 🌈🔫🌝/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mfrg.---------";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "🌚 🌈🔫🌝/🌚 🌈🔫🌝-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		626BF1A91F46B8FE00EDDD05 /* Build configuration list for PBXProject "🌚 🌈🔫🌝" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				626BF1BB1F46B8FE00EDDD05 /* Debug */,
+				626BF1BC1F46B8FE00EDDD05 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		626BF1BD1F46B8FE00EDDD05 /* Build configuration list for PBXNativeTarget "🌚 🌈🔫🌝" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				626BF1BE1F46B8FE00EDDD05 /* Debug */,
+				626BF1BF1F46B8FE00EDDD05 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 626BF1A61F46B8FE00EDDD05 /* Project object */;
+}
