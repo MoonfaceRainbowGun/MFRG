@@ -41,34 +41,16 @@ class MFProcessor: NSObject {
 		buffer = keyEventBuffer
 		var trieBuilderForKeycode = Trie.builder().removeOverlaps()
 		for rule in keycodeRuleMap{
-			trieBuilderForKeycode = trieBuilderForKeycode.add(keyword: rule.key)
+			trieBuilderForKeycode = trieBuilderForKeycode.add(keyword: rule.key, outputRules : rule.value)
 		}
 		trieForKeycode = trieBuilderForKeycode.build()
 		
 		var trieBuilderForString = Trie.builder().removeOverlaps()
 		for rule in charRuleMap {
-			trieBuilderForString = trieBuilderForKeycode.add(keyword: rule.key)
+			trieBuilderForString = trieBuilderForKeycode.add(keyword: rule.key, outputRules : rule.value)
 		}
 		trieForChar = trieBuilderForString.build()
 
-//		trieForKeycode = Trie.builder().removeOverlaps()
-//			.add(keyword: "hot")
-//			.add(keyword: "hot chocolate")
-//			.add(keyword: "chocolate")
-//			.add(keyword: "123")
-//			.add(keyword: "23")
-//			.add(keyword: "3")
-//			.add(keyword: "321")
-//			.build()
-//		trieForChar = Trie.builder().removeOverlaps()
-//			.add(keyword: "hot")
-//			.add(keyword: "hot chocolate")
-//			.add(keyword: "chocolate")
-//			.add(keyword: "123")
-//			.add(keyword: "23")
-//			.add(keyword: "3")
-//			.add(keyword: "321")
-//			.build()
 		super.init()
 		
 		let notificationKeycodeName = Notification.Name(rawValue: "GetKeycodeNotification")
@@ -103,7 +85,7 @@ class MFProcessor: NSObject {
 			for emit in emits{
 				//outputManager.executeEvent(type: OutputEventType.mechanicKeyboardSound, userInfo: keycodeRuleMap[emit.keyword]!)
 				print(emit)
-				
+				print(emit.outputRule)
 			}
 		}
 	}
@@ -117,6 +99,7 @@ class MFProcessor: NSObject {
 			for emit in emits{
 				//outputManager.executeEvent(type: OutputEventType.mechanicKeyboardSound, userInfo: charRuleMap[emit.keyword]!)
 				print(emit)
+				
 			}
 		}
 		

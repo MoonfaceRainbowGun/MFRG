@@ -7,7 +7,7 @@ public struct Trie {
 	public mutating func setInit(){
 		globalState = rootState
 	}
-    private func add(keyword: String) {
+	private func add(keyword: String, outputRule : [String: String]) {
         guard !keyword.isEmpty else { return }
 
         var currentState = rootState
@@ -31,6 +31,7 @@ public struct Trie {
         }
 
         currentState.addEmit(keyword)
+		currentState.addOutputRule(outputRule)
     }
 
     public func tokenize(text: String) -> [Token] {
@@ -153,7 +154,7 @@ public struct Trie {
                 let emitStrings = currentState.emits
 
                 for string in emitStrings {
-                    let emit = Emit(start: position - string.characters.count + 1, end: position, keyword: string)
+					let emit = Emit(start: position - string.characters.count + 1, end: position, keyword: string, outputRule: [String : String]())
                     if config.onlyDelimited {
                         if !isPartialMatch(searchText: text, emit: emit) {
                             return emit
@@ -239,15 +240,17 @@ public struct Trie {
 
     private func storeEmits(position: Int, currentState: State) -> [Emit] {
         let emits = currentState.emits
-
+		let outputEvents = currentState.outputEmits
         var storedEmits = [Emit]()
-
+		var cnt = 0
         for emit in emits {
-			storedEmits.append(Emit(start: position - emit.characters.count + 1, end: position, keyword: emit))
-        }
+			storedEmits.append(Emit(start: position - emit.characters.count + 1, end: position, keyword: emit, outputRule: outputEvents[cnt] ))
+			cnt+=1
+		}
 
         return storedEmits
     }
+
 
     init() {
         config = TrieConfig()
@@ -259,7 +262,7 @@ public struct Trie {
 		self.config = config
 
         for keyword in keywords {
-            add(keyword: keyword)
+			add(keyword: keyword, outputRule: [String : String]())
         }
 		
         constructFailureStates()
@@ -293,8 +296,8 @@ public struct Trie {
             return self
         }
 
-        public func add(keyword: String) -> TrieBuilder {
-            trie.add(keyword: keyword)
+		public func add(keyword: String, outputRules : [String : String]) -> TrieBuilder {
+            trie.add(keyword: keyword, outputRule: outputRules)
             return self
         }
 
