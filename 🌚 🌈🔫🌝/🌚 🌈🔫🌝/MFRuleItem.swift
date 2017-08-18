@@ -44,7 +44,7 @@ enum OutputEventType {
 
 class RuleOutput {
     var type: OutputEventType = .playSound
-    var userInfo: [String: Any]?
+    var userInfo = [String: Any]()
 }
 
 class RuleInput: Equatable {

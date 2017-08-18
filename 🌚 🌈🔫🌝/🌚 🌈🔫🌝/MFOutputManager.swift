@@ -10,20 +10,18 @@ import Cocoa
 
 class MFOutputManager: NSObject {
     static let sharedInstance: MFOutputManager = MFOutputManager()
-    
-    func prepareOutput(type: OutputEventType, userInfos: [[String: Any]]) {
-//        switch type {
-//        case .mechanicKeyboardSound:
-//            MFSoundOutputEvent.defaultInstance().prepare(userInfos)
-//            break
-//        }
-    }
-    
-    func executeEvent(type: OutputEventType, userInfo: Dictionary<String, Any>) {
-//        switch type {
-//        case .mechanicKeyboardSound:
-//            MFSoundOutputEvent.defaultInstance().run(userInfo)
-//            break
-//        }
+
+    func executeEvent(_ ruleOutput: RuleOutput) {
+        let type = ruleOutput.type
+        let userInfo = ruleOutput.userInfo
+        switch type {
+        case .playSound:
+            MFSoundOutputEvent.defaultInstance().run(userInfo)
+            break
+            
+        case .synthesizeSound:
+            MFSynthesizerOutputEvent.defaultInstance().run(userInfo)
+            break
+        }
     }
 }
