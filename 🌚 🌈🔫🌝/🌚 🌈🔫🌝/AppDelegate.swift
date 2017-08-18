@@ -13,9 +13,10 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
     let statusItem = NSStatusBar.system().statusItem(withLength: 40)
     var themeMenu: NSMenu!
-    let configs = ["mechanical-keyboard", "blind-helper", "easter-eggs"]
-    let titles = ["Mechanical Keyboard", "Blind Helper", "Easter Eggs"]
-    var selected = [false, false, false]
+
+    let configs = ["mechanical-keyboard", "blind-helper", "easter-eggs", "midi", "git"]
+    let titles = ["Mechanical Keyboard", "Blind Helper", "Easter Eggs", "Blind Helper ++", "Git"]
+    var selected = [false, false, false, false, false]
     var processors = [Int: MFProcessor]()
 
 	

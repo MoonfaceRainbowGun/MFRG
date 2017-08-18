@@ -33,6 +33,7 @@
 		626F7D311F46E4B50058BFAA /* MFSoundPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626F7D301F46E4B50058BFAA /* MFSoundPlayer.swift */; };
 		626F7D351F47359D0058BFAA /* MFSynthesizerOutputEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626F7D341F47359D0058BFAA /* MFSynthesizerOutputEvent.swift */; };
 		626F7D371F4767290058BFAA /* MFKeycodeMapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626F7D361F4767290058BFAA /* MFKeycodeMapping.swift */; };
+		626F7D391F477D810058BFAA /* midi.plist in Resources */ = {isa = PBXBuildFile; fileRef = 626F7D381F477D810058BFAA /* midi.plist */; };
 		6AAC040E1F46E6DA00F1FD58 /* MFConfigManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AAC040B1F46E6DA00F1FD58 /* MFConfigManager.swift */; };
 		6AAC040F1F46E6DA00F1FD58 /* MFRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AAC040C1F46E6DA00F1FD58 /* MFRule.swift */; };
 		6AAC04101F46E6DA00F1FD58 /* MFRuleItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AAC040D1F46E6DA00F1FD58 /* MFRuleItem.swift */; };
@@ -127,6 +128,7 @@
 		626F7D301F46E4B50058BFAA /* MFSoundPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MFSoundPlayer.swift; sourceTree = "<group>"; };
 		626F7D341F47359D0058BFAA /* MFSynthesizerOutputEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MFSynthesizerOutputEvent.swift; sourceTree = "<group>"; };
 		626F7D361F4767290058BFAA /* MFKeycodeMapping.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MFKeycodeMapping.swift; sourceTree = "<group>"; };
+		626F7D381F477D810058BFAA /* midi.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = midi.plist; sourceTree = "<group>"; };
 		6AAC040B1F46E6DA00F1FD58 /* MFConfigManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MFConfigManager.swift; sourceTree = "<group>"; };
 		6AAC040C1F46E6DA00F1FD58 /* MFRule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MFRule.swift; sourceTree = "<group>"; };
 		6AAC040D1F46E6DA00F1FD58 /* MFRuleItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MFRuleItem.swift; sourceTree = "<group>"; };
@@ -407,6 +409,7 @@
 		BF03E8981F472DD80070D6FD /* Configs */ = {
 			isa = PBXGroup;
 			children = (
+				626F7D381F477D810058BFAA /* midi.plist */,
 				BF03E89E1F4774CA0070D6FD /* mechanical-keyboard.plist */,
 				BF03E8A11F4774E60070D6FD /* blind-helper.plist */,
 				BF03E89D1F4774CA0070D6FD /* easter-eggs.plist */,
@@ -476,6 +479,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				626F7D391F477D810058BFAA /* midi.plist in Resources */,
 				6AAC04641F47864500F1FD58 /* 3.wav in Resources */,
 				6AAC044D1F477C2700F1FD58 /* Y.wav in Resources */,
 				6AAC044B1F477C2700F1FD58 /* W.wav in Resources */,

@@ -13,8 +13,9 @@ class MFSynthesizerOutputEvent: MFOutputEvent {
     fileprivate static let sharedInstance = MFSynthesizerOutputEvent()
     
     override func run(_ userInfo: [String: Any]) {
-        if let midinote = userInfo["midinote"] as? Int {
-            let frequency = 440 / 32 * pow(2, (Float(midinote) - 9.0) / 12.0)
+        // THIS IS A FAKE MIDI NOTE!!!
+        if let midinote = userInfo["MIDINote"] as? Int {
+            let frequency = 440 / 32 * pow(1.3, (Float(midinote) + 86.0) / 12.0)
             MFSynthesizer.sharedInstance.play(frequency: frequency, force: 200)
         } else if let frequency = userInfo["frequency"] as? Float32 {
             MFSynthesizer.sharedInstance.play(frequency: frequency, force: 200)
