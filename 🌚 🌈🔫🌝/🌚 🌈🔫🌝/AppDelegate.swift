@@ -26,7 +26,6 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 		MFCharacterEventManager.sharedInstance.startListening()
 		let mainBuffer : MFBuffer = MFBuffer()
 		
-		MFOutputManager.sharedInstance.prepareOutput(type: .mechanicKeyboardSound, userInfos: [["filename": "keyboard1.wav"]])
 		let rule = Config.configManager.loadRule("keyCode")
 		mainProcesser = MFProcessor(keyEventBuffer: mainBuffer, rule: rule!)
 		

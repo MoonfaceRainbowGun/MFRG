@@ -38,6 +38,15 @@ class RuleItem {
     }
 }
 
+enum OutputEventType {
+    case playSound, synthesizeSound
+}
+
+class RuleOutput {
+    var type: OutputEventType = .playSound
+    var userInfo: [String: Any]?
+}
+
 class RuleInput: Equatable {
     var type: InputRuleType
     var valueString: String?

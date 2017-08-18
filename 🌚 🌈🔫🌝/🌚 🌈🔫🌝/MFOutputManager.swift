@@ -8,26 +8,22 @@
 
 import Cocoa
 
-enum OutputEventType {
-    case mechanicKeyboardSound
-}
-
 class MFOutputManager: NSObject {
     static let sharedInstance: MFOutputManager = MFOutputManager()
     
     func prepareOutput(type: OutputEventType, userInfos: [[String: Any]]) {
-        switch type {
-        case .mechanicKeyboardSound:
-            MFSoundOutputEvent.defaultInstance().prepare(userInfos)
-            break
-        }
+//        switch type {
+//        case .mechanicKeyboardSound:
+//            MFSoundOutputEvent.defaultInstance().prepare(userInfos)
+//            break
+//        }
     }
     
     func executeEvent(type: OutputEventType, userInfo: Dictionary<String, Any>) {
-        switch type {
-        case .mechanicKeyboardSound:
-            MFSoundOutputEvent.defaultInstance().run(userInfo)
-            break
-        }
+//        switch type {
+//        case .mechanicKeyboardSound:
+//            MFSoundOutputEvent.defaultInstance().run(userInfo)
+//            break
+//        }
     }
 }
