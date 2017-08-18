@@ -9,10 +9,7 @@
 import Foundation
 
 class MFConfigManager {
-    init() {
-        //
-        
-    }
+    static let sharedInstance = MFConfigManager()
     
     func loadRule(_ ruleType: String) -> Rule? {
         guard ruleType != "" else {
@@ -27,29 +24,12 @@ class MFConfigManager {
         return Rule(plist: ruleFileList)
     }
     
-//    func saveRule(rule: Rule, newRuleName: String) -> String {
-//        
-//        let dictionary = NSMutableDictionary()
-//        dictionary.setDictionary(rule.toPList())
-//        let isSaved = dictionary.write(to: ruleFileURL, atomically: true)
-//        
-//        if(isSaved){
-//            return "save succeeded"
-//        }else{
-//            return "save failed"
-//        }
-//    }
-    
-    func getRuleFileList(fileURL: URL) -> [String: [[String: [String: String]]]] {
-        var ruleFileList = [String: [[String: [String: String]]]]()
-        
+    func getRuleFileList(fileURL: URL) -> [String: Any] {
         guard let configFileListDictionary = NSDictionary(contentsOf: fileURL) as? [String: AnyObject] else {
-            return ruleFileList
+            return [String: Any]()
         }
         
-        ruleFileList = configFileListDictionary as! [String: [[String: [String: String]]]]
-        
-        return ruleFileList
+        return configFileListDictionary
     }
     
 }

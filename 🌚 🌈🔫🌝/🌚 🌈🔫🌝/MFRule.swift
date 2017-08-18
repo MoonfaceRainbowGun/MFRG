@@ -9,57 +9,47 @@
 import Foundation
 
 class Rule {
-    var type: InputRuleType
     var list = [RuleItem]()
     
-    init(type: String) {
-        self.type = InputRuleType.getInputRuleType(type)
+    convenience init(plistName: String) {
+        let url = Bundle.main.url(forResource: plistName, withExtension: "plist")!
+        let configFileListDictionary = NSDictionary(contentsOf: url) as! [String: Any]
+        self.init(plist: configFileListDictionary)
     }
     
-    init(plist: [String: [[String: [String: String]]]]) {
-        self.type = InputRuleType.getInputRuleType(Array(plist.keys)[0])
-        let ruleItemDictList = plist[self.type.rawValue]!
-        for ruleItemDict in ruleItemDictList {
-            let inputValue = Array(ruleItemDict.keys)[0]
-            let output = ruleItemDict[inputValue]!
-			
+    init(plist: [String: Any]) {
+        let rulesDictionary = plist["Rules"] as! [[String: Any]]
+        for ruleItemDict in rulesDictionary {
+            let inputDict = ruleItemDict["Input"] as! [String: String];
+            
+            let inputType = InputRuleType(rawValue: inputDict["InputType"]!)!
+            let inputValue = inputDict["InputValue"]!
+            
 			var input: RuleInput!
-			switch self.type {
-			case InputRuleType.keyCode:
-				input = RuleInput(Int(inputValue)!)
-			case InputRuleType.frequency:
-				input = RuleInput(Double(inputValue)!)
-			default:
-				input = RuleInput(inputValue)
+			switch inputType {
+                case .keyCode:
+                    input = RuleInput(Int(inputValue)!)
+                case InputRuleType.frequency:
+                    input = RuleInput(Double(inputValue)!)
+                default:
+                    input = RuleInput(inputValue)
 			}
+            input.type = inputType
+            
+            
+            let outputDict = ruleItemDict["Output"] as! [String: Any]
+            
+            let outputType = OutputEventType(rawValue: outputDict["OutputType"] as! String)!
+            let outputUserInfo = outputDict["OutputUserInfo"] as! [String: Any]
+            
+            
+            let output = RuleOutput()
+            output.type = outputType
+            output.userInfo = outputUserInfo
+            
+            
             let ruleItem = RuleItem(input: input, output: output)
             self.list.append(ruleItem)
         }
-    }
-    
-    func getRuleItem(_ inputSource: RuleInput) -> RuleItem? {
-        return list.filter{$0.input == inputSource}[0]
-    }
-    
-    func add(_ newRuleItem: RuleItem) {
-        if newRuleItem.input.type.rawValue == self.type.rawValue {
-            list.append(newRuleItem)
-        }
-        
-    }
-
-    func count() -> Int {
-        return list.count
-    }
-    
-    func toPList() -> [String: [[String: [String: String]]]] {
-        var plist = [String: [[String: [String: String]]]]()
-        var ruleItemDictList = [[String: [String: String]]]()
-        for ruleItem in list {
-            ruleItemDictList.append([ruleItem.input.viewValue(): ruleItem.output])
-        }
-        plist[type.rawValue] = ruleItemDictList
-        
-        return plist
     }
 }

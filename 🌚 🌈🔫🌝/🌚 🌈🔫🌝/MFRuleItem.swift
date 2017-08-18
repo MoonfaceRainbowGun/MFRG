@@ -9,45 +9,32 @@
 import Foundation
 
 enum InputRuleType: String {
-    case keyCode = "keycode"
-    case string = "string"
-    case frequency = "frequency"
-    case null = ""
-    
-    static func getInputRuleType(_ type: String) -> InputRuleType {
-        switch type {
-        case InputRuleType.keyCode.rawValue:
-            return InputRuleType.keyCode
-        case InputRuleType.string.rawValue:
-            return InputRuleType.string
-        case InputRuleType.frequency.rawValue:
-            return InputRuleType.frequency
-        default:
-            return InputRuleType.null
-        }
-    }
+    case keyCode = "KeyCode"
+    case string = "String"
+    case frequency = "Frequency"
 }
 
 class RuleItem {
     var input: RuleInput
-    var output = [String: String]()
+    var output: RuleOutput
     
-    init(input: RuleInput, output: [String: String]) {
+    init(input: RuleInput, output: RuleOutput) {
         self.input = input
         self.output = output
     }
 }
 
-enum OutputEventType {
-    case playSound, synthesizeSound
+enum OutputEventType: String {
+    case playSound = "PlaySound"
+    case synthesizeSound = "SynthesizeSound"
 }
 
-class RuleOutput {
+public class RuleOutput {
     var type: OutputEventType = .playSound
     var userInfo = [String: Any]()
 }
 
-class RuleInput: Equatable {
+public class RuleInput: Equatable {
     var type: InputRuleType
     var valueString: String?
     var valueInt: Int?
@@ -58,13 +45,11 @@ class RuleInput: Equatable {
     }
     
     init(_ keyCode: Int) {
-//		print("Debug1")
         self.type = InputRuleType.keyCode
         self.valueInt = keyCode
     }
     
     init(_ string: String) {
-//		print("Debug2")
         self.type = InputRuleType.string
         self.valueString = string
     }
@@ -73,23 +58,10 @@ class RuleInput: Equatable {
         self.type = InputRuleType.frequency
         self.valueDouble = frequency
     }
-    
-    func viewValue() -> String {
-        switch type {
-        case InputRuleType.keyCode:
-            return String(describing: valueInt)
-        case InputRuleType.string:
-            return valueString!
-        case InputRuleType.frequency:
-            return String(valueDouble!)
-        default:
-            return ""
-        }
-    }
 }
 
 
-func ==(lhs: RuleInput, rhs: RuleInput) -> Bool {
+public func ==(lhs: RuleInput, rhs: RuleInput) -> Bool {
     return lhs.type == rhs.type &&
         lhs.valueString == rhs.valueString &&
         lhs.valueInt == rhs.valueInt &&

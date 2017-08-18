@@ -2,31 +2,44 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>InputType</key>
-	<string>keycode</string>
-	<key>OutputType</key>
-	<string>playSound</string>
 	<key>Rules</key>
 	<array>
 		<dict>
-			<key>0</key>
+			<key>Input</key>
 			<dict>
-				<key>sound</key>
-				<string>keyboard2.wav</string>
+				<key>InputType</key>
+				<string>KeyCode</string>
+				<key>InputValue</key>
+				<string>0</string>
+			</dict>
+			<key>Output</key>
+			<dict>
+				<key>OutputType</key>
+				<string>PlaySound</string>
+				<key>OutputUserInfo</key>
+				<dict>
+					<key>FileName</key>
+					<string>keyboard1.wav</string>
+				</dict>
 			</dict>
 		</dict>
 		<dict>
-			<key>1</key>
+			<key>Input</key>
 			<dict>
-				<key>sound</key>
-				<string>keyboard1.wav</string>
+				<key>InputType</key>
+				<string>KeyCode</string>
+				<key>InputValue</key>
+				<string>1</string>
 			</dict>
-		</dict>
-		<dict>
-			<key>2</key>
+			<key>Output</key>
 			<dict>
-				<key>sound</key>
-				<string>keyboard3.wav</string>
+				<key>OutputType</key>
+				<string>PlaySound</string>
+				<key>OutputUserInfo</key>
+				<dict>
+					<key>FileName</key>
+					<string>keyboard1.wav</string>
+				</dict>
 			</dict>
 		</dict>
 	</array>

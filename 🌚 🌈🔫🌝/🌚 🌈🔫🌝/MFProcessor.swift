@@ -13,9 +13,9 @@ class MFProcessor: NSObject {
 
 	var trieForKeycode : Trie
 	var trieForChar : Trie
-	var keycodeRuleMap = [String : [String : String]]()
-	var charRuleMap = [String : [String : String]]()
-	var rateRuleMap = [Double : [String : String]]()
+	var keycodeRuleMap = [String : RuleOutput]()
+	var charRuleMap = [String : RuleOutput]()
+	var rateRuleMap = [Double : RuleOutput]()
 	fileprivate var buffer : MFBuffer
 	init(keyEventBuffer : MFBuffer, rule: Rule){
 		
@@ -23,12 +23,10 @@ class MFProcessor: NSObject {
 			//ruleItem.output
 			switch ruleItem.input.type {
 			case InputRuleType.keyCode:
-				print("Debug")
 				print(String(Character(UnicodeScalar(ruleItem.input.valueInt!)!)))
 				keycodeRuleMap[String(Character(UnicodeScalar(ruleItem.input.valueInt!)!))]  = ruleItem.output
 				break;
 			case InputRuleType.string:
-				print("Debug")
 				charRuleMap[ruleItem.input.valueString!] = ruleItem.output
 				break;
 			case InputRuleType.frequency:

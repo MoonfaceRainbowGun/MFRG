@@ -8,7 +8,7 @@ public class State {
 
     public var failure: State?
     public var emits: Set<String> = []
-	public var outputEmits: [[String : String]] = []
+	public var outputEmits: [RuleOutput] = []
     convenience init() {
         self.init(depth: 0)
     }
@@ -41,7 +41,7 @@ public class State {
         emits.insert(keyword)
     }
 
-	public func addOutputRule(_ outputEvent : [String : String]){
+	public func addOutputRule(_ outputEvent : RuleOutput){
 		outputEmits.append(outputEvent)
 	}
 
