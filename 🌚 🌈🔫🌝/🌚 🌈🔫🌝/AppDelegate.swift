@@ -17,7 +17,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         MFKeyboardEventManager.sharedInstance.startListening()
         MFCharacterEventManager.sharedInstance.startListening()
 		let mainBuffer : MFBuffer = MFBuffer()
-		mainProcesser = MFProcessor(keyEventBuffer: mainBuffer)
+//		mainProcesser = MFProcessor(keyEventBuffer: mainBuffer)
     }
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {

@@ -24,7 +24,7 @@ class MFSoundPlayer: NSObject {
         }
     }
     
-    func playSound(_ filename: String) {
+    func play() {
         self.sound?.play()
     }
     

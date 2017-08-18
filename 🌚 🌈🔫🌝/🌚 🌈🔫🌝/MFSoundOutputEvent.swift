@@ -9,11 +9,29 @@
 import Cocoa
 
 class MFSoundOutputEvent: MFOutputEvent {
-    override class func run(_ userInfo: Dictionary<String, Any>) {
-        if let fileName = userInfo["filename"] {
-            print(fileName)
-            MFSoundPlayer.sharedInstance.playSound(fileName as! String)
+    
+    fileprivate static let sharedInstance = MFSoundOutputEvent()
+    
+    override func prepare(_ userInfos: [[String: Any]]) {
+        for userInfo in userInfos {
+            if let fileName = userInfo["filename"] as? String {
+                
+                
+                let player = MFSoundPlayer(sound: fileName)
+                player.play()
+            }
         }
+    }
+    
+    override func run(_ userInfo: Dictionary<String, Any>) {
+        if let fileName = userInfo["filename"] as? String {
+            let player = MFSoundPlayer(sound: fileName)
+            player.play()
+        }
+    }
+    
+    override class func defaultInstance() -> MFOutputEvent {
+        return MFSoundOutputEvent.sharedInstance
     }
 }
 

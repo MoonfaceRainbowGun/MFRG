@@ -9,7 +9,16 @@
 import Cocoa
 
 class MFOutputEvent: NSObject {
-    class func run(_ userInfo: Dictionary<String, Any>) {
+    
+    func prepare(_ userInfos: [[String: Any]]) {
+        fatalError("不支持🌚")
+    }
+    
+    func run(_ userInfo: Dictionary<String, Any>) {
+        fatalError("不支持🌚")
+    }
+    
+    class func defaultInstance() -> MFOutputEvent {
         fatalError("不支持🌚")
     }
 }
