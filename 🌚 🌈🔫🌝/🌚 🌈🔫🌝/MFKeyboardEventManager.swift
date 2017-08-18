@@ -49,8 +49,8 @@ class MFKeyboardEventManager: NSObject {
     }
     
     fileprivate func notifyBufferForKeyCode(keyCode: Int) {
-        MFOutputManager.sharedInstance.executeEvent(type: .mechanicKeyboardSound, userInfo: ["filename": "keyboard1.wav"])
-        print("a")
+//        MFOutputManager.sharedInstance.executeEvent(type: .mechanicKeyboardSound, userInfo: ["filename": "keyboard1.wav"])
+        MFSynthesizer.sharedInstance.play(frequency: Float(keyCode + 35) * 20, force: 100)
         for buffer in self.buffers {
             buffer.pushKeyCode(keycode: keyCode)
         }
