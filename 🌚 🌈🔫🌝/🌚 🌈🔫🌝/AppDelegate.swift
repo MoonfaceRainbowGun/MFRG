@@ -11,7 +11,12 @@ import Cocoa
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
 
-
+    func applicationWillFinishLaunching(_ notification: Notification) {
+        NSEvent.addGlobalMonitorForEvents(matching: .keyDown) { (e) in
+            
+            print(e.keyCode)
+        }
+    }
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         // Insert code here to initialize your application
