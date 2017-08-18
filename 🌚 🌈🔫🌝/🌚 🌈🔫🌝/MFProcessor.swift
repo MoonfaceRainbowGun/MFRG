@@ -10,6 +10,41 @@
 import Cocoa
 
 class MFProcessor: NSObject {
+	
+//	struct Node {
+//		var next:  [Character : UnsafePointer<Node>]
+//		var parent : UnsafePointer<Node>?
+//		var fail : UnsafePointer<Node>?
+//		var inputChar : Character?
+//		var patternTag : Int
+//		var patternNo : [Int]
+//	}
+//	var pattern : [String] = ["nihao","hao","hs","hsr"];
+//	
+//	func getNewNode() -> UnsafePointer<Node> {
+//		var tnode : Node = Node(next: <#[Character : UnsafePointer<MFProcessor.Node>]#>,
+//		                        parent: nil,
+//		                        fail : nil,
+//		                        inputChar : nil,
+//		                        patternTag : 0,
+//								patternNo : [Int]())
+//		return withUnsafePointer(to: &tnode, {$0});
+//	}
+//	
+//	func nodeToQueue(root : UnsafePointer<Node> , myqueue : UnsafePointer<[<UnsafePointer<Node>>>]) -> Int{
+//		var i : Int;
+//		
+//		for (i = 0; i < 26; i++){
+//			if (root->next[i]!=NULL)
+//			myqueue.push(root->next[i]);
+//		}
+//
+//		return 0;
+//	}
+
+	
+	
+	
 	fileprivate var buffer : MFBuffer
 	init(keyEventBuffer : MFBuffer){
 		buffer = keyEventBuffer
@@ -22,6 +57,24 @@ class MFProcessor: NSObject {
 		let notificationCharName = Notification.Name(rawValue: "GetCharacterNotification")
 		
 		NotificationCenter.default.addObserver(self,selector:#selector(processCharacterEvent(notification:)),name: notificationCharName, object: nil)
+		
+		var trie = Trie.builder()
+			.removeOverlaps()
+			.add(keyword: "hot")
+			.add(keyword: "hot chocolate")
+			.add(keyword: "chocolate")
+			.build()
+		//let emits = trie.parse(text: "hot chocolate hot")
+		//print(emits.count)
+		let chars : [Character] = ["h","o","t"," ","c","h","o","c","o","l","a","t","e"," ","h","o","t"]
+		for char in chars {
+			let emits = trie.parseByChar(char: char)
+			if emits.count > 0{
+				for emit in emits{
+					print(emit)
+				}
+			}
+		}
 		
 		
 	}

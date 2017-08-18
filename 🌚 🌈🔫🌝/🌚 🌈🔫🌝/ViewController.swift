@@ -14,8 +14,6 @@ class ViewController: NSViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        Config.testConfig()
-        Config.testReadConfig()
     }
 
     override var representedObject: Any? {
