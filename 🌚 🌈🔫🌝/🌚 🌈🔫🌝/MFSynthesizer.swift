@@ -20,7 +20,7 @@ class MFSynthesizer {
     // to fill the buffers in time. A setting of 1024 represents about 23ms of
     // samples.
     
-    let samplesPerBuffer: AVAudioFrameCount = 2000
+    let samplesPerBuffer: AVAudioFrameCount = 2770
     let audioEngine = AVAudioEngine()
     var playerNodesPool = [AVAudioPlayerNode]()
     let audioFormat = AVAudioFormat(standardFormatWithSampleRate: 44100.0, channels: 2)

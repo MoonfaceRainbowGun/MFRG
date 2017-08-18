@@ -17,6 +17,7 @@ class MFProcessor: NSObject {
 	var charRuleMap = [String : RuleOutput]()
 	var rateRuleMap = [Double : RuleOutput]()
 	var defaultKeycode : RuleOutput?
+	var regularExpression = [NSRegularExpression?]()
 	fileprivate var buffer : MFBuffer
 	init(keyEventBuffer : MFBuffer, rule: Rule){
 		
@@ -94,7 +95,10 @@ class MFProcessor: NSObject {
 		}else{
 //			print("Get deafult")
 //			print(defaultKeycode)
-			MFOutputManager.sharedInstance.executeEvent(defaultKeycode!)
+			if defaultKeycode != nil{
+				MFOutputManager.sharedInstance.executeEvent(defaultKeycode!)
+			}
+			
 		}
 	}
 	func processCharacterEvent(notification: Notification) {
