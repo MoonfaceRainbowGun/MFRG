@@ -11,17 +11,17 @@ import AudioToolbox
 
 class MFFastSoundPlayer: NSObject {
     static let sharedInstance: MFFastSoundPlayer = MFFastSoundPlayer()
-    var soundId: SystemSoundID = 0
+    var sound: FISound?
+    
     
     func prepareSound() {
-        if let path = Bundle.main.path(forResource: "keyboard1.wav", ofType: "") {
-            let url = URL(fileURLWithPath: path)
-            AudioServicesCreateSystemSoundID(url as CFURL, &soundId)
+        if let soundEngine = FISoundEngine.shared() {
+            self.sound = try! soundEngine.soundNamed("keyboard1.wav", maxPolyphony: 4)
         }
     }
     
     func playSound(_ filename: String) {
-        AudioServicesPlaySystemSound(soundId)
+        self.sound?.play()
     }
     
 }
