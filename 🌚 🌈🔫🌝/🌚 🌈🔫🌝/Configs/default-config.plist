@@ -2,27 +2,27 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>string</key>
+	<key>keycode</key>
 	<array>
 		<dict>
-			<key>a</key>
+			<key>0</key>
 			<dict>
 				<key>sound</key>
-				<string>a.wav</string>
+				<string>keyboard1.wav</string>
 			</dict>
 		</dict>
 		<dict>
-			<key>b</key>
+			<key>1</key>
 			<dict>
 				<key>sound</key>
-				<string>b.wav</string>
+				<string>keyboard1.wav</string>
 			</dict>
 		</dict>
 		<dict>
-			<key>c</key>
+			<key>2</key>
 			<dict>
 				<key>sound</key>
-				<string>c.wav</string>
+				<string>keyboard1.wav</string>
 			</dict>
 		</dict>
 	</array>

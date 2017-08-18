@@ -19,7 +19,7 @@ class MFConfigManager {
             return nil
         }
         
-        guard let ruleFileURL = Bundle.main.url(forResource: "sample-config", withExtension: "plist") else {
+        guard let ruleFileURL = Bundle.main.url(forResource: "default-config", withExtension: "plist") else {
             return nil
         }
         
