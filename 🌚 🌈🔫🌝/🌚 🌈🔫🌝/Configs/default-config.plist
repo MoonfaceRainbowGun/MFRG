@@ -6,7 +6,7 @@
 	<string>keycode</string>
 	<key>OutputType</key>
 	<string>playSound</string>
-	<key>rules</key>
+	<key>Rules</key>
 	<array>
 		<dict>
 			<key>0</key>
