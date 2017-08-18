@@ -7,7 +7,7 @@ public struct Trie {
 	public mutating func setInit(){
 		globalState = rootState
 	}
-	private func add(keyword: String, outputRule : [String: String]) {
+	private func add(keyword: String, outputRule : RuleOutput) {
         guard !keyword.isEmpty else { return }
 
         var currentState = rootState
@@ -154,7 +154,7 @@ public struct Trie {
                 let emitStrings = currentState.emits
 
                 for string in emitStrings {
-					let emit = Emit(start: position - string.characters.count + 1, end: position, keyword: string, outputRule: [String : String]())
+					let emit = Emit(start: position - string.characters.count + 1, end: position, keyword: string, outputRule: RuleOutput())
                     if config.onlyDelimited {
                         if !isPartialMatch(searchText: text, emit: emit) {
                             return emit
@@ -262,7 +262,7 @@ public struct Trie {
 		self.config = config
 
         for keyword in keywords {
-			add(keyword: keyword, outputRule: [String : String]())
+			add(keyword: keyword, outputRule: RuleOutput())
         }
 		
         constructFailureStates()
@@ -296,7 +296,7 @@ public struct Trie {
             return self
         }
 
-		public func add(keyword: String, outputRules : [String : String]) -> TrieBuilder {
+		public func add(keyword: String, outputRules : RuleOutput) -> TrieBuilder {
             trie.add(keyword: keyword, outputRule: outputRules)
             return self
         }

@@ -35,7 +35,6 @@
 		6AAC040E1F46E6DA00F1FD58 /* MFConfigManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AAC040B1F46E6DA00F1FD58 /* MFConfigManager.swift */; };
 		6AAC040F1F46E6DA00F1FD58 /* MFRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AAC040C1F46E6DA00F1FD58 /* MFRule.swift */; };
 		6AAC04101F46E6DA00F1FD58 /* MFRuleItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AAC040D1F46E6DA00F1FD58 /* MFRuleItem.swift */; };
-		6AAC04141F472A9200F1FD58 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AAC04131F472A9200F1FD58 /* Config.swift */; };
 		BF03E8281F46D1E90070D6FD /* MFCharacterEventManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF03E8271F46D1E90070D6FD /* MFCharacterEventManager.swift */; };
 		BF03E8841F46F7AB0070D6FD /* FIError.m in Sources */ = {isa = PBXBuildFile; fileRef = BF03E8661F46F7AB0070D6FD /* FIError.m */; };
 		BF03E8851F46F7AB0070D6FD /* FISampleBuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = BF03E8681F46F7AB0070D6FD /* FISampleBuffer.m */; };
@@ -85,7 +84,6 @@
 		6AAC040B1F46E6DA00F1FD58 /* MFConfigManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MFConfigManager.swift; sourceTree = "<group>"; };
 		6AAC040C1F46E6DA00F1FD58 /* MFRule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MFRule.swift; sourceTree = "<group>"; };
 		6AAC040D1F46E6DA00F1FD58 /* MFRuleItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MFRuleItem.swift; sourceTree = "<group>"; };
-		6AAC04131F472A9200F1FD58 /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		BF03E8271F46D1E90070D6FD /* MFCharacterEventManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MFCharacterEventManager.swift; sourceTree = "<group>"; };
 		BF03E8601F46F79D0070D6FD /* 🌚 🌈🔫🌝-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "🌚 🌈🔫🌝-Bridging-Header.h"; sourceTree = "<group>"; };
 		BF03E8651F46F7AB0070D6FD /* FIError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FIError.h; sourceTree = "<group>"; };
@@ -190,7 +188,6 @@
 			isa = PBXGroup;
 			children = (
 				BF03E8981F472DD80070D6FD /* Configs */,
-				6AAC04131F472A9200F1FD58 /* Config.swift */,
 				0C19C87C1F46FE3D008EBD75 /* ACAutoMaton */,
 				BF03E8641F46F7AB0070D6FD /* Finch */,
 				626F7D251F46D7B50058BFAA /* Sound */,
@@ -383,7 +380,6 @@
 				BFFA0FA41F46BA75008E8C9C /* MFBuffer.swift in Sources */,
 				BF03E8901F46F7AB0070D6FD /* FISoundSource.m in Sources */,
 				0C19C89B1F46FE3D008EBD75 /* Trie.swift in Sources */,
-				6AAC04141F472A9200F1FD58 /* Config.swift in Sources */,
 				626BF1C71F46D2F200EDDD05 /* MFSoundOutputEvent.swift in Sources */,
 				BF03E88F1F46F7AB0070D6FD /* FISoundEngine.m in Sources */,
 				626BF1C51F46D10900EDDD05 /* MFOutputEvent.swift in Sources */,

@@ -26,11 +26,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 		MFCharacterEventManager.sharedInstance.startListening()
 		let mainBuffer : MFBuffer = MFBuffer()
 		
-		let rule = Config.configManager.loadRule("keyCode")
-		mainProcesser = MFProcessor(keyEventBuffer: mainBuffer, rule: rule!)
-		
-//        Config.testConfig()
-        Config.testReadConfig()
+		let rule = Rule(plistName: "default-config")
+		mainProcesser = MFProcessor(keyEventBuffer: mainBuffer, rule: rule)
     }
     
     func configureMenu() {

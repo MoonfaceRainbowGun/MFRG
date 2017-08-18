@@ -2,7 +2,7 @@ public struct Emit: Interval {
     public var start: Int
     public var end: Int
     public var keyword: String
-	public var outputRule : [String : String]
+	public var outputRule : RuleOutput
 }
 
 extension Emit: CustomStringConvertible {
