@@ -76,7 +76,7 @@
 				<key>OutputUserInfo</key>
 				<dict>
 					<key>FileName</key>
-					<string>git_commit.wav</string>
+					<string>git_add.wav</string>
 				</dict>
 			</dict>
 		</dict>
@@ -114,7 +114,7 @@
 				<key>OutputUserInfo</key>
 				<dict>
 					<key>FileName</key>
-					<string>git_push.wav</string>
+					<string>git_commit.wav</string>
 				</dict>
 			</dict>
 		</dict>
