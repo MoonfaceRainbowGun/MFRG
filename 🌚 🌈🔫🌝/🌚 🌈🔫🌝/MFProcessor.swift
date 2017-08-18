@@ -10,9 +10,12 @@
 import Cocoa
 
 class MFProcessor: NSObject {
-	func generateTrie(allRules: [String]) {
-		for i in 0 ..< allRules.count{
+	func generateTrie(allStringMatchRules: [String]) {
+		for i in 0 ..< allStringMatchRules.count{
 			print(i)
 		}
 	}
+	
+	
+	
 }
