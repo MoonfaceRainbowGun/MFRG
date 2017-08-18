@@ -10,7 +10,7 @@
 				<key>InputType</key>
 				<string>KeyCode</string>
 				<key>InputValue</key>
-				<string>0</string>
+				<string>-1</string>
 			</dict>
 			<key>Output</key>
 			<dict>
@@ -29,7 +29,7 @@
 				<key>InputType</key>
 				<string>KeyCode</string>
 				<key>InputValue</key>
-				<string>1</string>
+				<string>36</string>
 			</dict>
 			<key>Output</key>
 			<dict>
@@ -38,7 +38,7 @@
 				<key>OutputUserInfo</key>
 				<dict>
 					<key>FileName</key>
-					<string>keyboard1.wav</string>
+					<string>keyboard.wav</string>
 				</dict>
 			</dict>
 		</dict>

@@ -16,6 +16,7 @@ class MFProcessor: NSObject {
 	var keycodeRuleMap = [String : RuleOutput]()
 	var charRuleMap = [String : RuleOutput]()
 	var rateRuleMap = [Double : RuleOutput]()
+	var defaultKeycode : RuleOutput?
 	fileprivate var buffer : MFBuffer
 	init(keyEventBuffer : MFBuffer, rule: Rule){
 		
@@ -23,16 +24,20 @@ class MFProcessor: NSObject {
 			//ruleItem.output
 			switch ruleItem.input.type {
 			case InputRuleType.keyCode:
-				print(String(Character(UnicodeScalar(ruleItem.input.valueInt!)!)))
-				keycodeRuleMap[String(Character(UnicodeScalar(ruleItem.input.valueInt!)!))]  = ruleItem.output
+				if (ruleItem.input.valueInt! != -1){
+					print(String(Character(UnicodeScalar(ruleItem.input.valueInt!)!)))
+					keycodeRuleMap[String(Character(UnicodeScalar(ruleItem.input.valueInt!)!))]  = ruleItem.output
+				}else{
+					defaultKeycode = ruleItem.output
+				}
+				
+
 				break;
 			case InputRuleType.string:
 				charRuleMap[ruleItem.input.valueString!] = ruleItem.output
 				break;
 			case InputRuleType.frequency:
 				rateRuleMap[ruleItem.input.valueDouble!] = ruleItem.output
-				break;
-			default:
 				break;
 			}
 		}
@@ -83,6 +88,10 @@ class MFProcessor: NSObject {
 			for emit in emits{
 				MFOutputManager.sharedInstance.executeEvent(emit.outputRule)
 			}
+		}else{
+//			print("Get deafult")
+//			print(defaultKeycode)
+			MFOutputManager.sharedInstance.executeEvent(defaultKeycode!)
 		}
 	}
 	func processCharacterEvent(notification: Notification) {
