@@ -51,7 +51,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         MFOutputManager.sharedInstance.prepareOutput(type: .mechanicKeyboardSound, userInfos: [["filename": "keyboard1.wav"]])
 		mainProcesser = MFProcessor(keyEventBuffer: mainBuffer)
         
-        Config.testConfig()
+//        Config.testConfig()
         Config.testReadConfig()
     }
 

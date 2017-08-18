@@ -20,17 +20,17 @@ struct Config {
     static let testRule = Rule(type: "string")
     static let configManager = MFConfigManager()
     
-    static func testConfig() {
-        Config.testRule.add(rule1)
-        Config.testRule.add(rule2)
-        Config.testRule.add(rule3)
-        
-        if configManager.saveRule(rule: Config.testRule, newRuleName: "testRule") == "save succeeded" {
-            print("testRule is saved successfully")
-        } else {
-            print("saving testRule failed")
-        }
-    }
+//    static func testConfig() {
+//        Config.testRule.add(rule1)
+//        Config.testRule.add(rule2)
+//        Config.testRule.add(rule3)
+//        
+//        if configManager.saveRule(rule: Config.testRule, newRuleName: "testRule") == "save succeeded" {
+//            print("testRule is saved successfully")
+//        } else {
+//            print("saving testRule failed")
+//        }
+//    }
     
     static func testReadConfig() {
         let ruleRead = configManager.loadRule("testRules")!
