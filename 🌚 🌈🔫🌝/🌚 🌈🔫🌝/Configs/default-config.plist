@@ -8,7 +8,7 @@
 			<key>0</key>
 			<dict>
 				<key>sound</key>
-				<string>keyboard1.wav</string>
+				<string>keyboard2.wav</string>
 			</dict>
 		</dict>
 		<dict>
@@ -22,7 +22,7 @@
 			<key>2</key>
 			<dict>
 				<key>sound</key>
-				<string>keyboard1.wav</string>
+				<string>keyboard3.wav</string>
 			</dict>
 		</dict>
 	</array>
