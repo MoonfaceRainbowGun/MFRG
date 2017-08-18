@@ -58,6 +58,7 @@ class MFKeyboardEventManager: NSObject {
 }
 
 var previousFlag: UInt64 = 0;
+var capsOn: Bool = false;
 
 fileprivate func didReceiveKeyboardEvent(proxy: CGEventTapProxy, type: CGEventType, event: CGEvent, refcon: UnsafeMutableRawPointer?) -> Unmanaged<CGEvent>? {
     
@@ -65,8 +66,18 @@ fileprivate func didReceiveKeyboardEvent(proxy: CGEventTapProxy, type: CGEventTy
     if type == .keyDown {
         manager.didReceiveKeyDownEvent(event: event);
     } else if type == .flagsChanged {
+        print(event.flags)
         if event.flags.rawValue > previousFlag {
             manager.didReceiveFlagsChangedEvent(event: event)
+        } else if capsOn {
+            if event.flags.intersection(CGEventFlags.maskAlphaShift) == CGEventFlags(rawValue: 0) {
+                capsOn = false;
+                manager.didReceiveFlagsChangedEvent(event: event)
+            }
+        }
+        
+        if event.flags.intersection(CGEventFlags.maskAlphaShift) == CGEventFlags.maskAlphaShift {
+            capsOn = true;
         }
         
         previousFlag = event.flags.rawValue
