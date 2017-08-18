@@ -10,45 +10,65 @@
 import Cocoa
 
 class MFProcessor: NSObject {
-	
-//	struct Node {
-//		var next:  [Character : UnsafePointer<Node>]
-//		var parent : UnsafePointer<Node>?
-//		var fail : UnsafePointer<Node>?
-//		var inputChar : Character?
-//		var patternTag : Int
-//		var patternNo : [Int]
-//	}
-//	var pattern : [String] = ["nihao","hao","hs","hsr"];
-//	
-//	func getNewNode() -> UnsafePointer<Node> {
-//		var tnode : Node = Node(next: <#[Character : UnsafePointer<MFProcessor.Node>]#>,
-//		                        parent: nil,
-//		                        fail : nil,
-//		                        inputChar : nil,
-//		                        patternTag : 0,
-//								patternNo : [Int]())
-//		return withUnsafePointer(to: &tnode, {$0});
-//	}
-//	
-//	func nodeToQueue(root : UnsafePointer<Node> , myqueue : UnsafePointer<[<UnsafePointer<Node>>>]) -> Int{
-//		var i : Int;
-//		
-//		for (i = 0; i < 26; i++){
-//			if (root->next[i]!=NULL)
-//			myqueue.push(root->next[i]);
-//		}
-//
-//		return 0;
-//	}
 
-	
-	
-	
+	var trieForKeycode : Trie
+	var trieForChar : Trie
+	var keycodeRuleMap = [String : [String : String]]()
+	var charRuleMap = [String : [String : String]]()
+	var rateRuleMap = [Double : [String : String]]()
 	fileprivate var buffer : MFBuffer
-	init(keyEventBuffer : MFBuffer){
-		buffer = keyEventBuffer
+	init(keyEventBuffer : MFBuffer, rule: Rule){
 		
+		for ruleItem in rule.list{
+			//ruleItem.output
+			switch ruleItem.input.type {
+			case InputRuleType.keyCode:
+				print("Debug")
+				print(String(Character(UnicodeScalar(ruleItem.input.valueInt!)!)))
+				keycodeRuleMap[String(Character(UnicodeScalar(ruleItem.input.valueInt!)!))]  = ruleItem.output
+				break;
+			case InputRuleType.string:
+				print("Debug")
+				charRuleMap[ruleItem.input.valueString!] = ruleItem.output
+				break;
+			case InputRuleType.frequency:
+				rateRuleMap[ruleItem.input.valueDouble!] = ruleItem.output
+				break;
+			default:
+				break;
+			}
+		}
+		buffer = keyEventBuffer
+		var trieBuilderForKeycode = Trie.builder().removeOverlaps()
+		for rule in keycodeRuleMap{
+			trieBuilderForKeycode = trieBuilderForKeycode.add(keyword: rule.key)
+		}
+		trieForKeycode = trieBuilderForKeycode.build()
+		
+		var trieBuilderForString = Trie.builder().removeOverlaps()
+		for rule in charRuleMap {
+			trieBuilderForString = trieBuilderForKeycode.add(keyword: rule.key)
+		}
+		trieForChar = trieBuilderForString.build()
+
+//		trieForKeycode = Trie.builder().removeOverlaps()
+//			.add(keyword: "hot")
+//			.add(keyword: "hot chocolate")
+//			.add(keyword: "chocolate")
+//			.add(keyword: "123")
+//			.add(keyword: "23")
+//			.add(keyword: "3")
+//			.add(keyword: "321")
+//			.build()
+//		trieForChar = Trie.builder().removeOverlaps()
+//			.add(keyword: "hot")
+//			.add(keyword: "hot chocolate")
+//			.add(keyword: "chocolate")
+//			.add(keyword: "123")
+//			.add(keyword: "23")
+//			.add(keyword: "3")
+//			.add(keyword: "321")
+//			.build()
 		super.init()
 		
 		let notificationKeycodeName = Notification.Name(rawValue: "GetKeycodeNotification")
@@ -57,24 +77,6 @@ class MFProcessor: NSObject {
 		let notificationCharName = Notification.Name(rawValue: "GetCharacterNotification")
 		
 		NotificationCenter.default.addObserver(self,selector:#selector(processCharacterEvent(notification:)),name: notificationCharName, object: nil)
-		
-		var trie = Trie.builder()
-			.removeOverlaps()
-			.add(keyword: "hot")
-			.add(keyword: "hot chocolate")
-			.add(keyword: "chocolate")
-			.build()
-		//let emits = trie.parse(text: "hot chocolate hot")
-		//print(emits.count)
-		let chars : [Character] = ["h","o","t"," ","c","h","o","c","o","l","a","t","e"," ","h","o","t"]
-		for char in chars {
-			let emits = trie.parseByChar(char: char)
-			if emits.count > 0{
-				for emit in emits{
-					print(emit)
-				}
-			}
-		}
 		
 		
 	}
@@ -95,12 +97,27 @@ class MFProcessor: NSObject {
 		if keycode == nil {
 			return
 		}
+		let char = Character(UnicodeScalar(keycode!)!)
+		let emits = trieForKeycode.parseByChar(char: char)
+		if emits.count > 0{
+			for emit in emits{
+				//outputManager.executeEvent(type: OutputEventType.mechanicKeyboardSound, userInfo: keycodeRuleMap[emit.keyword]!)
+				print(emit)
+				
+			}
+		}
 	}
-	
 	func processCharacterEvent(notification: Notification) {
 		let char : Character? = buffer.getChar()
 		if char == nil {
 			return
+		}
+		let emits = trieForChar.parseByChar(char: char!)
+		if emits.count > 0{
+			for emit in emits{
+				//outputManager.executeEvent(type: OutputEventType.mechanicKeyboardSound, userInfo: charRuleMap[emit.keyword]!)
+				print(emit)
+			}
 		}
 		
 	}

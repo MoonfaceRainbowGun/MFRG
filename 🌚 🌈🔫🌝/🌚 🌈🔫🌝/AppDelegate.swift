@@ -49,8 +49,10 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 		let mainBuffer : MFBuffer = MFBuffer()
         
         MFOutputManager.sharedInstance.prepareOutput(type: .mechanicKeyboardSound, userInfos: [["filename": "keyboard1.wav"]])
-		mainProcesser = MFProcessor(keyEventBuffer: mainBuffer)
-        
+		let rule = Config.configManager.loadRule("keyCode")
+		mainProcesser = MFProcessor(keyEventBuffer: mainBuffer, rule: rule!)
+		
+		
 //        Config.testConfig()
         Config.testReadConfig()
     }

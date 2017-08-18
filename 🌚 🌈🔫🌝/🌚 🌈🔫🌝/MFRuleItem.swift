@@ -49,11 +49,13 @@ class RuleInput: Equatable {
     }
     
     init(_ keyCode: Int) {
+//		print("Debug1")
         self.type = InputRuleType.keyCode
         self.valueInt = keyCode
     }
     
     init(_ string: String) {
+//		print("Debug2")
         self.type = InputRuleType.string
         self.valueString = string
     }

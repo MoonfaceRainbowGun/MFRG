@@ -22,8 +22,16 @@ class Rule {
         for ruleItemDict in ruleItemDictList {
             let inputValue = Array(ruleItemDict.keys)[0]
             let output = ruleItemDict[inputValue]!
-            
-            let input = RuleInput(inputValue)
+			
+			var input: RuleInput!
+			switch self.type {
+			case InputRuleType.keyCode:
+				input = RuleInput(Int(inputValue)!)
+			case InputRuleType.frequency:
+				input = RuleInput(Double(inputValue)!)
+			default:
+				input = RuleInput(inputValue)
+			}
             let ruleItem = RuleItem(input: input, output: output)
             self.list.append(ruleItem)
         }
