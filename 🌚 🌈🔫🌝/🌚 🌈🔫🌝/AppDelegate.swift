@@ -14,14 +14,16 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     let statusItem = NSStatusBar.system().statusItem(withLength: 40)
     var themeMenu: NSMenu!
 
-    let configs = ["mechanical-keyboard", "easter-eggs", "midi", "git", "voice"]
-    let titles = ["Mechanical Keyboard", "Easter Eggs", "Blind Helper ++", "Git", "Voice"]
-    var selected = [false, false, false, false, false]
+    let configs = ["mechanical-keyboard", "easter-eggs", "midi", "git", "voice", "command-line"]
+    let titles = ["Mechanical Keyboard", "Easter Eggs", "Blind Helper ++", "Git", "Voice", "Bash"]
+    var selected = [false, false, false, false, false, false]
+
     var processors = [Int: MFProcessor]()
 
 	
     func applicationWillFinishLaunching(_ notification: Notification) {
         
+        UserDefaults.standard.removeObject(forKey: "record")
         self.retrieveUserSettings()
         
         // test
