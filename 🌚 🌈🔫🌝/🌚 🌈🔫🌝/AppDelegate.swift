@@ -20,6 +20,10 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
 	
     func applicationWillFinishLaunching(_ notification: Notification) {
+        // test
+        MFKeycodeMapping.generateMapping()
+        
+        
         self.configureMenu()
 
 		MFKeyboardEventManager.sharedInstance.startListening()
