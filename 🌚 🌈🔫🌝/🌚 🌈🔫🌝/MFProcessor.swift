@@ -39,8 +39,6 @@ class MFProcessor: NSObject {
 			case InputRuleType.frequency:
 				rateRuleMap[ruleItem.input.valueDouble!] = ruleItem.output
 				break;
-			default:
-				break;
 			}
 		}
 		buffer = keyEventBuffer

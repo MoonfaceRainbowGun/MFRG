@@ -14,7 +14,6 @@ class MFSoundOutputEvent: MFOutputEvent {
     fileprivate var playerDicts = [String: MFSoundPlayer]()
     
     override func run(_ userInfo: [String: Any]) {
-        print("haha")
         if let fileName = userInfo["FileName"] as? String {
             if playerDicts[fileName] == nil {
                 playerDicts[fileName] = MFSoundPlayer(sound: fileName)
