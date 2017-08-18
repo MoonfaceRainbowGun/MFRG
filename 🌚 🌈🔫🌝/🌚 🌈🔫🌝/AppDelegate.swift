@@ -11,15 +11,18 @@ import Cocoa
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
 
-	var mainProcesser : MFProcessor?
     let statusItem = NSStatusBar.system().statusItem(withLength: 40)
     var themeMenu: NSMenu!
-    let configs = ["", "", ""]
-    let titles = ["Synthesised Sound", "Mechanical Keyboard", "Easter Eggs"]
+    let configs = ["mechanical-keyboard", "blind-helper", "easter-eggs"]
+    let titles = ["Mechanical Keyboard", "Blind Helper", "Easter Eggs"]
     var selected = [false, false, false]
+    var processors = [Int: MFProcessor]()
 
 	
     func applicationWillFinishLaunching(_ notification: Notification) {
+        
+        self.retrieveUserSettings()
+        
         // test
         MFKeycodeMapping.generateMapping()
         
@@ -28,10 +31,6 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
 		MFKeyboardEventManager.sharedInstance.startListening()
 		MFCharacterEventManager.sharedInstance.startListening()
-		let mainBuffer : MFBuffer = MFBuffer()
-		
-		let rule = Rule(plistName: "default-config")
-		mainProcesser = MFProcessor(keyEventBuffer: mainBuffer, rule: rule)
     }
     
     func configureMenu() {
@@ -62,6 +61,13 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             let item = NSMenuItem(title: title, action: #selector(themeDidSelect(sender:)), keyEquivalent: "\(index + 1)")
             item.tag = index;
             themeMenu.addItem(item)
+            
+            if self.selected[index] {
+                item.state = NSOnState
+                let rule = Rule(plistName: self.configs[index])
+                let processor = MFProcessor(keyEventBuffer: MFBuffer(), rule: rule)
+                self.processors[index] = processor
+            }
         }
         
         themeItem.submenu = themeMenu
@@ -73,13 +79,32 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     func themeDidSelect(sender: NSMenuItem) {
         for menuItem in self.themeMenu.items {
             if menuItem == sender {
-                self.selected[menuItem.tag] = !self.selected[menuItem.tag]
-                menuItem.state = self.selected[menuItem.tag] ? NSOnState : NSOffState
+                let tag = menuItem.tag
+                self.selected[tag] = !self.selected[tag]
+                menuItem.state = self.selected[tag] ? NSOnState : NSOffState
+                if (self.selected[tag]) {
+                    let rule = Rule(plistName: self.configs[tag])
+                    let processor = MFProcessor(keyEventBuffer: MFBuffer(), rule: rule)
+                    self.processors[tag] = processor
+                } else {
+                    self.processors[tag] = nil
+                }
             }
         }
     }
     
+    func saveUserSettings() {
+        UserDefaults.standard.set(self.selected, forKey: "record");
+    }
+    
+    func retrieveUserSettings() {
+        if let record = UserDefaults.standard.array(forKey: "record") as? [Bool] {
+            self.selected = record
+        }
+    }
+    
     func terminateApplication() {
+        self.saveUserSettings()
         exit(0)
     }
     
@@ -88,7 +113,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {
-        // Insert code here to tear down your application
+        self.saveUserSettings()
     }
 
 

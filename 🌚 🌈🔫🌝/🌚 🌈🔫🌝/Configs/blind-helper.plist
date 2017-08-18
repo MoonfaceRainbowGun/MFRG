@@ -29,7 +29,7 @@
 				<key>InputType</key>
 				<string>KeyCode</string>
 				<key>InputValue</key>
-				<string>36</string>
+				<string>1</string>
 			</dict>
 			<key>Output</key>
 			<dict>
@@ -38,7 +38,26 @@
 				<key>OutputUserInfo</key>
 				<dict>
 					<key>FileName</key>
-					<string>keyboard.wav</string>
+					<string>A.wav</string>
+				</dict>
+			</dict>
+		</dict>
+		<dict>
+			<key>Input</key>
+			<dict>
+				<key>InputType</key>
+				<string>KeyCode</string>
+				<key>InputValue</key>
+				<string>2</string>
+			</dict>
+			<key>Output</key>
+			<dict>
+				<key>OutputType</key>
+				<string>PlaySound</string>
+				<key>OutputUserInfo</key>
+				<dict>
+					<key>FileName</key>
+					<string>S.wav</string>
 				</dict>
 			</dict>
 		</dict>

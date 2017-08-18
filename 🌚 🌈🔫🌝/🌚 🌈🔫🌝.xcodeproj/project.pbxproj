@@ -36,6 +36,48 @@
 		6AAC040E1F46E6DA00F1FD58 /* MFConfigManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AAC040B1F46E6DA00F1FD58 /* MFConfigManager.swift */; };
 		6AAC040F1F46E6DA00F1FD58 /* MFRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AAC040C1F46E6DA00F1FD58 /* MFRule.swift */; };
 		6AAC04101F46E6DA00F1FD58 /* MFRuleItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AAC040D1F46E6DA00F1FD58 /* MFRuleItem.swift */; };
+		6AAC04351F477C2700F1FD58 /* A.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6AAC041B1F477C2700F1FD58 /* A.wav */; };
+		6AAC04361F477C2700F1FD58 /* B.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6AAC041C1F477C2700F1FD58 /* B.wav */; };
+		6AAC04371F477C2700F1FD58 /* C.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6AAC041D1F477C2700F1FD58 /* C.wav */; };
+		6AAC04381F477C2700F1FD58 /* D.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6AAC041E1F477C2700F1FD58 /* D.wav */; };
+		6AAC04391F477C2700F1FD58 /* E.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6AAC041F1F477C2700F1FD58 /* E.wav */; };
+		6AAC043A1F477C2700F1FD58 /* F.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6AAC04201F477C2700F1FD58 /* F.wav */; };
+		6AAC043B1F477C2700F1FD58 /* G.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6AAC04211F477C2700F1FD58 /* G.wav */; };
+		6AAC043C1F477C2700F1FD58 /* H.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6AAC04221F477C2700F1FD58 /* H.wav */; };
+		6AAC043D1F477C2700F1FD58 /* I.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6AAC04231F477C2700F1FD58 /* I.wav */; };
+		6AAC043E1F477C2700F1FD58 /* J.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6AAC04241F477C2700F1FD58 /* J.wav */; };
+		6AAC043F1F477C2700F1FD58 /* K.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6AAC04251F477C2700F1FD58 /* K.wav */; };
+		6AAC04401F477C2700F1FD58 /* L.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6AAC04261F477C2700F1FD58 /* L.wav */; };
+		6AAC04411F477C2700F1FD58 /* M.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6AAC04271F477C2700F1FD58 /* M.wav */; };
+		6AAC04421F477C2700F1FD58 /* N.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6AAC04281F477C2700F1FD58 /* N.wav */; };
+		6AAC04431F477C2700F1FD58 /* O.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6AAC04291F477C2700F1FD58 /* O.wav */; };
+		6AAC04441F477C2700F1FD58 /* P.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6AAC042A1F477C2700F1FD58 /* P.wav */; };
+		6AAC04451F477C2700F1FD58 /* Q.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6AAC042B1F477C2700F1FD58 /* Q.wav */; };
+		6AAC04461F477C2700F1FD58 /* R.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6AAC042C1F477C2700F1FD58 /* R.wav */; };
+		6AAC04471F477C2700F1FD58 /* S.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6AAC042D1F477C2700F1FD58 /* S.wav */; };
+		6AAC04481F477C2700F1FD58 /* T.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6AAC042E1F477C2700F1FD58 /* T.wav */; };
+		6AAC04491F477C2700F1FD58 /* U.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6AAC042F1F477C2700F1FD58 /* U.wav */; };
+		6AAC044A1F477C2700F1FD58 /* V.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6AAC04301F477C2700F1FD58 /* V.wav */; };
+		6AAC044B1F477C2700F1FD58 /* W.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6AAC04311F477C2700F1FD58 /* W.wav */; };
+		6AAC044C1F477C2700F1FD58 /* X.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6AAC04321F477C2700F1FD58 /* X.wav */; };
+		6AAC044D1F477C2700F1FD58 /* Y.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6AAC04331F477C2700F1FD58 /* Y.wav */; };
+		6AAC044E1F477C2700F1FD58 /* Z.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6AAC04341F477C2700F1FD58 /* Z.wav */; };
+		6AAC04521F477E6700F1FD58 /* git_add.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6AAC044F1F477E6700F1FD58 /* git_add.wav */; };
+		6AAC04531F477E6700F1FD58 /* git_commit.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6AAC04501F477E6700F1FD58 /* git_commit.wav */; };
+		6AAC04541F477E6700F1FD58 /* git.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6AAC04511F477E6700F1FD58 /* git.wav */; };
+		6AAC04561F47801300F1FD58 /* git.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6AAC04551F47801300F1FD58 /* git.plist */; };
+		6AAC04611F47864500F1FD58 /* 0.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6AAC04571F47864500F1FD58 /* 0.wav */; };
+		6AAC04621F47864500F1FD58 /* 1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6AAC04581F47864500F1FD58 /* 1.wav */; };
+		6AAC04631F47864500F1FD58 /* 2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6AAC04591F47864500F1FD58 /* 2.wav */; };
+		6AAC04641F47864500F1FD58 /* 3.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6AAC045A1F47864500F1FD58 /* 3.wav */; };
+		6AAC04651F47864500F1FD58 /* 4.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6AAC045B1F47864500F1FD58 /* 4.wav */; };
+		6AAC04661F47864500F1FD58 /* 5.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6AAC045C1F47864500F1FD58 /* 5.wav */; };
+		6AAC04671F47864500F1FD58 /* 6.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6AAC045D1F47864500F1FD58 /* 6.wav */; };
+		6AAC04681F47864500F1FD58 /* 7.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6AAC045E1F47864500F1FD58 /* 7.wav */; };
+		6AAC04691F47864500F1FD58 /* 8.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6AAC045F1F47864500F1FD58 /* 8.wav */; };
+		6AAC046A1F47864500F1FD58 /* 9.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6AAC04601F47864500F1FD58 /* 9.wav */; };
+		6AAC046D1F47865600F1FD58 /* exit.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6AAC046B1F47865600F1FD58 /* exit.wav */; };
+		6AAC046E1F47865600F1FD58 /* git_push.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6AAC046C1F47865600F1FD58 /* git_push.wav */; };
 		BF03E8281F46D1E90070D6FD /* MFCharacterEventManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF03E8271F46D1E90070D6FD /* MFCharacterEventManager.swift */; };
 		BF03E8841F46F7AB0070D6FD /* FIError.m in Sources */ = {isa = PBXBuildFile; fileRef = BF03E8661F46F7AB0070D6FD /* FIError.m */; };
 		BF03E8851F46F7AB0070D6FD /* FISampleBuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = BF03E8681F46F7AB0070D6FD /* FISampleBuffer.m */; };
@@ -46,7 +88,9 @@
 		BF03E88D1F46F7AB0070D6FD /* FISoundDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = BF03E8751F46F7AB0070D6FD /* FISoundDevice.m */; };
 		BF03E88F1F46F7AB0070D6FD /* FISoundEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = BF03E8781F46F7AB0070D6FD /* FISoundEngine.m */; };
 		BF03E8901F46F7AB0070D6FD /* FISoundSource.m in Sources */ = {isa = PBXBuildFile; fileRef = BF03E87A1F46F7AB0070D6FD /* FISoundSource.m */; };
-		BF03E89C1F47310B0070D6FD /* default-config.plist in Resources */ = {isa = PBXBuildFile; fileRef = BF03E89B1F47310B0070D6FD /* default-config.plist */; };
+		BF03E89F1F4774CA0070D6FD /* easter-eggs.plist in Resources */ = {isa = PBXBuildFile; fileRef = BF03E89D1F4774CA0070D6FD /* easter-eggs.plist */; };
+		BF03E8A01F4774CA0070D6FD /* mechanical-keyboard.plist in Resources */ = {isa = PBXBuildFile; fileRef = BF03E89E1F4774CA0070D6FD /* mechanical-keyboard.plist */; };
+		BF03E8A21F4774E60070D6FD /* blind-helper.plist in Resources */ = {isa = PBXBuildFile; fileRef = BF03E8A11F4774E60070D6FD /* blind-helper.plist */; };
 		BFFA0FA41F46BA75008E8C9C /* MFBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFFA0FA31F46BA75008E8C9C /* MFBuffer.swift */; };
 		BFFA0FA61F46BA93008E8C9C /* MFProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFFA0FA51F46BA93008E8C9C /* MFProcessor.swift */; };
 		BFFA0FA81F46BAA6008E8C9C /* MFOutputManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFFA0FA71F46BAA6008E8C9C /* MFOutputManager.swift */; };
@@ -86,6 +130,48 @@
 		6AAC040B1F46E6DA00F1FD58 /* MFConfigManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MFConfigManager.swift; sourceTree = "<group>"; };
 		6AAC040C1F46E6DA00F1FD58 /* MFRule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MFRule.swift; sourceTree = "<group>"; };
 		6AAC040D1F46E6DA00F1FD58 /* MFRuleItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MFRuleItem.swift; sourceTree = "<group>"; };
+		6AAC041B1F477C2700F1FD58 /* A.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = A.wav; sourceTree = "<group>"; };
+		6AAC041C1F477C2700F1FD58 /* B.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = B.wav; sourceTree = "<group>"; };
+		6AAC041D1F477C2700F1FD58 /* C.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = C.wav; sourceTree = "<group>"; };
+		6AAC041E1F477C2700F1FD58 /* D.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = D.wav; sourceTree = "<group>"; };
+		6AAC041F1F477C2700F1FD58 /* E.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = E.wav; sourceTree = "<group>"; };
+		6AAC04201F477C2700F1FD58 /* F.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = F.wav; sourceTree = "<group>"; };
+		6AAC04211F477C2700F1FD58 /* G.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = G.wav; sourceTree = "<group>"; };
+		6AAC04221F477C2700F1FD58 /* H.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = H.wav; sourceTree = "<group>"; };
+		6AAC04231F477C2700F1FD58 /* I.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = I.wav; sourceTree = "<group>"; };
+		6AAC04241F477C2700F1FD58 /* J.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = J.wav; sourceTree = "<group>"; };
+		6AAC04251F477C2700F1FD58 /* K.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = K.wav; sourceTree = "<group>"; };
+		6AAC04261F477C2700F1FD58 /* L.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = L.wav; sourceTree = "<group>"; };
+		6AAC04271F477C2700F1FD58 /* M.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = M.wav; sourceTree = "<group>"; };
+		6AAC04281F477C2700F1FD58 /* N.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = N.wav; sourceTree = "<group>"; };
+		6AAC04291F477C2700F1FD58 /* O.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = O.wav; sourceTree = "<group>"; };
+		6AAC042A1F477C2700F1FD58 /* P.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = P.wav; sourceTree = "<group>"; };
+		6AAC042B1F477C2700F1FD58 /* Q.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Q.wav; sourceTree = "<group>"; };
+		6AAC042C1F477C2700F1FD58 /* R.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = R.wav; sourceTree = "<group>"; };
+		6AAC042D1F477C2700F1FD58 /* S.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = S.wav; sourceTree = "<group>"; };
+		6AAC042E1F477C2700F1FD58 /* T.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = T.wav; sourceTree = "<group>"; };
+		6AAC042F1F477C2700F1FD58 /* U.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = U.wav; sourceTree = "<group>"; };
+		6AAC04301F477C2700F1FD58 /* V.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = V.wav; sourceTree = "<group>"; };
+		6AAC04311F477C2700F1FD58 /* W.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = W.wav; sourceTree = "<group>"; };
+		6AAC04321F477C2700F1FD58 /* X.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = X.wav; sourceTree = "<group>"; };
+		6AAC04331F477C2700F1FD58 /* Y.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Y.wav; sourceTree = "<group>"; };
+		6AAC04341F477C2700F1FD58 /* Z.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Z.wav; sourceTree = "<group>"; };
+		6AAC044F1F477E6700F1FD58 /* git_add.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = git_add.wav; sourceTree = "<group>"; };
+		6AAC04501F477E6700F1FD58 /* git_commit.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = git_commit.wav; sourceTree = "<group>"; };
+		6AAC04511F477E6700F1FD58 /* git.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = git.wav; sourceTree = "<group>"; };
+		6AAC04551F47801300F1FD58 /* git.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = git.plist; path = ../git.plist; sourceTree = "<group>"; };
+		6AAC04571F47864500F1FD58 /* 0.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 0.wav; sourceTree = "<group>"; };
+		6AAC04581F47864500F1FD58 /* 1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 1.wav; sourceTree = "<group>"; };
+		6AAC04591F47864500F1FD58 /* 2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 2.wav; sourceTree = "<group>"; };
+		6AAC045A1F47864500F1FD58 /* 3.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 3.wav; sourceTree = "<group>"; };
+		6AAC045B1F47864500F1FD58 /* 4.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 4.wav; sourceTree = "<group>"; };
+		6AAC045C1F47864500F1FD58 /* 5.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 5.wav; sourceTree = "<group>"; };
+		6AAC045D1F47864500F1FD58 /* 6.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 6.wav; sourceTree = "<group>"; };
+		6AAC045E1F47864500F1FD58 /* 7.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 7.wav; sourceTree = "<group>"; };
+		6AAC045F1F47864500F1FD58 /* 8.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 8.wav; sourceTree = "<group>"; };
+		6AAC04601F47864500F1FD58 /* 9.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 9.wav; sourceTree = "<group>"; };
+		6AAC046B1F47865600F1FD58 /* exit.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = exit.wav; sourceTree = "<group>"; };
+		6AAC046C1F47865600F1FD58 /* git_push.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = git_push.wav; sourceTree = "<group>"; };
 		BF03E8271F46D1E90070D6FD /* MFCharacterEventManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MFCharacterEventManager.swift; sourceTree = "<group>"; };
 		BF03E8601F46F79D0070D6FD /* 🌚 🌈🔫🌝-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "🌚 🌈🔫🌝-Bridging-Header.h"; sourceTree = "<group>"; };
 		BF03E8651F46F7AB0070D6FD /* FIError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FIError.h; sourceTree = "<group>"; };
@@ -106,7 +192,9 @@
 		BF03E8781F46F7AB0070D6FD /* FISoundEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FISoundEngine.m; sourceTree = "<group>"; };
 		BF03E8791F46F7AB0070D6FD /* FISoundSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FISoundSource.h; sourceTree = "<group>"; };
 		BF03E87A1F46F7AB0070D6FD /* FISoundSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FISoundSource.m; sourceTree = "<group>"; };
-		BF03E89B1F47310B0070D6FD /* default-config.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "default-config.plist"; sourceTree = "<group>"; };
+		BF03E89D1F4774CA0070D6FD /* easter-eggs.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "easter-eggs.plist"; sourceTree = "<group>"; };
+		BF03E89E1F4774CA0070D6FD /* mechanical-keyboard.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "mechanical-keyboard.plist"; sourceTree = "<group>"; };
+		BF03E8A11F4774E60070D6FD /* blind-helper.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "blind-helper.plist"; sourceTree = "<group>"; };
 		BFFA0FA31F46BA75008E8C9C /* MFBuffer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MFBuffer.swift; sourceTree = "<group>"; };
 		BFFA0FA51F46BA93008E8C9C /* MFProcessor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MFProcessor.swift; sourceTree = "<group>"; };
 		BFFA0FA71F46BAA6008E8C9C /* MFOutputManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MFOutputManager.swift; sourceTree = "<group>"; };
@@ -209,6 +297,47 @@
 		626F7D251F46D7B50058BFAA /* Sound */ = {
 			isa = PBXGroup;
 			children = (
+				6AAC04511F477E6700F1FD58 /* git.wav */,
+				6AAC044F1F477E6700F1FD58 /* git_add.wav */,
+				6AAC04501F477E6700F1FD58 /* git_commit.wav */,
+				6AAC046C1F47865600F1FD58 /* git_push.wav */,
+				6AAC046B1F47865600F1FD58 /* exit.wav */,
+				6AAC04571F47864500F1FD58 /* 0.wav */,
+				6AAC04581F47864500F1FD58 /* 1.wav */,
+				6AAC04591F47864500F1FD58 /* 2.wav */,
+				6AAC045A1F47864500F1FD58 /* 3.wav */,
+				6AAC045B1F47864500F1FD58 /* 4.wav */,
+				6AAC045C1F47864500F1FD58 /* 5.wav */,
+				6AAC045D1F47864500F1FD58 /* 6.wav */,
+				6AAC045E1F47864500F1FD58 /* 7.wav */,
+				6AAC045F1F47864500F1FD58 /* 8.wav */,
+				6AAC04601F47864500F1FD58 /* 9.wav */,
+				6AAC041B1F477C2700F1FD58 /* A.wav */,
+				6AAC041C1F477C2700F1FD58 /* B.wav */,
+				6AAC041D1F477C2700F1FD58 /* C.wav */,
+				6AAC041E1F477C2700F1FD58 /* D.wav */,
+				6AAC041F1F477C2700F1FD58 /* E.wav */,
+				6AAC04201F477C2700F1FD58 /* F.wav */,
+				6AAC04211F477C2700F1FD58 /* G.wav */,
+				6AAC04221F477C2700F1FD58 /* H.wav */,
+				6AAC04231F477C2700F1FD58 /* I.wav */,
+				6AAC04241F477C2700F1FD58 /* J.wav */,
+				6AAC04251F477C2700F1FD58 /* K.wav */,
+				6AAC04261F477C2700F1FD58 /* L.wav */,
+				6AAC04271F477C2700F1FD58 /* M.wav */,
+				6AAC04281F477C2700F1FD58 /* N.wav */,
+				6AAC04291F477C2700F1FD58 /* O.wav */,
+				6AAC042A1F477C2700F1FD58 /* P.wav */,
+				6AAC042B1F477C2700F1FD58 /* Q.wav */,
+				6AAC042C1F477C2700F1FD58 /* R.wav */,
+				6AAC042D1F477C2700F1FD58 /* S.wav */,
+				6AAC042E1F477C2700F1FD58 /* T.wav */,
+				6AAC042F1F477C2700F1FD58 /* U.wav */,
+				6AAC04301F477C2700F1FD58 /* V.wav */,
+				6AAC04311F477C2700F1FD58 /* W.wav */,
+				6AAC04321F477C2700F1FD58 /* X.wav */,
+				6AAC04331F477C2700F1FD58 /* Y.wav */,
+				6AAC04341F477C2700F1FD58 /* Z.wav */,
 				626F7D2C1F46DFBD0058BFAA /* keyboard1.wav */,
 				626F7D281F46DAC10058BFAA /* keyboard.wav */,
 			);
@@ -278,7 +407,10 @@
 		BF03E8981F472DD80070D6FD /* Configs */ = {
 			isa = PBXGroup;
 			children = (
-				BF03E89B1F47310B0070D6FD /* default-config.plist */,
+				BF03E89E1F4774CA0070D6FD /* mechanical-keyboard.plist */,
+				BF03E8A11F4774E60070D6FD /* blind-helper.plist */,
+				BF03E89D1F4774CA0070D6FD /* easter-eggs.plist */,
+				6AAC04551F47801300F1FD58 /* git.plist */,
 			);
 			path = Configs;
 			sourceTree = "<group>";
@@ -344,10 +476,54 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6AAC04641F47864500F1FD58 /* 3.wav in Resources */,
+				6AAC044D1F477C2700F1FD58 /* Y.wav in Resources */,
+				6AAC044B1F477C2700F1FD58 /* W.wav in Resources */,
+				6AAC04531F477E6700F1FD58 /* git_commit.wav in Resources */,
+				6AAC04371F477C2700F1FD58 /* C.wav in Resources */,
+				6AAC04521F477E6700F1FD58 /* git_add.wav in Resources */,
+				6AAC04481F477C2700F1FD58 /* T.wav in Resources */,
+				6AAC046D1F47865600F1FD58 /* exit.wav in Resources */,
+				6AAC04401F477C2700F1FD58 /* L.wav in Resources */,
+				6AAC043A1F477C2700F1FD58 /* F.wav in Resources */,
+				6AAC04351F477C2700F1FD58 /* A.wav in Resources */,
+				6AAC04361F477C2700F1FD58 /* B.wav in Resources */,
+				6AAC04621F47864500F1FD58 /* 1.wav in Resources */,
+				BF03E8A01F4774CA0070D6FD /* mechanical-keyboard.plist in Resources */,
+				6AAC04691F47864500F1FD58 /* 8.wav in Resources */,
+				BF03E89F1F4774CA0070D6FD /* easter-eggs.plist in Resources */,
+				6AAC043B1F477C2700F1FD58 /* G.wav in Resources */,
+				6AAC04671F47864500F1FD58 /* 6.wav in Resources */,
+				BF03E8A21F4774E60070D6FD /* blind-helper.plist in Resources */,
+				6AAC04461F477C2700F1FD58 /* R.wav in Resources */,
+				6AAC04441F477C2700F1FD58 /* P.wav in Resources */,
+				6AAC043F1F477C2700F1FD58 /* K.wav in Resources */,
+				6AAC04561F47801300F1FD58 /* git.plist in Resources */,
+				6AAC043D1F477C2700F1FD58 /* I.wav in Resources */,
+				6AAC04421F477C2700F1FD58 /* N.wav in Resources */,
+				6AAC04661F47864500F1FD58 /* 5.wav in Resources */,
+				6AAC043E1F477C2700F1FD58 /* J.wav in Resources */,
 				626F7D291F46DAC10058BFAA /* keyboard.wav in Resources */,
+				6AAC04431F477C2700F1FD58 /* O.wav in Resources */,
+				6AAC04491F477C2700F1FD58 /* U.wav in Resources */,
+				6AAC04651F47864500F1FD58 /* 4.wav in Resources */,
+				6AAC04541F477E6700F1FD58 /* git.wav in Resources */,
+				6AAC04681F47864500F1FD58 /* 7.wav in Resources */,
+				6AAC043C1F477C2700F1FD58 /* H.wav in Resources */,
+				6AAC04471F477C2700F1FD58 /* S.wav in Resources */,
+				6AAC044A1F477C2700F1FD58 /* V.wav in Resources */,
 				626BF1B61F46B8FE00EDDD05 /* Assets.xcassets in Resources */,
+				6AAC046E1F47865600F1FD58 /* git_push.wav in Resources */,
+				6AAC044E1F477C2700F1FD58 /* Z.wav in Resources */,
+				6AAC04411F477C2700F1FD58 /* M.wav in Resources */,
+				6AAC044C1F477C2700F1FD58 /* X.wav in Resources */,
+				6AAC04631F47864500F1FD58 /* 2.wav in Resources */,
 				626BF1B91F46B8FE00EDDD05 /* Main.storyboard in Resources */,
-				BF03E89C1F47310B0070D6FD /* default-config.plist in Resources */,
+				6AAC04391F477C2700F1FD58 /* E.wav in Resources */,
+				6AAC046A1F47864500F1FD58 /* 9.wav in Resources */,
+				6AAC04451F477C2700F1FD58 /* Q.wav in Resources */,
+				6AAC04381F477C2700F1FD58 /* D.wav in Resources */,
+				6AAC04611F47864500F1FD58 /* 0.wav in Resources */,
 				0C19C8921F46FE3D008EBD75 /* Info.plist in Resources */,
 				626F7D2D1F46DFBD0058BFAA /* keyboard1.wav in Resources */,
 			);
