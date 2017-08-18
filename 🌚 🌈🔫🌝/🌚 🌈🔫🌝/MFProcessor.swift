@@ -58,6 +58,16 @@ class MFProcessor: NSObject {
 		
 		NotificationCenter.default.addObserver(self,selector:#selector(processCharacterEvent(notification:)),name: notificationCharName, object: nil)
 		
+		let trie = Trie.builder()
+			.removeOverlaps()
+			.add(keyword: "hot")
+			.add(keyword: "hot chocolate")
+			.build()
+		let emits = trie.parse(text: "hot chocolate")
+		for i in ((0)...emits.count).reversed(){
+			print(emits[i].keyword)
+		}
+		
 		
 	}
 	func generateTrieForChars(allStringMatchRules: [String]) {

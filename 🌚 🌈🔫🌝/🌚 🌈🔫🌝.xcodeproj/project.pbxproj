@@ -7,6 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C19C88F1F46FE3D008EBD75 /* CharacterExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C19C87F1F46FE3D008EBD75 /* CharacterExtensions.swift */; };
+		0C19C8901F46FE3D008EBD75 /* IntervalArrayExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C19C8801F46FE3D008EBD75 /* IntervalArrayExtensions.swift */; };
+		0C19C8911F46FE3D008EBD75 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C19C8811F46FE3D008EBD75 /* StringExtensions.swift */; };
+		0C19C8921F46FE3D008EBD75 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0C19C8821F46FE3D008EBD75 /* Info.plist */; };
+		0C19C8931F46FE3D008EBD75 /* Interval.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C19C8841F46FE3D008EBD75 /* Interval.swift */; };
+		0C19C8941F46FE3D008EBD75 /* IntervalNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C19C8851F46FE3D008EBD75 /* IntervalNode.swift */; };
+		0C19C8951F46FE3D008EBD75 /* IntervalTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C19C8861F46FE3D008EBD75 /* IntervalTree.swift */; };
+		0C19C8961F46FE3D008EBD75 /* Emit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C19C8881F46FE3D008EBD75 /* Emit.swift */; };
+		0C19C8971F46FE3D008EBD75 /* FragmentToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C19C8891F46FE3D008EBD75 /* FragmentToken.swift */; };
+		0C19C8981F46FE3D008EBD75 /* MatchToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C19C88A1F46FE3D008EBD75 /* MatchToken.swift */; };
+		0C19C8991F46FE3D008EBD75 /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C19C88B1F46FE3D008EBD75 /* State.swift */; };
+		0C19C89A1F46FE3D008EBD75 /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C19C88C1F46FE3D008EBD75 /* Token.swift */; };
+		0C19C89B1F46FE3D008EBD75 /* Trie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C19C88D1F46FE3D008EBD75 /* Trie.swift */; };
+		0C19C89C1F46FE3D008EBD75 /* TrieConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C19C88E1F46FE3D008EBD75 /* TrieConfig.swift */; };
 		626BF1B21F46B8FE00EDDD05 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626BF1B11F46B8FE00EDDD05 /* AppDelegate.swift */; };
 		626BF1B41F46B8FE00EDDD05 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626BF1B31F46B8FE00EDDD05 /* ViewController.swift */; };
 		626BF1B61F46B8FE00EDDD05 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 626BF1B51F46B8FE00EDDD05 /* Assets.xcassets */; };
@@ -38,6 +52,21 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0C19C87D1F46FE3D008EBD75 /* Aho-Corasick-Swift.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Aho-Corasick-Swift.h"; sourceTree = "<group>"; };
+		0C19C87F1F46FE3D008EBD75 /* CharacterExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterExtensions.swift; sourceTree = "<group>"; };
+		0C19C8801F46FE3D008EBD75 /* IntervalArrayExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntervalArrayExtensions.swift; sourceTree = "<group>"; };
+		0C19C8811F46FE3D008EBD75 /* StringExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
+		0C19C8821F46FE3D008EBD75 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0C19C8841F46FE3D008EBD75 /* Interval.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Interval.swift; sourceTree = "<group>"; };
+		0C19C8851F46FE3D008EBD75 /* IntervalNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntervalNode.swift; sourceTree = "<group>"; };
+		0C19C8861F46FE3D008EBD75 /* IntervalTree.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntervalTree.swift; sourceTree = "<group>"; };
+		0C19C8881F46FE3D008EBD75 /* Emit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Emit.swift; sourceTree = "<group>"; };
+		0C19C8891F46FE3D008EBD75 /* FragmentToken.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FragmentToken.swift; sourceTree = "<group>"; };
+		0C19C88A1F46FE3D008EBD75 /* MatchToken.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatchToken.swift; sourceTree = "<group>"; };
+		0C19C88B1F46FE3D008EBD75 /* State.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
+		0C19C88C1F46FE3D008EBD75 /* Token.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Token.swift; sourceTree = "<group>"; };
+		0C19C88D1F46FE3D008EBD75 /* Trie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Trie.swift; sourceTree = "<group>"; };
+		0C19C88E1F46FE3D008EBD75 /* TrieConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrieConfig.swift; sourceTree = "<group>"; };
 		626BF1AE1F46B8FE00EDDD05 /* 🌚 🌈🔫🌝.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "🌚 🌈🔫🌝.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		626BF1B11F46B8FE00EDDD05 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		626BF1B31F46B8FE00EDDD05 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -91,6 +120,52 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0C19C87C1F46FE3D008EBD75 /* ACAutoMaton */ = {
+			isa = PBXGroup;
+			children = (
+				0C19C87D1F46FE3D008EBD75 /* Aho-Corasick-Swift.h */,
+				0C19C87E1F46FE3D008EBD75 /* Extensions */,
+				0C19C8821F46FE3D008EBD75 /* Info.plist */,
+				0C19C8831F46FE3D008EBD75 /* Interval */,
+				0C19C8871F46FE3D008EBD75 /* Trie */,
+			);
+			path = ACAutoMaton;
+			sourceTree = "<group>";
+		};
+		0C19C87E1F46FE3D008EBD75 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				0C19C87F1F46FE3D008EBD75 /* CharacterExtensions.swift */,
+				0C19C8801F46FE3D008EBD75 /* IntervalArrayExtensions.swift */,
+				0C19C8811F46FE3D008EBD75 /* StringExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		0C19C8831F46FE3D008EBD75 /* Interval */ = {
+			isa = PBXGroup;
+			children = (
+				0C19C8841F46FE3D008EBD75 /* Interval.swift */,
+				0C19C8851F46FE3D008EBD75 /* IntervalNode.swift */,
+				0C19C8861F46FE3D008EBD75 /* IntervalTree.swift */,
+			);
+			path = Interval;
+			sourceTree = "<group>";
+		};
+		0C19C8871F46FE3D008EBD75 /* Trie */ = {
+			isa = PBXGroup;
+			children = (
+				0C19C8881F46FE3D008EBD75 /* Emit.swift */,
+				0C19C8891F46FE3D008EBD75 /* FragmentToken.swift */,
+				0C19C88A1F46FE3D008EBD75 /* MatchToken.swift */,
+				0C19C88B1F46FE3D008EBD75 /* State.swift */,
+				0C19C88C1F46FE3D008EBD75 /* Token.swift */,
+				0C19C88D1F46FE3D008EBD75 /* Trie.swift */,
+				0C19C88E1F46FE3D008EBD75 /* TrieConfig.swift */,
+			);
+			path = Trie;
+			sourceTree = "<group>";
+		};
 		626BF1A51F46B8FE00EDDD05 = {
 			isa = PBXGroup;
 			children = (
@@ -110,6 +185,7 @@
 		626BF1B01F46B8FE00EDDD05 /* 🌚 🌈🔫🌝 */ = {
 			isa = PBXGroup;
 			children = (
+				0C19C87C1F46FE3D008EBD75 /* ACAutoMaton */,
 				BF03E8641F46F7AB0070D6FD /* Finch */,
 				626F7D251F46D7B50058BFAA /* Sound */,
 				626BF1B11F46B8FE00EDDD05 /* AppDelegate.swift */,
@@ -233,6 +309,7 @@
 				626F7D291F46DAC10058BFAA /* keyboard.wav in Resources */,
 				626BF1B61F46B8FE00EDDD05 /* Assets.xcassets in Resources */,
 				626BF1B91F46B8FE00EDDD05 /* Main.storyboard in Resources */,
+				0C19C8921F46FE3D008EBD75 /* Info.plist in Resources */,
 				626F7D2D1F46DFBD0058BFAA /* keyboard1.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -245,8 +322,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF03E88A1F46F7AB0070D6FD /* FISound.m in Sources */,
+				0C19C89A1F46FE3D008EBD75 /* Token.swift in Sources */,
 				6AAC040F1F46E6DA00F1FD58 /* MFRules.swift in Sources */,
 				BF03E8891F46F7AB0070D6FD /* FISampleFormat.m in Sources */,
+				0C19C89C1F46FE3D008EBD75 /* TrieConfig.swift in Sources */,
+				0C19C8971F46FE3D008EBD75 /* FragmentToken.swift in Sources */,
+				0C19C8941F46FE3D008EBD75 /* IntervalNode.swift in Sources */,
 				BF03E8851F46F7AB0070D6FD /* FISampleBuffer.m in Sources */,
 				626BF1B41F46B8FE00EDDD05 /* ViewController.swift in Sources */,
 				626F7D311F46E4B50058BFAA /* MFFastSoundPlayer.swift in Sources */,
@@ -255,18 +336,27 @@
 				626F7D2B1F46DC2D0058BFAA /* MFSoundPlayer.swift in Sources */,
 				BF03E88B1F46F7AB0070D6FD /* FISoundContext.m in Sources */,
 				BFFA0FAA1F46BB2C008E8C9C /* MFKeyboardEventManager.swift in Sources */,
+				0C19C8991F46FE3D008EBD75 /* State.swift in Sources */,
+				0C19C88F1F46FE3D008EBD75 /* CharacterExtensions.swift in Sources */,
+				0C19C8901F46FE3D008EBD75 /* IntervalArrayExtensions.swift in Sources */,
+				0C19C8961F46FE3D008EBD75 /* Emit.swift in Sources */,
 				BFFA0FA61F46BA93008E8C9C /* MFProcessor.swift in Sources */,
 				BFFA0FA41F46BA75008E8C9C /* MFBuffer.swift in Sources */,
 				BF03E8901F46F7AB0070D6FD /* FISoundSource.m in Sources */,
+				0C19C89B1F46FE3D008EBD75 /* Trie.swift in Sources */,
 				626BF1C71F46D2F200EDDD05 /* MFSoundOutputEvent.swift in Sources */,
 				BF03E88F1F46F7AB0070D6FD /* FISoundEngine.m in Sources */,
 				626BF1C51F46D10900EDDD05 /* MFOutputEvent.swift in Sources */,
+				0C19C8981F46FE3D008EBD75 /* MatchToken.swift in Sources */,
 				6AAC040E1F46E6DA00F1FD58 /* MFConfigManager.swift in Sources */,
 				626BF1B21F46B8FE00EDDD05 /* AppDelegate.swift in Sources */,
+				0C19C8951F46FE3D008EBD75 /* IntervalTree.swift in Sources */,
+				0C19C8911F46FE3D008EBD75 /* StringExtensions.swift in Sources */,
 				BF03E8281F46D1E90070D6FD /* MFCharacterEventManager.swift in Sources */,
 				BF03E8841F46F7AB0070D6FD /* FIError.m in Sources */,
 				6AAC04101F46E6DA00F1FD58 /* MFRule.swift in Sources */,
 				BFFA0FA81F46BAA6008E8C9C /* MFOutputManager.swift in Sources */,
+				0C19C8931F46FE3D008EBD75 /* Interval.swift in Sources */,
 				BF03E88D1F46F7AB0070D6FD /* FISoundDevice.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
