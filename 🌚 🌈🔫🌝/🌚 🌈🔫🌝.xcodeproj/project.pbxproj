@@ -196,13 +196,8 @@
 				626BF1BA1F46B8FE00EDDD05 /* Info.plist */,
 				BFFA0FA31F46BA75008E8C9C /* MFBuffer.swift */,
 				BFFA0FA51F46BA93008E8C9C /* MFProcessor.swift */,
-				BFFA0FA91F46BB2C008E8C9C /* MFKeyboardEventManager.swift */,
-				626BF1C01F46BEDA00EDDD05 /* MFSynthesizer.swift */,
-				BFFA0FA71F46BAA6008E8C9C /* MFOutputManager.swift */,
-				626BF1C41F46D10900EDDD05 /* MFOutputEvent.swift */,
-				626BF1C61F46D2F200EDDD05 /* MFSoundOutputEvent.swift */,
-				BF03E8271F46D1E90070D6FD /* MFCharacterEventManager.swift */,
-				626F7D301F46E4B50058BFAA /* MFSoundPlayer.swift */,
+				BF03E8951F470E580070D6FD /* Input Events */,
+				BF03E8961F470E720070D6FD /* Output Handlers */,
 				BF03E8601F46F79D0070D6FD /* 🌚 🌈🔫🌝-Bridging-Header.h */,
 			);
 			path = "🌚 🌈🔫🌝";
@@ -240,6 +235,27 @@
 				BF03E87A1F46F7AB0070D6FD /* FISoundSource.m */,
 			);
 			path = Finch;
+			sourceTree = "<group>";
+		};
+		BF03E8951F470E580070D6FD /* Input Events */ = {
+			isa = PBXGroup;
+			children = (
+				BF03E8271F46D1E90070D6FD /* MFCharacterEventManager.swift */,
+				BFFA0FA91F46BB2C008E8C9C /* MFKeyboardEventManager.swift */,
+			);
+			name = "Input Events";
+			sourceTree = "<group>";
+		};
+		BF03E8961F470E720070D6FD /* Output Handlers */ = {
+			isa = PBXGroup;
+			children = (
+				626BF1C01F46BEDA00EDDD05 /* MFSynthesizer.swift */,
+				BFFA0FA71F46BAA6008E8C9C /* MFOutputManager.swift */,
+				626BF1C41F46D10900EDDD05 /* MFOutputEvent.swift */,
+				626BF1C61F46D2F200EDDD05 /* MFSoundOutputEvent.swift */,
+				626F7D301F46E4B50058BFAA /* MFSoundPlayer.swift */,
+			);
+			name = "Output Handlers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
