@@ -9,5 +9,15 @@
 import Cocoa
 
 class MFCharacterEventManager: NSObject {
-
+    static let sharedInstance: MFCharacterEventManager = MFCharacterEventManager()
+    
+    override init() {
+        super.init()
+    }
+    
+    func startListening() {
+        NSEvent.addGlobalMonitorForEvents(matching: .keyDown) { (e) in
+            print("CHAR:\(e.characters ?? "")");
+        }
+    }
 }
