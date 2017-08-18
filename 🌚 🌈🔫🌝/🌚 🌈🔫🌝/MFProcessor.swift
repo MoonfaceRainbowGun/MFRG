@@ -81,9 +81,7 @@ class MFProcessor: NSObject {
 		let emits = trieForKeycode.parseByChar(char: char)
 		if emits.count > 0{
 			for emit in emits{
-				//outputManager.executeEvent(type: OutputEventType.mechanicKeyboardSound, userInfo: keycodeRuleMap[emit.keyword]!)
-				print(emit)
-				print(emit.outputRule)
+				MFOutputManager.sharedInstance.executeEvent(emit.outputRule)
 			}
 		}
 	}
@@ -93,10 +91,9 @@ class MFProcessor: NSObject {
 			return
 		}
 		let emits = trieForChar.parseByChar(char: char!)
-		if emits.count > 0{
-			for emit in emits{
-				//outputManager.executeEvent(type: OutputEventType.mechanicKeyboardSound, userInfo: charRuleMap[emit.keyword]!)
-				print(emit)
+		if emits.count > 0 {
+			for emit in emits {
+				MFOutputManager.sharedInstance.executeEvent(emit.outputRule)
 				
 			}
 		}

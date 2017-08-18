@@ -198,10 +198,10 @@
 				6AAC040D1F46E6DA00F1FD58 /* MFRuleItem.swift */,
 				BFFA0FA31F46BA75008E8C9C /* MFBuffer.swift */,
 				BFFA0FA51F46BA93008E8C9C /* MFProcessor.swift */,
+				626F7D361F4767290058BFAA /* MFKeycodeMapping.swift */,
 				BF03E8951F470E580070D6FD /* Input Events */,
 				BF03E8961F470E720070D6FD /* Output Handlers */,
 				BF03E8971F4717C50070D6FD /* Others */,
-				626F7D361F4767290058BFAA /* MFKeycodeMapping.swift */,
 			);
 			path = "🌚 🌈🔫🌝";
 			sourceTree = "<group>";
