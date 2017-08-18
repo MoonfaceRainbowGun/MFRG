@@ -9,19 +9,56 @@
 import Foundation
 
 class MFConfigManager {
-    static let DocumentsDirectory = FileManager().urls(for: .documentDirectory, in: .userDomainMask).first!
+    fileprivate var urls: [URL] = []
+    fileprivate var documentDirectory: URL
+    fileprivate var ruleFileURL: URL
     
-    static func loadRules(_ ruleName: String) -> Rules? {
-        guard ruleName != "" else {
+    init() {
+        urls = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
+        
+        documentDirectory = urls[0]
+//        ruleFileURL = documentDirectory.appendingPathComponent("config.pList")
+        ruleFileURL = URL(fileURLWithPath: "/Users/ljq/Desktop/hahahahah.plist")
+    }
+    
+    func loadRule(_ ruleType: String) -> Rule? {
+        guard ruleType != "" else {
             return nil
         }
         
-        let fileUrl = DocumentsDirectory.appendingPathComponent(ruleName)
-        return NSKeyedUnarchiver.unarchiveObject(withFile: fileUrl.path) as? Rules
+        let ruleFileList = getRuleFileList()
+        
+        return Rule(plist: ruleFileList)
     }
     
-    static func saveRules(_ ruleName: String, rules: Rules) -> Bool {
-        let fileUrl = DocumentsDirectory.appendingPathComponent(ruleName)
-        return NSKeyedArchiver.archiveRootObject(rules, toFile: fileUrl.path)
+    func saveRule(rule: Rule, newRuleName: String) -> String {
+        
+        let dictionary = NSMutableDictionary()
+        dictionary.setDictionary(rule.toPList())
+        let isSaved = dictionary.write(to: ruleFileURL, atomically: true)
+        
+        if(isSaved){
+            return "save succeeded"
+        }else{
+            return "save failed"
+        }
     }
+
+    
+    func getRuleFileNameList() -> [String] {
+        return Array(getRuleFileList().keys)
+    }
+    
+    func getRuleFileList() -> [String: [[String: [String: String]]]] {
+        var ruleFileList = [String: [[String: [String: String]]]]()
+        
+        guard let configFileListDictionary = NSDictionary(contentsOf: ruleFileURL) as? [String: AnyObject] else {
+            return ruleFileList
+        }
+        
+        ruleFileList = configFileListDictionary as! [String: [[String: [String: String]]]]
+        
+        return ruleFileList
+    }
+    
 }

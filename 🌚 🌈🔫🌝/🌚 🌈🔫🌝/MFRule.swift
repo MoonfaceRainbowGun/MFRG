@@ -1,5 +1,5 @@
 //
-//  MFRule.swift
+//  MFRuleList.swift
 //  🌚 🌈🔫🌝
 //
 //  Created by Richthofen on 18/08/2017.
@@ -8,47 +8,53 @@
 
 import Foundation
 
-enum InputRuleType: Int {
-    case keyCode
-    case string
-    case frequency
-}
-
 class Rule {
-    var input: RuleInput
-    var output: RuleOutput!
-    
-    init(_ input: RuleInput, output: RuleOutput) {
-        self.input = input
-        self.output = output
-    }
-}
-
-class RuleInput: Equatable {
     var type: InputRuleType
-    var valueString: String?
-    var valueInt: Int?
-    var valueDouble: Double?
+    var list = [RuleItem]()
     
-    init(_ type: InputRuleType) {
-        self.type = type
+    init(type: String) {
+        self.type = InputRuleType.getInputRuleType(type)
     }
     
-}
-
-class RuleOutput {
-    var type: InputRuleType
-    var userInfo = NSDictionary()
-    
-    init(_ type: InputRuleType, userInfo: NSDictionary) {
-        self.type = type
-        self.userInfo = userInfo
+    init(plist: [String: [[String: [String: String]]]]) {
+        self.type = InputRuleType.getInputRuleType(Array(plist.keys)[0])
+        let ruleItemDictList = plist[self.type.rawValue]!
+        for ruleItemDict in ruleItemDictList {
+            let inputValue = Array(ruleItemDict.keys)[0]
+            let output = ruleItemDict[inputValue]!
+            
+            let input = RuleInput(inputValue)
+            let ruleItem = RuleItem(input: input, output: output)
+            self.list.append(ruleItem)
+        }
     }
-}
+    
+    func getRuleItem(_ inputSource: RuleInput) -> RuleItem? {
+        return list.filter{$0.input == inputSource}[0]
+    }
+    
+    func add(_ newRuleItem: RuleItem) {
+        if newRuleItem.input.type.rawValue == self.type.rawValue {
+            list.append(newRuleItem)
+//            return true
+//        } else {
+//            return false
+        }
+        
+    }
 
-func ==(lhs: RuleInput, rhs: RuleInput) -> Bool {
-    return lhs.type == rhs.type &&
-        lhs.valueString == rhs.valueString &&
-        lhs.valueInt == rhs.valueInt &&
-        lhs.valueDouble == rhs.valueDouble
+    func count() -> Int {
+        return list.count
+    }
+    
+    func toPList() -> [String: [[String: [String: String]]]] {
+        var plist = [String: [[String: [String: String]]]]()
+        var ruleItemDictList = [[String: [String: String]]]()
+        for ruleItem in list {
+            ruleItemDictList.append([ruleItem.input.viewValue(): ruleItem.output])
+        }
+        plist[type.rawValue] = ruleItemDictList
+        
+        return plist
+    }
 }
