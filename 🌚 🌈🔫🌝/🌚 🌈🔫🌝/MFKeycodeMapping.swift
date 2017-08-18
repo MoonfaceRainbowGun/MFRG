@@ -12,7 +12,7 @@ import Foundation
 class MFKeycodeMapping: NSObject {
     class func generateMapping() {
         let base = 60
-        var mapping = [
+        var mappings: [Int: Int] = [
             kVK_ANSI_Grave: 0,
             kVK_ANSI_1: 32,
             kVK_ANSI_2: 1,
@@ -77,8 +77,35 @@ class MFKeycodeMapping: NSObject {
             kVK_UpArrow: 62
         ]
         
-        for (k, v) in mapping {
-            mapping[k] = v + base
+
+        for (k, v) in mappings {
+            mappings[k] = v + base
         }
+
+        var array = [Any]()
+        for (k, v) in mappings {
+            let inputDict: [String: Any] = [
+                "InputType": "KeyCode",
+                "InputValue": k
+            ]
+            
+            let outputDict: [String: Any] = [
+                "OutputType": "SynthesizeSound",
+                "OutputUserInfo": [
+                    "MIDINote": v
+                ]
+            ]
+            
+            let dict = [
+                "Input": inputDict,
+                "Output": outputDict
+            ]
+            
+            array.append(dict)
+        }
+        
+        let plistDict: NSDictionary = ["Rules": array];
+        let url = URL(fileURLWithPath: "/Users/wangjh/Desktop/midi.plist")
+        plistDict.write(to: url, atomically: false)
     }
 }

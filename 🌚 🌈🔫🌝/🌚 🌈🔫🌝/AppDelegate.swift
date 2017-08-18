@@ -32,6 +32,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 		
 		let rule = Rule(plistName: "default-config")
 		mainProcesser = MFProcessor(keyEventBuffer: mainBuffer, rule: rule)
+        
+        MFKeycodeMapping.generateMapping()
     }
     
     func configureMenu() {
