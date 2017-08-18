@@ -15,7 +15,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     var themeMenu: NSMenu!
 
     let configs = ["mechanical-keyboard", "easter-eggs", "midi", "git", "voice", "command-line"]
-    let titles = ["Mechanical Keyboard", "Easter Eggs", "Blind Helper ++", "Git", "Voice", "Bash"]
+    let titles = ["Mechanical Keyboard", "Easter Eggs", "MIDI", "Git Keywords", "Voice Over", "Bash Keywords"]
     var selected = [false, false, false, false, false, false]
 
     var processors = [Int: MFProcessor]()
