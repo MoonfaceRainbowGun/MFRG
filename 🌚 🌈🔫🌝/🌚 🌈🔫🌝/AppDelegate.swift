@@ -12,10 +12,8 @@ import Cocoa
 class AppDelegate: NSObject, NSApplicationDelegate {
 
     func applicationWillFinishLaunching(_ notification: Notification) {
-        NSEvent.addGlobalMonitorForEvents(matching: .keyDown) { (e) in
-            
-            print(e.keyCode)
-        }
+        MFKeyboardEventManager.sharedInstance.startListening();
+        MFCharacterEventManager.sharedInstance.startListening();
     }
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {

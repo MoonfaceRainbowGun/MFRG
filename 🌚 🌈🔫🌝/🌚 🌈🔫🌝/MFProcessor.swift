@@ -7,9 +7,15 @@
 //
 
 
-//Try to push something
 import Cocoa
 
 class MFProcessor: NSObject {
-
+	func generateTrie(allStringMatchRules: [String]) {
+		for i in 0 ..< allStringMatchRules.count{
+			print(i)
+		}
+	}
+	
+	
+	
 }
