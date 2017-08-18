@@ -14,6 +14,9 @@
 		626BF1C11F46BEDA00EDDD05 /* MFSynthesizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626BF1C01F46BEDA00EDDD05 /* MFSynthesizer.swift */; };
 		626BF1C51F46D10900EDDD05 /* MFOutputEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626BF1C41F46D10900EDDD05 /* MFOutputEvent.swift */; };
 		626BF1C71F46D2F200EDDD05 /* MFSoundOutputEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626BF1C61F46D2F200EDDD05 /* MFSoundOutputEvent.swift */; };
+		626F7D291F46DAC10058BFAA /* keyboard.wav in Resources */ = {isa = PBXBuildFile; fileRef = 626F7D281F46DAC10058BFAA /* keyboard.wav */; };
+		626F7D2B1F46DC2D0058BFAA /* MFSoundPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626F7D2A1F46DC2D0058BFAA /* MFSoundPlayer.swift */; };
+		626F7D2D1F46DFBD0058BFAA /* keyboard1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 626F7D2C1F46DFBD0058BFAA /* keyboard1.wav */; };
 		BF03E8281F46D1E90070D6FD /* MFCharacterEventManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF03E8271F46D1E90070D6FD /* MFCharacterEventManager.swift */; };
 		BFFA0FA41F46BA75008E8C9C /* MFBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFFA0FA31F46BA75008E8C9C /* MFBuffer.swift */; };
 		BFFA0FA61F46BA93008E8C9C /* MFProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFFA0FA51F46BA93008E8C9C /* MFProcessor.swift */; };
@@ -31,6 +34,9 @@
 		626BF1C01F46BEDA00EDDD05 /* MFSynthesizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MFSynthesizer.swift; sourceTree = "<group>"; };
 		626BF1C41F46D10900EDDD05 /* MFOutputEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MFOutputEvent.swift; sourceTree = "<group>"; };
 		626BF1C61F46D2F200EDDD05 /* MFSoundOutputEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MFSoundOutputEvent.swift; sourceTree = "<group>"; };
+		626F7D281F46DAC10058BFAA /* keyboard.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = keyboard.wav; path = Sound/keyboard.wav; sourceTree = "<group>"; };
+		626F7D2A1F46DC2D0058BFAA /* MFSoundPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MFSoundPlayer.swift; sourceTree = "<group>"; };
+		626F7D2C1F46DFBD0058BFAA /* keyboard1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = keyboard1.wav; path = Sound/keyboard1.wav; sourceTree = "<group>"; };
 		BF03E8271F46D1E90070D6FD /* MFCharacterEventManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MFCharacterEventManager.swift; sourceTree = "<group>"; };
 		BFFA0FA31F46BA75008E8C9C /* MFBuffer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MFBuffer.swift; sourceTree = "<group>"; };
 		BFFA0FA51F46BA93008E8C9C /* MFProcessor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MFProcessor.swift; sourceTree = "<group>"; };
@@ -68,6 +74,7 @@
 		626BF1B01F46B8FE00EDDD05 /* 🌚 🌈🔫🌝 */ = {
 			isa = PBXGroup;
 			children = (
+				626F7D251F46D7B50058BFAA /* Sound */,
 				626BF1B11F46B8FE00EDDD05 /* AppDelegate.swift */,
 				626BF1B31F46B8FE00EDDD05 /* ViewController.swift */,
 				626BF1B51F46B8FE00EDDD05 /* Assets.xcassets */,
@@ -81,8 +88,18 @@
 				626BF1C41F46D10900EDDD05 /* MFOutputEvent.swift */,
 				626BF1C61F46D2F200EDDD05 /* MFSoundOutputEvent.swift */,
 				BF03E8271F46D1E90070D6FD /* MFCharacterEventManager.swift */,
+				626F7D2A1F46DC2D0058BFAA /* MFSoundPlayer.swift */,
 			);
 			path = "🌚 🌈🔫🌝";
+			sourceTree = "<group>";
+		};
+		626F7D251F46D7B50058BFAA /* Sound */ = {
+			isa = PBXGroup;
+			children = (
+				626F7D2C1F46DFBD0058BFAA /* keyboard1.wav */,
+				626F7D281F46DAC10058BFAA /* keyboard.wav */,
+			);
+			name = Sound;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,8 +162,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				626F7D291F46DAC10058BFAA /* keyboard.wav in Resources */,
 				626BF1B61F46B8FE00EDDD05 /* Assets.xcassets in Resources */,
 				626BF1B91F46B8FE00EDDD05 /* Main.storyboard in Resources */,
+				626F7D2D1F46DFBD0058BFAA /* keyboard1.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -159,6 +178,7 @@
 			files = (
 				626BF1B41F46B8FE00EDDD05 /* ViewController.swift in Sources */,
 				626BF1C11F46BEDA00EDDD05 /* MFSynthesizer.swift in Sources */,
+				626F7D2B1F46DC2D0058BFAA /* MFSoundPlayer.swift in Sources */,
 				BFFA0FAA1F46BB2C008E8C9C /* MFKeyboardEventManager.swift in Sources */,
 				BFFA0FA61F46BA93008E8C9C /* MFProcessor.swift in Sources */,
 				BFFA0FA41F46BA75008E8C9C /* MFBuffer.swift in Sources */,

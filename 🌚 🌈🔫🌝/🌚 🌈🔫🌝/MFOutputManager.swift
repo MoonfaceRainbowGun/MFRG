@@ -13,6 +13,8 @@ enum OutputEventType {
 }
 
 class MFOutputManager: NSObject {
+    static let sharedInstance: MFOutputManager = MFOutputManager()
+    
     func executeEvent(type: OutputEventType, userInfo: Dictionary<String, Any>) {
         switch type {
         case .mechanicKeyboardSound:
