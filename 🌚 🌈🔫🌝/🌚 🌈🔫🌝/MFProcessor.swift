@@ -10,14 +10,14 @@
 import Cocoa
 
 class MFProcessor: NSObject {
-
+	var slidingWindow  = [Character]()
 	var trieForKeycode : Trie
 	var trieForChar : Trie
 	var keycodeRuleMap = [String : RuleOutput]()
 	var charRuleMap = [String : RuleOutput]()
 	var rateRuleMap = [Double : RuleOutput]()
 	var defaultKeycode : RuleOutput?
-	var regularExpression = [NSRegularExpression?]()
+	var regularExpression = [NSRegularExpression : RuleOutput]()
 	fileprivate var buffer : MFBuffer
 	init(keyEventBuffer : MFBuffer, rule: Rule){
 		
@@ -103,6 +103,24 @@ class MFProcessor: NSObject {
 		if char == nil {
 			return
 		}
+		if slidingWindow.count == 20{
+			slidingWindow.removeFirst()
+		}
+		slidingWindow.append(char!)
+		var current = ""
+		var n = 0
+		for char in slidingWindow.reversed(){
+			n+=1
+			current = String(char) + current
+			if n == slidingWindow.count{
+				for regex in regularExpression{
+					if regex.key.matches(in: current, options: [], range: NSRange(location: 0,length: n) ).count > 0{
+						MFOutputManager.sharedInstance.executeEvent(regex.value)
+					}
+				}
+			}
+		}
+		
 		let emits = trieForChar.parseByChar(char: char!)
 		if emits.count > 0 {
 			for emit in emits {
