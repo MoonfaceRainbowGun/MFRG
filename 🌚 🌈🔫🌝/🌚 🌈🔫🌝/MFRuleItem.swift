@@ -12,6 +12,7 @@ enum InputRuleType: String {
     case keyCode = "KeyCode"
     case string = "String"
     case frequency = "Frequency"
+    case regex = "Regex"
 }
 
 class RuleItem {
@@ -57,6 +58,11 @@ public class RuleInput: Equatable {
     init(_ frequency: Double) {
         self.type = InputRuleType.frequency
         self.valueDouble = frequency
+    }
+    
+    init(regex: String) {
+        self.type = InputRuleType.regex
+        self.valueString = regex
     }
 }
 

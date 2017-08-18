@@ -32,13 +32,16 @@ class MFProcessor: NSObject {
 				}
 				
 
-				break;
+				break
 			case InputRuleType.string:
 				charRuleMap[ruleItem.input.valueString!] = ruleItem.output
-				break;
+				break
 			case InputRuleType.frequency:
 				rateRuleMap[ruleItem.input.valueDouble!] = ruleItem.output
-				break;
+				break
+            case InputRuleType.regex:
+                //TODO: 曹神靠你了
+                break
 			}
 		}
 		buffer = keyEventBuffer
