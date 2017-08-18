@@ -10,6 +10,7 @@ import Cocoa
 
 class MFKeyboardEventManager: NSObject {
     static let sharedInstance: MFKeyboardEventManager = MFKeyboardEventManager()
+    fileprivate var buffers = Set<MFBuffer>()
     
     override init() {
         super.init()
@@ -17,6 +18,10 @@ class MFKeyboardEventManager: NSObject {
     
     func startListening() {
         self.listenToEvent();
+    }
+    
+    func addBuffer(buffer: MFBuffer) {
+        self.buffers.insert(buffer)
     }
     
     fileprivate func listenToEvent() {
@@ -35,12 +40,18 @@ class MFKeyboardEventManager: NSObject {
     
     fileprivate func didReceiveKeyDownEvent(event: CGEvent) {
         let keyCode = event.getIntegerValueField(.keyboardEventKeycode)
-        print("Down:\(keyCode)");
+        self.notifyBufferForKeyCode(keyCode: Int(keyCode))
     }
     
     fileprivate func didReceiveFlagsChangedEvent(event: CGEvent) {
         let keyCode = event.getIntegerValueField(.keyboardEventKeycode)
-        print("Modifier:\(keyCode)")
+        self.notifyBufferForKeyCode(keyCode: Int(keyCode))
+    }
+    
+    fileprivate func notifyBufferForKeyCode(keyCode: Int) {
+        for buffer in self.buffers {
+            buffer.pushKeyCode(keycode: keyCode)
+        }
     }
 }
 
