@@ -46,7 +46,9 @@
 		BF03E88D1F46F7AB0070D6FD /* FISoundDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = BF03E8751F46F7AB0070D6FD /* FISoundDevice.m */; };
 		BF03E88F1F46F7AB0070D6FD /* FISoundEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = BF03E8781F46F7AB0070D6FD /* FISoundEngine.m */; };
 		BF03E8901F46F7AB0070D6FD /* FISoundSource.m in Sources */ = {isa = PBXBuildFile; fileRef = BF03E87A1F46F7AB0070D6FD /* FISoundSource.m */; };
-		BF03E89C1F47310B0070D6FD /* default-config.plist in Resources */ = {isa = PBXBuildFile; fileRef = BF03E89B1F47310B0070D6FD /* default-config.plist */; };
+		BF03E89F1F4774CA0070D6FD /* easter-eggs.plist in Resources */ = {isa = PBXBuildFile; fileRef = BF03E89D1F4774CA0070D6FD /* easter-eggs.plist */; };
+		BF03E8A01F4774CA0070D6FD /* mechanical-keyboard.plist in Resources */ = {isa = PBXBuildFile; fileRef = BF03E89E1F4774CA0070D6FD /* mechanical-keyboard.plist */; };
+		BF03E8A21F4774E60070D6FD /* blind-helper.plist in Resources */ = {isa = PBXBuildFile; fileRef = BF03E8A11F4774E60070D6FD /* blind-helper.plist */; };
 		BFFA0FA41F46BA75008E8C9C /* MFBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFFA0FA31F46BA75008E8C9C /* MFBuffer.swift */; };
 		BFFA0FA61F46BA93008E8C9C /* MFProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFFA0FA51F46BA93008E8C9C /* MFProcessor.swift */; };
 		BFFA0FA81F46BAA6008E8C9C /* MFOutputManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFFA0FA71F46BAA6008E8C9C /* MFOutputManager.swift */; };
@@ -106,7 +108,9 @@
 		BF03E8781F46F7AB0070D6FD /* FISoundEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FISoundEngine.m; sourceTree = "<group>"; };
 		BF03E8791F46F7AB0070D6FD /* FISoundSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FISoundSource.h; sourceTree = "<group>"; };
 		BF03E87A1F46F7AB0070D6FD /* FISoundSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FISoundSource.m; sourceTree = "<group>"; };
-		BF03E89B1F47310B0070D6FD /* default-config.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "default-config.plist"; sourceTree = "<group>"; };
+		BF03E89D1F4774CA0070D6FD /* easter-eggs.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "easter-eggs.plist"; sourceTree = "<group>"; };
+		BF03E89E1F4774CA0070D6FD /* mechanical-keyboard.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "mechanical-keyboard.plist"; sourceTree = "<group>"; };
+		BF03E8A11F4774E60070D6FD /* blind-helper.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "blind-helper.plist"; sourceTree = "<group>"; };
 		BFFA0FA31F46BA75008E8C9C /* MFBuffer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MFBuffer.swift; sourceTree = "<group>"; };
 		BFFA0FA51F46BA93008E8C9C /* MFProcessor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MFProcessor.swift; sourceTree = "<group>"; };
 		BFFA0FA71F46BAA6008E8C9C /* MFOutputManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MFOutputManager.swift; sourceTree = "<group>"; };
@@ -278,7 +282,9 @@
 		BF03E8981F472DD80070D6FD /* Configs */ = {
 			isa = PBXGroup;
 			children = (
-				BF03E89B1F47310B0070D6FD /* default-config.plist */,
+				BF03E89E1F4774CA0070D6FD /* mechanical-keyboard.plist */,
+				BF03E8A11F4774E60070D6FD /* blind-helper.plist */,
+				BF03E89D1F4774CA0070D6FD /* easter-eggs.plist */,
 			);
 			path = Configs;
 			sourceTree = "<group>";
@@ -344,10 +350,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF03E8A01F4774CA0070D6FD /* mechanical-keyboard.plist in Resources */,
+				BF03E89F1F4774CA0070D6FD /* easter-eggs.plist in Resources */,
+				BF03E8A21F4774E60070D6FD /* blind-helper.plist in Resources */,
 				626F7D291F46DAC10058BFAA /* keyboard.wav in Resources */,
 				626BF1B61F46B8FE00EDDD05 /* Assets.xcassets in Resources */,
 				626BF1B91F46B8FE00EDDD05 /* Main.storyboard in Resources */,
-				BF03E89C1F47310B0070D6FD /* default-config.plist in Resources */,
 				0C19C8921F46FE3D008EBD75 /* Info.plist in Resources */,
 				626F7D2D1F46DFBD0058BFAA /* keyboard1.wav in Resources */,
 			);
