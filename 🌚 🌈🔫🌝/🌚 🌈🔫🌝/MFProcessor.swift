@@ -24,12 +24,14 @@ class MFProcessor: NSObject {
 			//ruleItem.output
 			switch ruleItem.input.type {
 			case InputRuleType.keyCode:
-				print(String(Character(UnicodeScalar(ruleItem.input.valueInt!)!)))
 				if (ruleItem.input.valueInt! != -1){
+					print(String(Character(UnicodeScalar(ruleItem.input.valueInt!)!)))
 					keycodeRuleMap[String(Character(UnicodeScalar(ruleItem.input.valueInt!)!))]  = ruleItem.output
 				}else{
 					defaultKeycode = ruleItem.output
 				}
+				
+
 				break;
 			case InputRuleType.string:
 				charRuleMap[ruleItem.input.valueString!] = ruleItem.output
@@ -89,7 +91,9 @@ class MFProcessor: NSObject {
 				MFOutputManager.sharedInstance.executeEvent(emit.outputRule)
 			}
 		}else{
-			MFOutputManager.sharedInstance.executeEvent(defaultKeycode)
+//			print("Get deafult")
+//			print(defaultKeycode)
+			MFOutputManager.sharedInstance.executeEvent(defaultKeycode!)
 		}
 	}
 	func processCharacterEvent(notification: Notification) {
