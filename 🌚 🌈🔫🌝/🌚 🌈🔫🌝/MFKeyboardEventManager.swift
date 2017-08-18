@@ -57,15 +57,19 @@ class MFKeyboardEventManager: NSObject {
     }
 }
 
+var previousFlag: UInt64 = 0;
+
 fileprivate func didReceiveKeyboardEvent(proxy: CGEventTapProxy, type: CGEventType, event: CGEvent, refcon: UnsafeMutableRawPointer?) -> Unmanaged<CGEvent>? {
     
     let manager = MFKeyboardEventManager.sharedInstance;
     if type == .keyDown {
         manager.didReceiveKeyDownEvent(event: event);
     } else if type == .flagsChanged {
-        if event.flags != CGEventFlags(rawValue: 256) {
+        if event.flags.rawValue > previousFlag {
             manager.didReceiveFlagsChangedEvent(event: event)
         }
+        
+        previousFlag = event.flags.rawValue
     }
     
     return Unmanaged.passRetained(event)

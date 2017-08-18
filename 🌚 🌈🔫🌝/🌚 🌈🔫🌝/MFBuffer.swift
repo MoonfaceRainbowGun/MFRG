@@ -64,14 +64,12 @@ class MFBuffer: NSObject {
 	}
 	
 	func notifyKeycode() {
-        print(self.keyQueue)
 		let notificationName = Notification.Name(rawValue: "GetKeycodeNotification")
 		NotificationCenter.default.post(name: notificationName, object: self,
 		                                userInfo: ["value":"Keycode"])
 	}
 	
 	func notifyCharcode() {
-        print(self.charQueue)
 		let notificationName = Notification.Name(rawValue: "GetCharacterNotification")
 		NotificationCenter.default.post(name: notificationName, object: self,
 		                                userInfo: ["value":"Character"])

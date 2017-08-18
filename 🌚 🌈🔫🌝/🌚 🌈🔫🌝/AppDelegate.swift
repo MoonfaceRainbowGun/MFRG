@@ -11,10 +11,14 @@ import Cocoa
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
 
+	var mainProcesser : MFProcessor?
+	
     func applicationWillFinishLaunching(_ notification: Notification) {
         MFKeyboardEventManager.sharedInstance.startListening()
         MFCharacterEventManager.sharedInstance.startListening()
         MFFastSoundPlayer.sharedInstance.prepareSound()
+		let mainBuffer : MFBuffer = MFBuffer()
+		mainProcesser = MFProcessor(keyEventBuffer: mainBuffer)
     }
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
