@@ -12,7 +12,7 @@ import Foundation
 class MFKeycodeMapping: NSObject {
     class func generateMapping() {
         let base = 60
-        let mapping = [
+        var mapping = [
             kVK_ANSI_Grave: 0,
             kVK_ANSI_1: 32,
             kVK_ANSI_2: 1,
