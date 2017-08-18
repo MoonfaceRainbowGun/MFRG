@@ -49,11 +49,16 @@ class MFKeyboardEventManager: NSObject {
     }
     
     fileprivate func notifyBufferForKeyCode(keyCode: Int) {
+//        MFOutputManager.sharedInstance.executeEvent(type: .mechanicKeyboardSound, userInfo: ["filename": "keyboard1.wav"])
+        MFSynthesizer.sharedInstance.play(frequency: Float(keyCode + 35) * 20, force: 100)
         for buffer in self.buffers {
             buffer.pushKeyCode(keycode: keyCode)
         }
     }
 }
+
+var previousFlag: UInt64 = 0;
+var capsOn: Bool = false;
 
 fileprivate func didReceiveKeyboardEvent(proxy: CGEventTapProxy, type: CGEventType, event: CGEvent, refcon: UnsafeMutableRawPointer?) -> Unmanaged<CGEvent>? {
     
@@ -61,9 +66,21 @@ fileprivate func didReceiveKeyboardEvent(proxy: CGEventTapProxy, type: CGEventTy
     if type == .keyDown {
         manager.didReceiveKeyDownEvent(event: event);
     } else if type == .flagsChanged {
-        if event.flags != CGEventFlags(rawValue: 256) {
+        print(event.flags)
+        if event.flags.rawValue > previousFlag {
             manager.didReceiveFlagsChangedEvent(event: event)
+        } else if capsOn {
+            if event.flags.intersection(CGEventFlags.maskAlphaShift) == CGEventFlags(rawValue: 0) {
+                capsOn = false;
+                manager.didReceiveFlagsChangedEvent(event: event)
+            }
         }
+        
+        if event.flags.intersection(CGEventFlags.maskAlphaShift) == CGEventFlags.maskAlphaShift {
+            capsOn = true;
+        }
+        
+        previousFlag = event.flags.rawValue
     }
     
     return Unmanaged.passRetained(event)
