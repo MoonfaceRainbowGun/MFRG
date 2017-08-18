@@ -22,8 +22,27 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         }
         
         let menu = NSMenu()
-        menu.addItem(NSMenuItem(title: "Quit", action: #selector(terminateApplication), keyEquivalent: "Q"))
+        
+        let themeItem = NSMenuItem()
+        themeItem.title = "Theme"
+        let themeMenu = NSMenu()
+        themeMenu.addItem(NSMenuItem(title: "Blue Switch", action: #selector(themeDidSelect(sender:)), keyEquivalent: "1"))
+        themeMenu.addItem(NSMenuItem(title: "Brown Switch", action: #selector(themeDidSelect(sender:)), keyEquivalent: "2"))
+        
+        
+        themeItem.submenu = themeMenu
+        
+        
+        menu.addItem(themeItem)
+        
+        let quit = NSMenuItem(title: "Quit", action: #selector(terminateApplication), keyEquivalent: "Q")
+        menu.addItem(quit)
+        
+        
+        
         statusItem.menu = menu
+        
+        
         
         MFKeyboardEventManager.sharedInstance.startListening()
         MFCharacterEventManager.sharedInstance.startListening()
@@ -33,6 +52,10 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 		mainProcesser = MFProcessor(keyEventBuffer: mainBuffer)
     }
 
+    func themeDidSelect(sender: Any) {
+        print(sender)
+    }
+    
     func terminateApplication() {
         exit(0)
     }
