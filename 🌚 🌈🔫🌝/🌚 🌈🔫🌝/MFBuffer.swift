@@ -17,6 +17,7 @@ class MFBuffer: NSObject {
 	}
 	func pushKeyCode(keycode: Int) {
 		keyQueue.append(keycode)
+		notifyKeycode()
 	}
 	func getKeyCode() -> Int? {
 		if !isKeyQueueEmpty() {
@@ -37,6 +38,7 @@ class MFBuffer: NSObject {
 	}
 	func pushChar(char: Character) {
 		charQueue.append(char)
+		notifyCharcode()
 	}
 	func getChar() -> Character? {
 		if !isCharQueueEmpty() {
@@ -55,4 +57,26 @@ class MFBuffer: NSObject {
 	func sizeCharQueue() -> Int {
 		return charQueue.count
 	}
+	
+	func notifyKeycode() {
+		let notificationName = Notification.Name(rawValue: "GetKeycodeNotification")
+		NotificationCenter.default.post(name: notificationName, object: self,
+		                                userInfo: ["value":"Keycode"])
+	}
+	
+	func notifyCharcode() {
+		let notificationName = Notification.Name(rawValue: "GetCharacterNotification")
+		NotificationCenter.default.post(name: notificationName, object: self,
+		                                userInfo: ["value":"Character"])
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 }
