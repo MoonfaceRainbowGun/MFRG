@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>keycode</key>
+	<array>
+		<dict>
+			<key>0</key>
+			<dict>
+				<key>sound</key>
+				<string>keyboard1.wav</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>1</key>
+			<dict>
+				<key>sound</key>
+				<string>keyboard1.wav</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>2</key>
+			<dict>
+				<key>sound</key>
+				<string>keyboard1.wav</string>
+			</dict>
+		</dict>
+	</array>
+</dict>
+</plist>

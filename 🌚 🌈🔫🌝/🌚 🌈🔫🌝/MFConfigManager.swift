@@ -9,19 +9,47 @@
 import Foundation
 
 class MFConfigManager {
-    static let DocumentsDirectory = FileManager().urls(for: .documentDirectory, in: .userDomainMask).first!
+    init() {
+        //
+        
+    }
     
-    static func loadRules(_ ruleName: String) -> Rules? {
-        guard ruleName != "" else {
+    func loadRule(_ ruleType: String) -> Rule? {
+        guard ruleType != "" else {
             return nil
         }
         
-        let fileUrl = DocumentsDirectory.appendingPathComponent(ruleName)
-        return NSKeyedUnarchiver.unarchiveObject(withFile: fileUrl.path) as? Rules
+        guard let ruleFileURL = Bundle.main.url(forResource: "default-config", withExtension: "plist") else {
+            return nil
+        }
+        
+        let ruleFileList = getRuleFileList(fileURL: ruleFileURL)
+        return Rule(plist: ruleFileList)
     }
     
-    static func saveRules(_ ruleName: String, rules: Rules) -> Bool {
-        let fileUrl = DocumentsDirectory.appendingPathComponent(ruleName)
-        return NSKeyedArchiver.archiveRootObject(rules, toFile: fileUrl.path)
+//    func saveRule(rule: Rule, newRuleName: String) -> String {
+//        
+//        let dictionary = NSMutableDictionary()
+//        dictionary.setDictionary(rule.toPList())
+//        let isSaved = dictionary.write(to: ruleFileURL, atomically: true)
+//        
+//        if(isSaved){
+//            return "save succeeded"
+//        }else{
+//            return "save failed"
+//        }
+//    }
+    
+    func getRuleFileList(fileURL: URL) -> [String: [[String: [String: String]]]] {
+        var ruleFileList = [String: [[String: [String: String]]]]()
+        
+        guard let configFileListDictionary = NSDictionary(contentsOf: fileURL) as? [String: AnyObject] else {
+            return ruleFileList
+        }
+        
+        ruleFileList = configFileListDictionary as! [String: [[String: [String: String]]]]
+        
+        return ruleFileList
     }
+    
 }
