@@ -19,7 +19,7 @@ class MFKeyboardEventManager: NSObject {
         self.listenToEvent();
     }
     
-    func listenToEvent() {
+    fileprivate func listenToEvent() {
         let eventType = 1 << CGEventType.keyDown.rawValue | 1 << CGEventType.flagsChanged.rawValue
         guard let eventTap: CFMachPort = CGEvent.tapCreate(tap: .cgSessionEventTap, place: .headInsertEventTap, options: .defaultTap, eventsOfInterest: CGEventMask(eventType), callback: didReceiveKeyboardEvent, userInfo: nil) else {
             return
@@ -33,12 +33,12 @@ class MFKeyboardEventManager: NSObject {
         }
     }
     
-    func didReceiveKeyDownEvent(event: CGEvent) {
+    fileprivate func didReceiveKeyDownEvent(event: CGEvent) {
         let keyCode = event.getIntegerValueField(.keyboardEventKeycode)
         print("Down:\(keyCode)");
     }
     
-    func didReceiveFlagsChangedEvent(event: CGEvent) {
+    fileprivate func didReceiveFlagsChangedEvent(event: CGEvent) {
         let keyCode = event.getIntegerValueField(.keyboardEventKeycode)
         print("Modifier:\(keyCode)")
     }
