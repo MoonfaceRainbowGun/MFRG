@@ -12,8 +12,9 @@ import Cocoa
 class AppDelegate: NSObject, NSApplicationDelegate {
 
     func applicationWillFinishLaunching(_ notification: Notification) {
-        MFKeyboardEventManager.sharedInstance.startListening();
-        MFCharacterEventManager.sharedInstance.startListening();
+        MFKeyboardEventManager.sharedInstance.startListening()
+        MFCharacterEventManager.sharedInstance.startListening()
+        MFFastSoundPlayer.sharedInstance.prepareSound()
     }
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
