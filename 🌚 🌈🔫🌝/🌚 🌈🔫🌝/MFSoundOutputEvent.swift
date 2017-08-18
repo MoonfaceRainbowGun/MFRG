@@ -11,22 +11,24 @@ import Cocoa
 class MFSoundOutputEvent: MFOutputEvent {
     
     fileprivate static let sharedInstance = MFSoundOutputEvent()
+    fileprivate var playerDicts = [String: MFSoundPlayer]()
+    
     
     override func prepare(_ userInfos: [[String: Any]]) {
         for userInfo in userInfos {
             if let fileName = userInfo["filename"] as? String {
-                
-                
-                let player = MFSoundPlayer(sound: fileName)
-                player.play()
+                if playerDicts[fileName] == nil {
+                    playerDicts[fileName] = MFSoundPlayer(sound: fileName)
+                }
             }
         }
     }
     
     override func run(_ userInfo: Dictionary<String, Any>) {
         if let fileName = userInfo["filename"] as? String {
-            let player = MFSoundPlayer(sound: fileName)
-            player.play()
+            if let player = self.playerDicts[fileName] {
+                player.play()
+            }
         }
     }
     
