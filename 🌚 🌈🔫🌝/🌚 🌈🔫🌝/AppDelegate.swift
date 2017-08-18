@@ -21,6 +21,9 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             button.image = NSImage(named: "ic_keyboard")
         }
         
+        let menu = NSMenu()
+        menu.addItem(NSMenuItem(title: "Quit", action: #selector(terminateApplication), keyEquivalent: "Q"))
+        statusItem.menu = menu
         
         MFKeyboardEventManager.sharedInstance.startListening()
         MFCharacterEventManager.sharedInstance.startListening()
@@ -30,6 +33,10 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 		mainProcesser = MFProcessor(keyEventBuffer: mainBuffer)
     }
 
+    func terminateApplication() {
+        exit(0)
+    }
+    
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         // Insert code here to initialize your application
     }
