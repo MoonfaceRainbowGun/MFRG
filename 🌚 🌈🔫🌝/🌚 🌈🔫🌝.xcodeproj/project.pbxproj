@@ -23,6 +23,11 @@
 		0C19C89C1F46FE3D008EBD75 /* TrieConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C19C88E1F46FE3D008EBD75 /* TrieConfig.swift */; };
 		0C7E87C31F4792E700A80E32 /* command-line.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0C7E87C21F4792E700A80E32 /* command-line.plist */; };
 		0C7E87C91F47DC2F00A80E32 /* pentatonic.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0C7E87C81F47DC2F00A80E32 /* pentatonic.plist */; };
+		0C7E87CF1F47DE9600A80E32 /* p1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 0C7E87CA1F47DE9600A80E32 /* p1.wav */; };
+		0C7E87D01F47DE9600A80E32 /* p2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 0C7E87CB1F47DE9600A80E32 /* p2.wav */; };
+		0C7E87D11F47DE9600A80E32 /* p3.wav in Resources */ = {isa = PBXBuildFile; fileRef = 0C7E87CC1F47DE9600A80E32 /* p3.wav */; };
+		0C7E87D21F47DE9600A80E32 /* p4.wav in Resources */ = {isa = PBXBuildFile; fileRef = 0C7E87CD1F47DE9600A80E32 /* p4.wav */; };
+		0C7E87D31F47DE9600A80E32 /* p5.wav in Resources */ = {isa = PBXBuildFile; fileRef = 0C7E87CE1F47DE9600A80E32 /* p5.wav */; };
 		626BF1B21F46B8FE00EDDD05 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626BF1B11F46B8FE00EDDD05 /* AppDelegate.swift */; };
 		626BF1B41F46B8FE00EDDD05 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626BF1B31F46B8FE00EDDD05 /* ViewController.swift */; };
 		626BF1B61F46B8FE00EDDD05 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 626BF1B51F46B8FE00EDDD05 /* Assets.xcassets */; };
@@ -120,6 +125,11 @@
 		0C19C88E1F46FE3D008EBD75 /* TrieConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrieConfig.swift; sourceTree = "<group>"; };
 		0C7E87C21F4792E700A80E32 /* command-line.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "command-line.plist"; sourceTree = "<group>"; };
 		0C7E87C81F47DC2F00A80E32 /* pentatonic.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = pentatonic.plist; sourceTree = "<group>"; };
+		0C7E87CA1F47DE9600A80E32 /* p1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = p1.wav; path = Sound/p1.wav; sourceTree = "<group>"; };
+		0C7E87CB1F47DE9600A80E32 /* p2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = p2.wav; path = Sound/p2.wav; sourceTree = "<group>"; };
+		0C7E87CC1F47DE9600A80E32 /* p3.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = p3.wav; path = Sound/p3.wav; sourceTree = "<group>"; };
+		0C7E87CD1F47DE9600A80E32 /* p4.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = p4.wav; path = Sound/p4.wav; sourceTree = "<group>"; };
+		0C7E87CE1F47DE9600A80E32 /* p5.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = p5.wav; path = Sound/p5.wav; sourceTree = "<group>"; };
 		626BF1AE1F46B8FE00EDDD05 /* 🌚 🌈🔫🌝.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "🌚 🌈🔫🌝.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		626BF1B11F46B8FE00EDDD05 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		626BF1B31F46B8FE00EDDD05 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -307,6 +317,11 @@
 		626F7D251F46D7B50058BFAA /* Sound */ = {
 			isa = PBXGroup;
 			children = (
+				0C7E87CA1F47DE9600A80E32 /* p1.wav */,
+				0C7E87CB1F47DE9600A80E32 /* p2.wav */,
+				0C7E87CC1F47DE9600A80E32 /* p3.wav */,
+				0C7E87CD1F47DE9600A80E32 /* p4.wav */,
+				0C7E87CE1F47DE9600A80E32 /* p5.wav */,
 				626F7D3A1F478BF40058BFAA /* 0.wav */,
 				626F7D3B1F478BF40058BFAA /* 1.wav */,
 				626F7D3C1F478BF40058BFAA /* 2.wav */,
@@ -494,11 +509,13 @@
 				626F7D7D1F478BF40058BFAA /* J.wav in Resources */,
 				626F7D8B1F478BF40058BFAA /* X.wav in Resources */,
 				626F7D6B1F478BF40058BFAA /* 6.wav in Resources */,
+				0C7E87CF1F47DE9600A80E32 /* p1.wav in Resources */,
 				626F7D821F478BF40058BFAA /* O.wav in Resources */,
 				626F7D941F478C4B0058BFAA /* git.plist in Resources */,
 				626F7D681F478BF40058BFAA /* 3.wav in Resources */,
 				626F7D671F478BF40058BFAA /* 2.wav in Resources */,
 				626F7D661F478BF40058BFAA /* 1.wav in Resources */,
+				0C7E87D11F47DE9600A80E32 /* p3.wav in Resources */,
 				626F7D831F478BF40058BFAA /* P.wav in Resources */,
 				626F7D871F478BF40058BFAA /* T.wav in Resources */,
 				626F7D6F1F478BF40058BFAA /* A.wav in Resources */,
@@ -506,6 +523,7 @@
 				626F7D8F1F478BF40058BFAA /* keyboard1.wav in Resources */,
 				626F7D741F478BF40058BFAA /* exit.wav in Resources */,
 				626F7D711F478BF40058BFAA /* C.wav in Resources */,
+				0C7E87D01F47DE9600A80E32 /* p2.wav in Resources */,
 				626F7D751F478BF40058BFAA /* F.wav in Resources */,
 				626F7D861F478BF40058BFAA /* S.wav in Resources */,
 				6AAC04701F47CB1D00F1FD58 /* git_clone.wav in Resources */,
@@ -537,11 +555,13 @@
 				626F7D6C1F478BF40058BFAA /* 7.wav in Resources */,
 				626F7D891F478BF40058BFAA /* V.wav in Resources */,
 				BF03E89F1F4774CA0070D6FD /* easter-eggs.plist in Resources */,
+				0C7E87D21F47DE9600A80E32 /* p4.wav in Resources */,
 				626F7D851F478BF40058BFAA /* R.wav in Resources */,
 				626F7D8C1F478BF40058BFAA /* Y.wav in Resources */,
 				626BF1B61F46B8FE00EDDD05 /* Assets.xcassets in Resources */,
 				626F7D651F478BF40058BFAA /* 0.wav in Resources */,
 				626BF1B91F46B8FE00EDDD05 /* Main.storyboard in Resources */,
+				0C7E87D31F47DE9600A80E32 /* p5.wav in Resources */,
 				626F7D8E1F478BF40058BFAA /* keyboard.wav in Resources */,
 				626F7D8D1F478BF40058BFAA /* Z.wav in Resources */,
 				0C7E87C91F47DC2F00A80E32 /* pentatonic.plist in Resources */,
