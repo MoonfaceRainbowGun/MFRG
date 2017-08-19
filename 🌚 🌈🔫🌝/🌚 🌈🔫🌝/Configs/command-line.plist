@@ -84,9 +84,9 @@
 			<key>Input</key>
 			<dict>
 				<key>InputType</key>
-				<string>String</string>
+				<string>Regex</string>
 				<key>InputValue</key>
-				<string>git add</string>
+				<string>rm*[\x0D-\x0E]</string>
 			</dict>
 			<key>Output</key>
 			<dict>
