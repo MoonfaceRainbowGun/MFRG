@@ -12,6 +12,8 @@ class MFPentatonicOutputEvent: MFOutputEvent {
     
     fileprivate static let sharedInstance = MFPentatonicOutputEvent()
     fileprivate var playerDicts = [String: MFSoundPlayer]()
+    fileprivate var index = 0
+//    fileprivate var dindex = 1
     
     override init() {
         // prepare
@@ -29,8 +31,14 @@ class MFPentatonicOutputEvent: MFOutputEvent {
     }
     
     override func run(_ userInfo: [String: Any]) {
+        
         let players = Array(playerDicts.values)
         let player = players[Int(arc4random_uniform(UInt32(players.count)))]
+//        let player = players[index]
+//        index += dindex
+//        if index == 0 || index == playerDicts.count - 1 {
+//            dindex *= -1
+//        }
         player.play()
     }
     
