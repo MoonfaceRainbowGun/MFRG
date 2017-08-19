@@ -29,6 +29,25 @@
 				<key>InputType</key>
 				<string>String</string>
 				<key>InputValue</key>
+				<string>git push --force</string>
+			</dict>
+			<key>Output</key>
+			<dict>
+				<key>OutputType</key>
+				<string>PlaySound</string>
+				<key>OutputUserInfo</key>
+				<dict>
+					<key>FileName</key>
+					<string>keyboard1.wav</string>
+				</dict>
+			</dict>
+		</dict>
+		<dict>
+			<key>Input</key>
+			<dict>
+				<key>InputType</key>
+				<string>String</string>
+				<key>InputValue</key>
 				<string>git</string>
 			</dict>
 			<key>Output</key>

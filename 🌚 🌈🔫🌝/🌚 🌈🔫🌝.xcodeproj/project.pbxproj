@@ -22,6 +22,7 @@
 		0C19C89B1F46FE3D008EBD75 /* Trie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C19C88D1F46FE3D008EBD75 /* Trie.swift */; };
 		0C19C89C1F46FE3D008EBD75 /* TrieConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C19C88E1F46FE3D008EBD75 /* TrieConfig.swift */; };
 		0C7E87C31F4792E700A80E32 /* command-line.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0C7E87C21F4792E700A80E32 /* command-line.plist */; };
+		0C7E87C91F47DC2F00A80E32 /* pentatonic.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0C7E87C81F47DC2F00A80E32 /* pentatonic.plist */; };
 		626BF1B21F46B8FE00EDDD05 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626BF1B11F46B8FE00EDDD05 /* AppDelegate.swift */; };
 		626BF1B41F46B8FE00EDDD05 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626BF1B31F46B8FE00EDDD05 /* ViewController.swift */; };
 		626BF1B61F46B8FE00EDDD05 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 626BF1B51F46B8FE00EDDD05 /* Assets.xcassets */; };
@@ -82,7 +83,7 @@
 		6AAC040E1F46E6DA00F1FD58 /* MFConfigManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AAC040B1F46E6DA00F1FD58 /* MFConfigManager.swift */; };
 		6AAC040F1F46E6DA00F1FD58 /* MFRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AAC040C1F46E6DA00F1FD58 /* MFRule.swift */; };
 		6AAC04101F46E6DA00F1FD58 /* MFRuleItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AAC040D1F46E6DA00F1FD58 /* MFRuleItem.swift */; };
-		6AAC04701F47CB1D00F1FD58 /* git-clone.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6AAC046F1F47CB1D00F1FD58 /* git-clone.wav */; };
+		6AAC04701F47CB1D00F1FD58 /* git_clone.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6AAC046F1F47CB1D00F1FD58 /* git_clone.wav */; };
 		BF03E8281F46D1E90070D6FD /* MFCharacterEventManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF03E8271F46D1E90070D6FD /* MFCharacterEventManager.swift */; };
 		BF03E8841F46F7AB0070D6FD /* FIError.m in Sources */ = {isa = PBXBuildFile; fileRef = BF03E8661F46F7AB0070D6FD /* FIError.m */; };
 		BF03E8851F46F7AB0070D6FD /* FISampleBuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = BF03E8681F46F7AB0070D6FD /* FISampleBuffer.m */; };
@@ -118,6 +119,7 @@
 		0C19C88D1F46FE3D008EBD75 /* Trie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Trie.swift; sourceTree = "<group>"; };
 		0C19C88E1F46FE3D008EBD75 /* TrieConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrieConfig.swift; sourceTree = "<group>"; };
 		0C7E87C21F4792E700A80E32 /* command-line.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "command-line.plist"; sourceTree = "<group>"; };
+		0C7E87C81F47DC2F00A80E32 /* pentatonic.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = pentatonic.plist; sourceTree = "<group>"; };
 		626BF1AE1F46B8FE00EDDD05 /* 🌚 🌈🔫🌝.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "🌚 🌈🔫🌝.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		626BF1B11F46B8FE00EDDD05 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		626BF1B31F46B8FE00EDDD05 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -180,7 +182,7 @@
 		6AAC040B1F46E6DA00F1FD58 /* MFConfigManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MFConfigManager.swift; sourceTree = "<group>"; };
 		6AAC040C1F46E6DA00F1FD58 /* MFRule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MFRule.swift; sourceTree = "<group>"; };
 		6AAC040D1F46E6DA00F1FD58 /* MFRuleItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MFRuleItem.swift; sourceTree = "<group>"; };
-		6AAC046F1F47CB1D00F1FD58 /* git-clone.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "git-clone.wav"; path = "Sound/git-clone.wav"; sourceTree = "<group>"; };
+		6AAC046F1F47CB1D00F1FD58 /* git_clone.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = git_clone.wav; path = Sound/git_clone.wav; sourceTree = "<group>"; };
 		BF03E8271F46D1E90070D6FD /* MFCharacterEventManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MFCharacterEventManager.swift; sourceTree = "<group>"; };
 		BF03E8601F46F79D0070D6FD /* 🌚 🌈🔫🌝-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "🌚 🌈🔫🌝-Bridging-Header.h"; sourceTree = "<group>"; };
 		BF03E8651F46F7AB0070D6FD /* FIError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FIError.h; sourceTree = "<group>"; };
@@ -324,7 +326,7 @@
 				626F7D4A1F478BF40058BFAA /* F.wav */,
 				626F7D4B1F478BF40058BFAA /* G.wav */,
 				626F7D4C1F478BF40058BFAA /* git_add.wav */,
-				6AAC046F1F47CB1D00F1FD58 /* git-clone.wav */,
+				6AAC046F1F47CB1D00F1FD58 /* git_clone.wav */,
 				626F7D4D1F478BF40058BFAA /* git_commit.wav */,
 				626F7D4E1F478BF40058BFAA /* git_push.wav */,
 				626F7D4F1F478BF40058BFAA /* git.wav */,
@@ -416,6 +418,7 @@
 		BF03E8981F472DD80070D6FD /* Configs */ = {
 			isa = PBXGroup;
 			children = (
+				0C7E87C81F47DC2F00A80E32 /* pentatonic.plist */,
 				626F7D901F478C4B0058BFAA /* voice.plist */,
 				626F7D911F478C4B0058BFAA /* git.plist */,
 				626F7D921F478C4B0058BFAA /* string-config.plist */,
@@ -505,7 +508,7 @@
 				626F7D711F478BF40058BFAA /* C.wav in Resources */,
 				626F7D751F478BF40058BFAA /* F.wav in Resources */,
 				626F7D861F478BF40058BFAA /* S.wav in Resources */,
-				6AAC04701F47CB1D00F1FD58 /* git-clone.wav in Resources */,
+				6AAC04701F47CB1D00F1FD58 /* git_clone.wav in Resources */,
 				626F7D7E1F478BF40058BFAA /* K.wav in Resources */,
 				626F7D931F478C4B0058BFAA /* voice.plist in Resources */,
 				0C7E87C31F4792E700A80E32 /* command-line.plist in Resources */,
@@ -541,6 +544,7 @@
 				626BF1B91F46B8FE00EDDD05 /* Main.storyboard in Resources */,
 				626F7D8E1F478BF40058BFAA /* keyboard.wav in Resources */,
 				626F7D8D1F478BF40058BFAA /* Z.wav in Resources */,
+				0C7E87C91F47DC2F00A80E32 /* pentatonic.plist in Resources */,
 				0C19C8921F46FE3D008EBD75 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
