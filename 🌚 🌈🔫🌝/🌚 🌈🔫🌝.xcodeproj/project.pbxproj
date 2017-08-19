@@ -30,6 +30,11 @@
 		0C7E87D31F47DE9600A80E32 /* p5.wav in Resources */ = {isa = PBXBuildFile; fileRef = 0C7E87CE1F47DE9600A80E32 /* p5.wav */; };
 		0C7E87D61F47E01A00A80E32 /* force-push.wav in Resources */ = {isa = PBXBuildFile; fileRef = 0C7E87D41F47E01A00A80E32 /* force-push.wav */; };
 		0C7E87D71F47E01A00A80E32 /* vim_wq.wav in Resources */ = {isa = PBXBuildFile; fileRef = 0C7E87D51F47E01A00A80E32 /* vim_wq.wav */; };
+		0C7E87E01F47E2FF00A80E32 /* p6.wav in Resources */ = {isa = PBXBuildFile; fileRef = 0C7E87DB1F47E2FF00A80E32 /* p6.wav */; };
+		0C7E87E11F47E2FF00A80E32 /* p7.wav in Resources */ = {isa = PBXBuildFile; fileRef = 0C7E87DC1F47E2FF00A80E32 /* p7.wav */; };
+		0C7E87E21F47E2FF00A80E32 /* p8.wav in Resources */ = {isa = PBXBuildFile; fileRef = 0C7E87DD1F47E2FF00A80E32 /* p8.wav */; };
+		0C7E87E31F47E2FF00A80E32 /* p9.wav in Resources */ = {isa = PBXBuildFile; fileRef = 0C7E87DE1F47E2FF00A80E32 /* p9.wav */; };
+		0C7E87E41F47E2FF00A80E32 /* p10.wav in Resources */ = {isa = PBXBuildFile; fileRef = 0C7E87DF1F47E2FF00A80E32 /* p10.wav */; };
 		626BF1B21F46B8FE00EDDD05 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626BF1B11F46B8FE00EDDD05 /* AppDelegate.swift */; };
 		626BF1B41F46B8FE00EDDD05 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626BF1B31F46B8FE00EDDD05 /* ViewController.swift */; };
 		626BF1B61F46B8FE00EDDD05 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 626BF1B51F46B8FE00EDDD05 /* Assets.xcassets */; };
@@ -135,6 +140,11 @@
 		0C7E87CE1F47DE9600A80E32 /* p5.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = p5.wav; path = Sound/p5.wav; sourceTree = "<group>"; };
 		0C7E87D41F47E01A00A80E32 /* force-push.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "force-push.wav"; path = "Sound/force-push.wav"; sourceTree = "<group>"; };
 		0C7E87D51F47E01A00A80E32 /* vim_wq.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = vim_wq.wav; path = Sound/vim_wq.wav; sourceTree = "<group>"; };
+		0C7E87DB1F47E2FF00A80E32 /* p6.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = p6.wav; path = Sound/p6.wav; sourceTree = "<group>"; };
+		0C7E87DC1F47E2FF00A80E32 /* p7.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = p7.wav; path = Sound/p7.wav; sourceTree = "<group>"; };
+		0C7E87DD1F47E2FF00A80E32 /* p8.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = p8.wav; path = Sound/p8.wav; sourceTree = "<group>"; };
+		0C7E87DE1F47E2FF00A80E32 /* p9.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = p9.wav; path = Sound/p9.wav; sourceTree = "<group>"; };
+		0C7E87DF1F47E2FF00A80E32 /* p10.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = p10.wav; path = Sound/p10.wav; sourceTree = "<group>"; };
 		626BF1AE1F46B8FE00EDDD05 /* 🌚 🌈🔫🌝.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "🌚 🌈🔫🌝.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		626BF1B11F46B8FE00EDDD05 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		626BF1B31F46B8FE00EDDD05 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -292,6 +302,11 @@
 				0C7E87CC1F47DE9600A80E32 /* p3.wav */,
 				0C7E87CD1F47DE9600A80E32 /* p4.wav */,
 				0C7E87CE1F47DE9600A80E32 /* p5.wav */,
+				0C7E87DB1F47E2FF00A80E32 /* p6.wav */,
+				0C7E87DC1F47E2FF00A80E32 /* p7.wav */,
+				0C7E87DD1F47E2FF00A80E32 /* p8.wav */,
+				0C7E87DE1F47E2FF00A80E32 /* p9.wav */,
+				0C7E87DF1F47E2FF00A80E32 /* p10.wav */,
 			);
 			name = pentatonic;
 			sourceTree = "<group>";
@@ -539,8 +554,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C7E87E21F47E2FF00A80E32 /* p8.wav in Resources */,
 				626F7D7D1F478BF40058BFAA /* J.wav in Resources */,
 				626F7D8B1F478BF40058BFAA /* X.wav in Resources */,
+				0C7E87E31F47E2FF00A80E32 /* p9.wav in Resources */,
 				626F7D6B1F478BF40058BFAA /* 6.wav in Resources */,
 				0C7E87CF1F47DE9600A80E32 /* p1.wav in Resources */,
 				626F7D821F478BF40058BFAA /* O.wav in Resources */,
@@ -565,6 +582,7 @@
 				626F7D931F478C4B0058BFAA /* voice.plist in Resources */,
 				0C7E87C31F4792E700A80E32 /* command-line.plist in Resources */,
 				626F7D391F477D810058BFAA /* midi.plist in Resources */,
+				0C7E87E41F47E2FF00A80E32 /* p10.wav in Resources */,
 				626F7D7C1F478BF40058BFAA /* I.wav in Resources */,
 				626F7D811F478BF40058BFAA /* N.wav in Resources */,
 				626F7D781F478BF40058BFAA /* git_commit.wav in Resources */,
@@ -580,6 +598,7 @@
 				626F7D721F478BF40058BFAA /* D.wav in Resources */,
 				626F7D6D1F478BF40058BFAA /* 8.wav in Resources */,
 				626F7D731F478BF40058BFAA /* E.wav in Resources */,
+				0C7E87E11F47E2FF00A80E32 /* p7.wav in Resources */,
 				0C7E87D71F47E01A00A80E32 /* vim_wq.wav in Resources */,
 				626F7D841F478BF40058BFAA /* Q.wav in Resources */,
 				626F7D791F478BF40058BFAA /* git_push.wav in Resources */,
@@ -590,6 +609,7 @@
 				626F7D6C1F478BF40058BFAA /* 7.wav in Resources */,
 				626F7D891F478BF40058BFAA /* V.wav in Resources */,
 				BF03E89F1F4774CA0070D6FD /* easter-eggs.plist in Resources */,
+				0C7E87E01F47E2FF00A80E32 /* p6.wav in Resources */,
 				0C7E87D21F47DE9600A80E32 /* p4.wav in Resources */,
 				626F7D851F478BF40058BFAA /* R.wav in Resources */,
 				626F7D8C1F478BF40058BFAA /* Y.wav in Resources */,
