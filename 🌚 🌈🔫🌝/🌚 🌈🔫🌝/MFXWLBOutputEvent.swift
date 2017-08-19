@@ -46,14 +46,10 @@ class MFXWLBOutputEvent: MFOutputEvent {
     }
     
     override func run(_ userInfo: [String: Any]) {
-        
-        let players = Array(playerDicts.values)
-        let player = players[index]
-        index += dindex
-        if index == 0 || index == playerDicts.count - 1 {
-            dindex *= -1
-        }
-        player.play()
+        index += 1
+        let player = playerDicts[String(index)]
+        index = index % 25
+        player?.play()
     }
     
     override class func defaultInstance() -> MFOutputEvent {
