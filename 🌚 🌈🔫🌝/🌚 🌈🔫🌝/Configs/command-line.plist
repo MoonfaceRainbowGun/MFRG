@@ -57,7 +57,7 @@
 				<key>OutputUserInfo</key>
 				<dict>
 					<key>FileName</key>
-					<string>hello.wav</string>
+					<string>hello_world.wav</string>
 				</dict>
 			</dict>
 		</dict>
@@ -76,7 +76,7 @@
 				<key>OutputUserInfo</key>
 				<dict>
 					<key>FileName</key>
-					<string>intmain.wav</string>
+					<string>int_main.wav</string>
 				</dict>
 			</dict>
 		</dict>
