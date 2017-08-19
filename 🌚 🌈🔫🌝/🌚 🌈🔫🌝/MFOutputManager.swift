@@ -26,6 +26,9 @@ class MFOutputManager: NSObject {
         case .playPentatonic:
             MFPentatonicOutputEvent.defaultInstance().run(userInfo)
             break
+            
+        case .playXWLB:
+            MFXWLBOutputEvent.defaultInstance().run(userInfo)
         }
         
     }
