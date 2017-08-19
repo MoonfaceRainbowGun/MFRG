@@ -97,8 +97,8 @@
 		6AAC040F1F46E6DA00F1FD58 /* MFRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AAC040C1F46E6DA00F1FD58 /* MFRule.swift */; };
 		6AAC04101F46E6DA00F1FD58 /* MFRuleItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AAC040D1F46E6DA00F1FD58 /* MFRuleItem.swift */; };
 		6AAC04701F47CB1D00F1FD58 /* git_clone.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6AAC046F1F47CB1D00F1FD58 /* git_clone.wav */; };
-		6AAC04721F47E0DD00F1FD58 /* hello_world.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6AAC04711F47E0DD00F1FD58 /* hello_world.wav */; };
-		6AAC04741F47E0FC00F1FD58 /* int_main.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6AAC04731F47E0FC00F1FD58 /* int_main.wav */; };
+		6AAC04761F47F5B800F1FD58 /* wq.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6AAC04751F47F5B800F1FD58 /* wq.wav */; };
+		6AAC04781F47F6DD00F1FD58 /* hello_world.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6AAC04771F47F6DD00F1FD58 /* hello_world.wav */; };
 		BF03E8281F46D1E90070D6FD /* MFCharacterEventManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF03E8271F46D1E90070D6FD /* MFCharacterEventManager.swift */; };
 		BF03E8841F46F7AB0070D6FD /* FIError.m in Sources */ = {isa = PBXBuildFile; fileRef = BF03E8661F46F7AB0070D6FD /* FIError.m */; };
 		BF03E8851F46F7AB0070D6FD /* FISampleBuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = BF03E8681F46F7AB0070D6FD /* FISampleBuffer.m */; };
@@ -211,8 +211,8 @@
 		6AAC040C1F46E6DA00F1FD58 /* MFRule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MFRule.swift; sourceTree = "<group>"; };
 		6AAC040D1F46E6DA00F1FD58 /* MFRuleItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MFRuleItem.swift; sourceTree = "<group>"; };
 		6AAC046F1F47CB1D00F1FD58 /* git_clone.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = git_clone.wav; path = Sound/git_clone.wav; sourceTree = "<group>"; };
-		6AAC04711F47E0DD00F1FD58 /* hello_world.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = hello_world.wav; path = Sound/hello_world.wav; sourceTree = "<group>"; };
-		6AAC04731F47E0FC00F1FD58 /* int_main.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = int_main.wav; sourceTree = "<group>"; };
+		6AAC04751F47F5B800F1FD58 /* wq.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = wq.wav; sourceTree = "<group>"; };
+		6AAC04771F47F6DD00F1FD58 /* hello_world.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = hello_world.wav; sourceTree = "<group>"; };
 		BF03E8271F46D1E90070D6FD /* MFCharacterEventManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MFCharacterEventManager.swift; sourceTree = "<group>"; };
 		BF03E8601F46F79D0070D6FD /* 🌚 🌈🔫🌝-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "🌚 🌈🔫🌝-Bridging-Header.h"; sourceTree = "<group>"; };
 		BF03E8651F46F7AB0070D6FD /* FIError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FIError.h; sourceTree = "<group>"; };
@@ -407,8 +407,8 @@
 			isa = PBXGroup;
 			children = (
 				0C7E87D41F47E01A00A80E32 /* force-push.wav */,
-				6AAC04711F47E0DD00F1FD58 /* hello_world.wav */,
-				6AAC04731F47E0FC00F1FD58 /* int_main.wav */,
+				6AAC04771F47F6DD00F1FD58 /* hello_world.wav */,
+				6AAC04751F47F5B800F1FD58 /* wq.wav */,
 				0C7E87D51F47E01A00A80E32 /* vim_wq.wav */,
 				626F7D491F478BF40058BFAA /* exit.wav */,
 				626F7D4C1F478BF40058BFAA /* git_add.wav */,
@@ -562,12 +562,14 @@
 			files = (
 				0C7E87E21F47E2FF00A80E32 /* p8.wav in Resources */,
 				626F7D7D1F478BF40058BFAA /* J.wav in Resources */,
+				6AAC04761F47F5B800F1FD58 /* wq.wav in Resources */,
 				626F7D8B1F478BF40058BFAA /* X.wav in Resources */,
 				0C7E87E31F47E2FF00A80E32 /* p9.wav in Resources */,
 				626F7D6B1F478BF40058BFAA /* 6.wav in Resources */,
 				0C7E87CF1F47DE9600A80E32 /* p1.wav in Resources */,
 				626F7D821F478BF40058BFAA /* O.wav in Resources */,
 				626F7D941F478C4B0058BFAA /* git.plist in Resources */,
+				6AAC04781F47F6DD00F1FD58 /* hello_world.wav in Resources */,
 				626F7D681F478BF40058BFAA /* 3.wav in Resources */,
 				626F7D671F478BF40058BFAA /* 2.wav in Resources */,
 				626F7D661F478BF40058BFAA /* 1.wav in Resources */,
@@ -585,7 +587,6 @@
 				626F7D861F478BF40058BFAA /* S.wav in Resources */,
 				6AAC04701F47CB1D00F1FD58 /* git_clone.wav in Resources */,
 				626F7D7E1F478BF40058BFAA /* K.wav in Resources */,
-				6AAC04741F47E0FC00F1FD58 /* int_main.wav in Resources */,
 				626F7D931F478C4B0058BFAA /* voice.plist in Resources */,
 				0C7E87C31F4792E700A80E32 /* command-line.plist in Resources */,
 				626F7D391F477D810058BFAA /* midi.plist in Resources */,
@@ -603,7 +604,6 @@
 				626F7D6A1F478BF40058BFAA /* 5.wav in Resources */,
 				626F7D951F478C4B0058BFAA /* string-config.plist in Resources */,
 				626F7D721F478BF40058BFAA /* D.wav in Resources */,
-				6AAC04721F47E0DD00F1FD58 /* hello_world.wav in Resources */,
 				626F7D6D1F478BF40058BFAA /* 8.wav in Resources */,
 				626F7D731F478BF40058BFAA /* E.wav in Resources */,
 				0C7E87E11F47E2FF00A80E32 /* p7.wav in Resources */,

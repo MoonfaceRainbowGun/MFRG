@@ -10,7 +10,7 @@
 				<key>InputType</key>
 				<string>String</string>
 				<key>InputValue</key>
-				<string>wq</string>
+				<string>:wq</string>
 			</dict>
 			<key>Output</key>
 			<dict>
@@ -76,7 +76,7 @@
 				<key>OutputUserInfo</key>
 				<dict>
 					<key>FileName</key>
-					<string>int_main.wav</string>
+					<string>git_add.wav</string>
 				</dict>
 			</dict>
 		</dict>
