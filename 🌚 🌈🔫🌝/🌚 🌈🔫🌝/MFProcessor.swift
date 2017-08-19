@@ -118,7 +118,7 @@ class MFProcessor: NSObject {
 		}
 		slidingWindow.append(char!)
 		var current = ""
-		var n = 0
+		_ = 0
 //		for char in slidingWindow.reversed(){
 //			n+=1
 //			current = String(char) + current
