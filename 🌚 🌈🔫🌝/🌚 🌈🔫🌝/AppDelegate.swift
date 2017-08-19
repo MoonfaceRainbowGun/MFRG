@@ -14,9 +14,9 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     let statusItem = NSStatusBar.system().statusItem(withLength: 40)
     var themeMenu: NSMenu!
 
-    let configs = ["mechanical-keyboard", "pentatonic", "easter-eggs", "midi", "git", "voice", "command-line", "pentatonic"]
-    let titles = ["Mechanical Keyboard", "Pentatonic","Easter Eggs", "MIDI", "Git Keywords", "Voice Over", "Bash Keywords", "Musician"]
-    var selected = [false, false, false, false, false, false, false, false]
+    let configs = ["mechanical-keyboard", "pentatonic", "easter-eggs", "midi", "git", "voice", "command-line", "pentatonic", "xwlb"]
+    let titles = ["Mechanical Keyboard", "Pentatonic","Easter Eggs", "MIDI", "Git Keywords", "Voice Over", "Bash Keywords", "Musician", "新闻联播"]
+    var selected = [false, false, false, false, false, false, false, false, false]
 
     var processors = [Int: MFProcessor]()
 
