@@ -80,6 +80,7 @@
 		626F7D931F478C4B0058BFAA /* voice.plist in Resources */ = {isa = PBXBuildFile; fileRef = 626F7D901F478C4B0058BFAA /* voice.plist */; };
 		626F7D941F478C4B0058BFAA /* git.plist in Resources */ = {isa = PBXBuildFile; fileRef = 626F7D911F478C4B0058BFAA /* git.plist */; };
 		626F7D951F478C4B0058BFAA /* string-config.plist in Resources */ = {isa = PBXBuildFile; fileRef = 626F7D921F478C4B0058BFAA /* string-config.plist */; };
+		626F7DA11F47DEC10058BFAA /* MFPentatonicOutputEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626F7DA01F47DEC10058BFAA /* MFPentatonicOutputEvent.swift */; };
 		6AAC040E1F46E6DA00F1FD58 /* MFConfigManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AAC040B1F46E6DA00F1FD58 /* MFConfigManager.swift */; };
 		6AAC040F1F46E6DA00F1FD58 /* MFRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AAC040C1F46E6DA00F1FD58 /* MFRule.swift */; };
 		6AAC04101F46E6DA00F1FD58 /* MFRuleItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AAC040D1F46E6DA00F1FD58 /* MFRuleItem.swift */; };
@@ -179,6 +180,7 @@
 		626F7D901F478C4B0058BFAA /* voice.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = voice.plist; sourceTree = "<group>"; };
 		626F7D911F478C4B0058BFAA /* git.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = git.plist; sourceTree = "<group>"; };
 		626F7D921F478C4B0058BFAA /* string-config.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "string-config.plist"; sourceTree = "<group>"; };
+		626F7DA01F47DEC10058BFAA /* MFPentatonicOutputEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MFPentatonicOutputEvent.swift; sourceTree = "<group>"; };
 		6AAC040B1F46E6DA00F1FD58 /* MFConfigManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MFConfigManager.swift; sourceTree = "<group>"; };
 		6AAC040C1F46E6DA00F1FD58 /* MFRule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MFRule.swift; sourceTree = "<group>"; };
 		6AAC040D1F46E6DA00F1FD58 /* MFRuleItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MFRuleItem.swift; sourceTree = "<group>"; };
@@ -396,6 +398,7 @@
 				BFFA0FA71F46BAA6008E8C9C /* MFOutputManager.swift */,
 				626BF1C41F46D10900EDDD05 /* MFOutputEvent.swift */,
 				626BF1C61F46D2F200EDDD05 /* MFSoundOutputEvent.swift */,
+				626F7DA01F47DEC10058BFAA /* MFPentatonicOutputEvent.swift */,
 				626F7D341F47359D0058BFAA /* MFSynthesizerOutputEvent.swift */,
 				626F7D301F46E4B50058BFAA /* MFSoundPlayer.swift */,
 			);
@@ -564,6 +567,7 @@
 				BF03E8891F46F7AB0070D6FD /* FISampleFormat.m in Sources */,
 				0C19C89C1F46FE3D008EBD75 /* TrieConfig.swift in Sources */,
 				0C19C8971F46FE3D008EBD75 /* FragmentToken.swift in Sources */,
+				626F7DA11F47DEC10058BFAA /* MFPentatonicOutputEvent.swift in Sources */,
 				0C19C8941F46FE3D008EBD75 /* IntervalNode.swift in Sources */,
 				BF03E8851F46F7AB0070D6FD /* FISampleBuffer.m in Sources */,
 				626BF1B41F46B8FE00EDDD05 /* ViewController.swift in Sources */,

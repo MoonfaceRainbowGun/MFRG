@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
-<dict>
-	<key>Rules</key>
-	<array>
-		<dict>
-			<key>Input</key>
-			<dict>
-				<key>InputType</key>
-				<string>KeyCode</string>
-				<key>InputValue</key>
-				<string>17</string>
-			</dict>
-			<key>Output</key>
-			<dict>
-				<key>OutputType</key>
-				<string>PlaySound</string>
-				<key>OutputUserInfo</key>
-				<dict>
-					<key>FileName</key>
-					<string>T.wav</string>
-				</dict>
-			</dict>
-		</dict>
-	</array>
-</dict>
+    <dict>
+        <key>Rules</key>
+        <array>
+            <dict>
+                <key>Input</key>
+                <dict>
+                    <key>InputType</key>
+                    <string>KeyCode</string>
+                    <key>InputValue</key>
+                    <string>-1</string>
+                </dict>
+                <key>Output</key>
+                <dict>
+                    <key>OutputType</key>
+                    <string>PlayPentatonic</string>
+                    <key>OutputUserInfo</key>
+                    <dict>
+                        <key>key</key>
+                        <string>s</string>
+                    </dict>
+                </dict>
+            </dict>
+        </array>
+    </dict>
 </plist>

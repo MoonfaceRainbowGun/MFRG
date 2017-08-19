@@ -28,6 +28,7 @@ class RuleItem {
 enum OutputEventType: String {
     case playSound = "PlaySound"
     case synthesizeSound = "SynthesizeSound"
+    case playPentatonic = "PlayPentatonic"
 }
 
 public class RuleOutput {

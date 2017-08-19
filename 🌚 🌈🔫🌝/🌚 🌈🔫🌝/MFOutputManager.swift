@@ -22,6 +22,11 @@ class MFOutputManager: NSObject {
         case .synthesizeSound:
             MFSynthesizerOutputEvent.defaultInstance().run(userInfo)
             break
+            
+        case .playPentatonic:
+            MFPentatonicOutputEvent.defaultInstance().run(userInfo)
+            break
         }
+        
     }
 }
