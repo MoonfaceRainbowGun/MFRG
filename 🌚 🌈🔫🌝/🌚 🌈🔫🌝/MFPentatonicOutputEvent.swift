@@ -10,7 +10,7 @@ import Cocoa
 
 class MFPentatonicOutputEvent: MFOutputEvent {
     
-    fileprivate static let sharedInstance = MFSoundOutputEvent()
+    fileprivate static let sharedInstance = MFPentatonicOutputEvent()
     fileprivate var playerDicts = [String: MFSoundPlayer]()
     
     override init() {
@@ -25,7 +25,7 @@ class MFPentatonicOutputEvent: MFOutputEvent {
     
     override func run(_ userInfo: [String: Any]) {
         let players = Array(playerDicts.values)
-        let player = players[0]
+        let player = players[Int(arc4random_uniform(5))]
         player.play()
     }
     
