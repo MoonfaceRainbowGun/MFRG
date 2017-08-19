@@ -118,7 +118,7 @@ class MFProcessor: NSObject {
 		}
 		slidingWindow.append(char!)
 		var current = ""
-		_ = 0
+		
 //		for char in slidingWindow.reversed(){
 //			n+=1
 //			current = String(char) + current
@@ -133,21 +133,30 @@ class MFProcessor: NSObject {
 //				}
 //			//}
 //		}
+
 		for regex in regularExpression{
 			var n = 0
 			for char in slidingWindow.reversed(){
 				n+=1
 				current = String(char) + current
-				if regex.key.matches(in: current, options: [], range: NSRange(location: 0,length: n) ).count > 0{
-					print("Regex matches!")
-					MFOutputManager.sharedInstance.executeEvent(regex.value)
-					break;
+                
+                let matchResult = regex.key.matches(in: current, options: [], range: NSRange(location: 0,length: n) )
+				if matchResult.count > 0{
+                    for match in matchResult {
+                        if (match.range.length == n){
+                            print(regex.value)
+                            MFOutputManager.sharedInstance.executeEvent(regex.value)
+                            break;
+                        }
+                    }
 				}
 			}
 		}
 		let emits = trieForChar.parseByChar(char: char!)
 		if emits.count > 0 {
 			for emit in emits {
+                print("match")
+                print(emit.keyword)
 				MFOutputManager.sharedInstance.executeEvent(emit.outputRule)
 				
 			}
