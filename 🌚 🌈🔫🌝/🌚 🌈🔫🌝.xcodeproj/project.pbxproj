@@ -94,6 +94,7 @@
 		626F7D951F478C4B0058BFAA /* string-config.plist in Resources */ = {isa = PBXBuildFile; fileRef = 626F7D921F478C4B0058BFAA /* string-config.plist */; };
 		626F7DA11F47DEC10058BFAA /* MFPentatonicOutputEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626F7DA01F47DEC10058BFAA /* MFPentatonicOutputEvent.swift */; };
 		626F7DA31F47F7840058BFAA /* MFXWLBOutputEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626F7DA21F47F7840058BFAA /* MFXWLBOutputEvent.swift */; };
+		626F7DA51F47F9B40058BFAA /* xwlb.plist in Resources */ = {isa = PBXBuildFile; fileRef = 626F7DA41F47F9B40058BFAA /* xwlb.plist */; };
 		6AAC040E1F46E6DA00F1FD58 /* MFConfigManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AAC040B1F46E6DA00F1FD58 /* MFConfigManager.swift */; };
 		6AAC040F1F46E6DA00F1FD58 /* MFRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AAC040C1F46E6DA00F1FD58 /* MFRule.swift */; };
 		6AAC04101F46E6DA00F1FD58 /* MFRuleItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AAC040D1F46E6DA00F1FD58 /* MFRuleItem.swift */; };
@@ -209,6 +210,7 @@
 		626F7D921F478C4B0058BFAA /* string-config.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "string-config.plist"; sourceTree = "<group>"; };
 		626F7DA01F47DEC10058BFAA /* MFPentatonicOutputEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MFPentatonicOutputEvent.swift; sourceTree = "<group>"; };
 		626F7DA21F47F7840058BFAA /* MFXWLBOutputEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MFXWLBOutputEvent.swift; sourceTree = "<group>"; };
+		626F7DA41F47F9B40058BFAA /* xwlb.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = xwlb.plist; sourceTree = "<group>"; };
 		6AAC040B1F46E6DA00F1FD58 /* MFConfigManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MFConfigManager.swift; sourceTree = "<group>"; };
 		6AAC040C1F46E6DA00F1FD58 /* MFRule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MFRule.swift; sourceTree = "<group>"; };
 		6AAC040D1F46E6DA00F1FD58 /* MFRuleItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MFRuleItem.swift; sourceTree = "<group>"; };
@@ -490,6 +492,7 @@
 		BF03E8981F472DD80070D6FD /* Configs */ = {
 			isa = PBXGroup;
 			children = (
+				626F7DA41F47F9B40058BFAA /* xwlb.plist */,
 				0C7E87C81F47DC2F00A80E32 /* pentatonic.plist */,
 				626F7D901F478C4B0058BFAA /* voice.plist */,
 				626F7D911F478C4B0058BFAA /* git.plist */,
@@ -566,6 +569,7 @@
 				0C7E87E21F47E2FF00A80E32 /* p8.wav in Resources */,
 				626F7D7D1F478BF40058BFAA /* J.wav in Resources */,
 				6AAC04761F47F5B800F1FD58 /* wq.wav in Resources */,
+				626F7DA51F47F9B40058BFAA /* xwlb.plist in Resources */,
 				626F7D8B1F478BF40058BFAA /* X.wav in Resources */,
 				0C7E87E31F47E2FF00A80E32 /* p9.wav in Resources */,
 				626F7D6B1F478BF40058BFAA /* 6.wav in Resources */,
