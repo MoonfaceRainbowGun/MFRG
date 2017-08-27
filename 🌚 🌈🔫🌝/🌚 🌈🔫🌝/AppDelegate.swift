@@ -15,9 +15,9 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     var themeMenu: NSMenu!
 
     let configs = ["mechanical-keyboard", "pentatonic", "easter-eggs", "midi", "git", "voice", "command-line", "xwlb"]
-    var selected = [false, false, false, false, false, false, false, false]
+	var selected = [String: Bool]()
 
-    var processors = [Int: MFProcessor]()
+    var processors = [String: MFProcessor]()
 
 	
     func applicationWillFinishLaunching(_ notification: Notification) {
@@ -56,14 +56,16 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         
         for (index, plistName) in configs.enumerated() {
 			let rule = Rule(plistName: plistName)
-            let item = NSMenuItem(title: rule.displayName, action: #selector(themeDidSelect(sender:)), keyEquivalent: "\(index + 1)")
-            item.tag = index;
+            let item = MFMenuItem(title: rule.displayName, action: #selector(themeDidSelect(sender:)), keyEquivalent: "\(index + 1)")
+			item.userInfo["plist"] = plistName;
             themeMenu.addItem(item)
-            
-            if self.selected[index] {
+			
+			let selected = self.selected[plistName] != nil && self.selected[plistName]!
+			
+            if selected {
                 item.state = NSOnState
                 let processor = MFProcessor(keyEventBuffer: MFBuffer(), rule: rule)
-                self.processors[index] = processor
+                self.processors[plistName] = processor
             }
         }
         
@@ -80,16 +82,18 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 		}
 		
         for menuItem in self.themeMenu.items {
-            if menuItem == sender {
-                let tag = menuItem.tag
-                self.selected[tag] = !self.selected[tag]
-                menuItem.state = self.selected[tag] ? NSOnState : NSOffState
-                if (self.selected[tag]) {
-                    let rule = Rule(plistName: self.configs[tag])
+            if menuItem == sender, let item = sender as? MFMenuItem {
+				let plistName = item.userInfo["plist"] as! String;
+				let selected = !(self.selected[plistName] != nil && self.selected[plistName]!)
+                self.selected[plistName] = selected
+                if (selected) {
+                    let rule = Rule(plistName: plistName)
                     let processor = MFProcessor(keyEventBuffer: MFBuffer(), rule: rule)
-                    self.processors[tag] = processor
+                    self.processors[plistName] = processor
+					menuItem.state = NSOnState
                 } else {
-                    self.processors[tag] = nil
+                    self.processors[plistName] = nil
+					menuItem.state = NSOffState
                 }
             }
         }
@@ -100,7 +104,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
     
     func retrieveUserSettings() {
-        if let record = UserDefaults.standard.array(forKey: "record") as? [Bool] {
+		if let record = UserDefaults.standard.dictionary(forKey: "record") as? [String: Bool] {
             self.selected = record
         }
     }
