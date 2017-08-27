@@ -60,6 +60,7 @@
 		0C7E88141F47F8EE00A80E32 /* b23.wav in Resources */ = {isa = PBXBuildFile; fileRef = 0C7E880F1F47F8EE00A80E32 /* b23.wav */; };
 		0C7E88151F47F8EE00A80E32 /* b24.wav in Resources */ = {isa = PBXBuildFile; fileRef = 0C7E88101F47F8EE00A80E32 /* b24.wav */; };
 		0C7E88161F47F8EE00A80E32 /* b25.wav in Resources */ = {isa = PBXBuildFile; fileRef = 0C7E88111F47F8EE00A80E32 /* b25.wav */; };
+		0C7E88191F5285A700A80E32 /* wq.wav in Resources */ = {isa = PBXBuildFile; fileRef = 0C7E88181F5285A700A80E32 /* wq.wav */; };
 		626BF1B21F46B8FE00EDDD05 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626BF1B11F46B8FE00EDDD05 /* AppDelegate.swift */; };
 		626BF1B41F46B8FE00EDDD05 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626BF1B31F46B8FE00EDDD05 /* ViewController.swift */; };
 		626BF1B61F46B8FE00EDDD05 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 626BF1B51F46B8FE00EDDD05 /* Assets.xcassets */; };
@@ -124,7 +125,6 @@
 		6AAC040F1F46E6DA00F1FD58 /* MFRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AAC040C1F46E6DA00F1FD58 /* MFRule.swift */; };
 		6AAC04101F46E6DA00F1FD58 /* MFRuleItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AAC040D1F46E6DA00F1FD58 /* MFRuleItem.swift */; };
 		6AAC04701F47CB1D00F1FD58 /* git_clone.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6AAC046F1F47CB1D00F1FD58 /* git_clone.wav */; };
-		6AAC04761F47F5B800F1FD58 /* wq.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6AAC04751F47F5B800F1FD58 /* wq.wav */; };
 		6AAC04781F47F6DD00F1FD58 /* hello_world.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6AAC04771F47F6DD00F1FD58 /* hello_world.wav */; };
 		BF03E8281F46D1E90070D6FD /* MFCharacterEventManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF03E8271F46D1E90070D6FD /* MFCharacterEventManager.swift */; };
 		BF03E8841F46F7AB0070D6FD /* FIError.m in Sources */ = {isa = PBXBuildFile; fileRef = BF03E8661F46F7AB0070D6FD /* FIError.m */; };
@@ -199,6 +199,7 @@
 		0C7E880F1F47F8EE00A80E32 /* b23.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = b23.wav; path = Sound/b23.wav; sourceTree = "<group>"; };
 		0C7E88101F47F8EE00A80E32 /* b24.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = b24.wav; path = Sound/b24.wav; sourceTree = "<group>"; };
 		0C7E88111F47F8EE00A80E32 /* b25.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = b25.wav; path = Sound/b25.wav; sourceTree = "<group>"; };
+		0C7E88181F5285A700A80E32 /* wq.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = wq.wav; path = Sound/wq.wav; sourceTree = "<group>"; };
 		626BF1AE1F46B8FE00EDDD05 /* 🌚 🌈🔫🌝.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "🌚 🌈🔫🌝.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		626BF1B11F46B8FE00EDDD05 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		626BF1B31F46B8FE00EDDD05 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -265,7 +266,6 @@
 		6AAC040C1F46E6DA00F1FD58 /* MFRule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MFRule.swift; sourceTree = "<group>"; };
 		6AAC040D1F46E6DA00F1FD58 /* MFRuleItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MFRuleItem.swift; sourceTree = "<group>"; };
 		6AAC046F1F47CB1D00F1FD58 /* git_clone.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = git_clone.wav; path = Sound/git_clone.wav; sourceTree = "<group>"; };
-		6AAC04751F47F5B800F1FD58 /* wq.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = wq.wav; sourceTree = "<group>"; };
 		6AAC04771F47F6DD00F1FD58 /* hello_world.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = hello_world.wav; sourceTree = "<group>"; };
 		BF03E8271F46D1E90070D6FD /* MFCharacterEventManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MFCharacterEventManager.swift; sourceTree = "<group>"; };
 		BF03E8601F46F79D0070D6FD /* 🌚 🌈🔫🌝-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "🌚 🌈🔫🌝-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -492,9 +492,9 @@
 		626F7D251F46D7B50058BFAA /* Sound */ = {
 			isa = PBXGroup;
 			children = (
+				0C7E88181F5285A700A80E32 /* wq.wav */,
 				0C7E87D41F47E01A00A80E32 /* force-push.wav */,
 				6AAC04771F47F6DD00F1FD58 /* hello_world.wav */,
-				6AAC04751F47F5B800F1FD58 /* wq.wav */,
 				0C7E87D51F47E01A00A80E32 /* vim_wq.wav */,
 				626F7D491F478BF40058BFAA /* exit.wav */,
 				626F7D4C1F478BF40058BFAA /* git_add.wav */,
@@ -651,7 +651,6 @@
 			files = (
 				0C7E87E21F47E2FF00A80E32 /* p8.wav in Resources */,
 				626F7D7D1F478BF40058BFAA /* J.wav in Resources */,
-				6AAC04761F47F5B800F1FD58 /* wq.wav in Resources */,
 				626F7DA51F47F9B40058BFAA /* xwlb.plist in Resources */,
 				626F7D8B1F478BF40058BFAA /* X.wav in Resources */,
 				0C7E87E31F47E2FF00A80E32 /* p9.wav in Resources */,
@@ -685,6 +684,7 @@
 				626F7D7E1F478BF40058BFAA /* K.wav in Resources */,
 				626F7D931F478C4B0058BFAA /* voice.plist in Resources */,
 				0C7E88151F47F8EE00A80E32 /* b24.wav in Resources */,
+				0C7E88191F5285A700A80E32 /* wq.wav in Resources */,
 				0C7E87FE1F47F81A00A80E32 /* b12.wav in Resources */,
 				0C7E87C31F4792E700A80E32 /* command-line.plist in Resources */,
 				0C7E88161F47F8EE00A80E32 /* b25.wav in Resources */,
@@ -711,7 +711,6 @@
 				626F7D951F478C4B0058BFAA /* string-config.plist in Resources */,
 				626F7D721F478BF40058BFAA /* D.wav in Resources */,
 				0C7E87F01F47F77A00A80E32 /* b5.wav in Resources */,
-				6AAC04721F47E0DD00F1FD58 /* hello_world.wav in Resources */,
 				626F7D6D1F478BF40058BFAA /* 8.wav in Resources */,
 				0C7E87E71F47F70400A80E32 /* b1.wav in Resources */,
 				626F7D731F478BF40058BFAA /* E.wav in Resources */,
