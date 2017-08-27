@@ -10,6 +10,7 @@ import Foundation
 
 class Rule {
     var list = [RuleItem]()
+	var displayName: String = "Default Theme"
     
     convenience init(plistName: String) {
         let url = Bundle.main.url(forResource: plistName, withExtension: "plist")!
@@ -19,6 +20,10 @@ class Rule {
     
     init(plist: [String: Any]) {
         let rulesDictionary = plist["Rules"] as! [[String: Any]]
+		if let displayName = plist["Name"] as? String {
+			self.displayName = displayName
+		}
+		
         for ruleItemDict in rulesDictionary {
             let inputDict = ruleItemDict["Input"] as! [String: String];
             

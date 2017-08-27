@@ -14,9 +14,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     let statusItem = NSStatusBar.system().statusItem(withLength: 40)
     var themeMenu: NSMenu!
 
-    let configs = ["mechanical-keyboard", "pentatonic", "easter-eggs", "midi", "git", "voice", "command-line", "pentatonic", "xwlb"]
-    let titles = ["Mechanical Keyboard", "Pentatonic","Easter Eggs", "MIDI", "Git Keywords", "Voice Over", "Bash Keywords", "Musician", "新闻联播"]
-    var selected = [false, false, false, false, false, false, false, false, false]
+    let configs = ["mechanical-keyboard", "pentatonic", "easter-eggs", "midi", "git", "voice", "command-line", "xwlb"]
+    var selected = [false, false, false, false, false, false, false, false]
 
     var processors = [Int: MFProcessor]()
 
@@ -55,14 +54,14 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         
         let themeMenu = NSMenu()
         
-        for (index, title) in titles.enumerated() {
-            let item = NSMenuItem(title: title, action: #selector(themeDidSelect(sender:)), keyEquivalent: "\(index + 1)")
+        for (index, plistName) in configs.enumerated() {
+			let rule = Rule(plistName: plistName)
+            let item = NSMenuItem(title: rule.displayName, action: #selector(themeDidSelect(sender:)), keyEquivalent: "\(index + 1)")
             item.tag = index;
             themeMenu.addItem(item)
             
             if self.selected[index] {
                 item.state = NSOnState
-                let rule = Rule(plistName: self.configs[index])
                 let processor = MFProcessor(keyEventBuffer: MFBuffer(), rule: rule)
                 self.processors[index] = processor
             }

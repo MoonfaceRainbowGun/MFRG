@@ -117,7 +117,6 @@
 		626F7D8F1F478BF40058BFAA /* keyboard1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 626F7D641F478BF40058BFAA /* keyboard1.wav */; };
 		626F7D931F478C4B0058BFAA /* voice.plist in Resources */ = {isa = PBXBuildFile; fileRef = 626F7D901F478C4B0058BFAA /* voice.plist */; };
 		626F7D941F478C4B0058BFAA /* git.plist in Resources */ = {isa = PBXBuildFile; fileRef = 626F7D911F478C4B0058BFAA /* git.plist */; };
-		626F7D951F478C4B0058BFAA /* string-config.plist in Resources */ = {isa = PBXBuildFile; fileRef = 626F7D921F478C4B0058BFAA /* string-config.plist */; };
 		626F7DA11F47DEC10058BFAA /* MFPentatonicOutputEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626F7DA01F47DEC10058BFAA /* MFPentatonicOutputEvent.swift */; };
 		626F7DA31F47F7840058BFAA /* MFXWLBOutputEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626F7DA21F47F7840058BFAA /* MFXWLBOutputEvent.swift */; };
 		626F7DA51F47F9B40058BFAA /* xwlb.plist in Resources */ = {isa = PBXBuildFile; fileRef = 626F7DA41F47F9B40058BFAA /* xwlb.plist */; };
@@ -258,7 +257,6 @@
 		626F7D641F478BF40058BFAA /* keyboard1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = keyboard1.wav; path = Sound/keyboard1.wav; sourceTree = "<group>"; };
 		626F7D901F478C4B0058BFAA /* voice.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = voice.plist; sourceTree = "<group>"; };
 		626F7D911F478C4B0058BFAA /* git.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = git.plist; sourceTree = "<group>"; };
-		626F7D921F478C4B0058BFAA /* string-config.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "string-config.plist"; sourceTree = "<group>"; };
 		626F7DA01F47DEC10058BFAA /* MFPentatonicOutputEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MFPentatonicOutputEvent.swift; sourceTree = "<group>"; };
 		626F7DA21F47F7840058BFAA /* MFXWLBOutputEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MFXWLBOutputEvent.swift; sourceTree = "<group>"; };
 		626F7DA41F47F9B40058BFAA /* xwlb.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = xwlb.plist; sourceTree = "<group>"; };
@@ -579,7 +577,6 @@
 				0C7E87C81F47DC2F00A80E32 /* pentatonic.plist */,
 				626F7D901F478C4B0058BFAA /* voice.plist */,
 				626F7D911F478C4B0058BFAA /* git.plist */,
-				626F7D921F478C4B0058BFAA /* string-config.plist */,
 				626F7D381F477D810058BFAA /* midi.plist */,
 				BF03E89E1F4774CA0070D6FD /* mechanical-keyboard.plist */,
 				BF03E89D1F4774CA0070D6FD /* easter-eggs.plist */,
@@ -708,7 +705,6 @@
 				626F7D801F478BF40058BFAA /* M.wav in Resources */,
 				626F7D6A1F478BF40058BFAA /* 5.wav in Resources */,
 				0C7E88141F47F8EE00A80E32 /* b23.wav in Resources */,
-				626F7D951F478C4B0058BFAA /* string-config.plist in Resources */,
 				626F7D721F478BF40058BFAA /* D.wav in Resources */,
 				0C7E87F01F47F77A00A80E32 /* b5.wav in Resources */,
 				626F7D6D1F478BF40058BFAA /* 8.wav in Resources */,
