@@ -140,6 +140,7 @@
 		0C6F82BE1F52C119003D428F /* MFRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C6F82BC1F52C119003D428F /* MFRule.swift */; };
 		0C6F82BF1F52C119003D428F /* MFRuleItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C6F82BD1F52C119003D428F /* MFRuleItem.swift */; };
 		0C6F82C21F52C129003D428F /* MFProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C6F82C11F52C129003D428F /* MFProcessor.swift */; };
+		0C6F82C41F52C1B2003D428F /* MFAccessManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C6F82C31F52C1B2003D428F /* MFAccessManager.swift */; };
 		0C7E881C1F528D6700A80E32 /* MFMenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C7E881B1F528D6700A80E32 /* MFMenuItem.swift */; };
 		626BF1B61F46B8FE00EDDD05 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 626BF1B51F46B8FE00EDDD05 /* Assets.xcassets */; };
 		626BF1B91F46B8FE00EDDD05 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 626BF1B71F46B8FE00EDDD05 /* Main.storyboard */; };
@@ -290,6 +291,7 @@
 		0C6F82BC1F52C119003D428F /* MFRule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MFRule.swift; sourceTree = "<group>"; };
 		0C6F82BD1F52C119003D428F /* MFRuleItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MFRuleItem.swift; sourceTree = "<group>"; };
 		0C6F82C11F52C129003D428F /* MFProcessor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MFProcessor.swift; sourceTree = "<group>"; };
+		0C6F82C31F52C1B2003D428F /* MFAccessManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MFAccessManager.swift; sourceTree = "<group>"; };
 		0C7E881B1F528D6700A80E32 /* MFMenuItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MFMenuItem.swift; sourceTree = "<group>"; };
 		626BF1AE1F46B8FE00EDDD05 /* Sholes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sholes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		626BF1B51F46B8FE00EDDD05 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -562,6 +564,7 @@
 			isa = PBXGroup;
 			children = (
 				0C6F829A1F52C091003D428F /* MFConfigManager.swift */,
+				0C6F82C31F52C1B2003D428F /* MFAccessManager.swift */,
 			);
 			path = Configs;
 			sourceTree = "<group>";
@@ -646,7 +649,6 @@
 			children = (
 				0C6F82C01F52C129003D428F /* Processors */,
 				0C6F82BB1F52C119003D428F /* Models */,
-				0C6F82B21F52C0EC003D428F /* Misc */,
 				0C6F82AF1F52C0A2003D428F /* Input Buffer */,
 				0C6F829C1F52C095003D428F /* Themes */,
 				0C6F82991F52C091003D428F /* Configs */,
@@ -655,6 +657,7 @@
 				0C6F81D51F52BFB0003D428F /* Sounds */,
 				0C6F81931F52BF7D003D428F /* Libraries */,
 				0C7E881A1F528D5100A80E32 /* Views */,
+				0C6F82B21F52C0EC003D428F /* Misc */,
 				BF03E8971F4717C50070D6FD /* Others */,
 			);
 			path = Sholes;
@@ -869,6 +872,7 @@
 				0C6F81C71F52BF7D003D428F /* Token.swift in Sources */,
 				0C6F82931F52BFF9003D428F /* MFPentatonicOutputEvent.swift in Sources */,
 				0C6F82911F52BFF9003D428F /* MFOutputEvent.swift in Sources */,
+				0C6F82C41F52C1B2003D428F /* MFAccessManager.swift in Sources */,
 				0C6F81D11F52BF7D003D428F /* FISoundContext.m in Sources */,
 				0C6F81D41F52BF7D003D428F /* FISoundSource.m in Sources */,
 				0C6F81D31F52BF7D003D428F /* FISoundEngine.m in Sources */,

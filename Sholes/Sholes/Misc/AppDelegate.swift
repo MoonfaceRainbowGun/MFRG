@@ -28,6 +28,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
 		MFKeyboardEventManager.sharedInstance.startListening()
 		MFCharacterEventManager.sharedInstance.startListening()
+		
+		_ = MFAccessManager.sharedInstance.checkAccess()
     }
     
     func configureMenu() {
