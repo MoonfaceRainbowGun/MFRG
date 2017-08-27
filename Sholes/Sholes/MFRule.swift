@@ -1,6 +1,6 @@
 //
 //  MFRuleList.swift
-//  🌚 🌈🔫🌝
+//  Sholes
 //
 //  Created by Richthofen on 18/08/2017.
 //  Copyright © 2017 MFRG. All rights reserved.

@@ -1,6 +1,6 @@
 //
 //  MFKeycodeMapping.swift
-//  🌚 🌈🔫🌝
+//  Sholes
 //
 //  Created by Lei Mingyu on 19/8/17.
 //  Copyright © 2017 MFRG. All rights reserved.
