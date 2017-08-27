@@ -201,7 +201,7 @@
 		0C7E88111F47F8EE00A80E32 /* b25.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = b25.wav; path = Sound/b25.wav; sourceTree = "<group>"; };
 		0C7E88181F5285A700A80E32 /* wq.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = wq.wav; path = Sound/wq.wav; sourceTree = "<group>"; };
 		0C7E881B1F528D6700A80E32 /* MFMenuItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MFMenuItem.swift; sourceTree = "<group>"; };
-		626BF1AE1F46B8FE00EDDD05 /* 🌚 🌈🔫🌝.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "🌚 🌈🔫🌝.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		626BF1AE1F46B8FE00EDDD05 /* Sholes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sholes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		626BF1B11F46B8FE00EDDD05 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		626BF1B31F46B8FE00EDDD05 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		626BF1B51F46B8FE00EDDD05 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -268,7 +268,7 @@
 		6AAC046F1F47CB1D00F1FD58 /* git_clone.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = git_clone.wav; path = Sound/git_clone.wav; sourceTree = "<group>"; };
 		6AAC04771F47F6DD00F1FD58 /* hello_world.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = hello_world.wav; sourceTree = "<group>"; };
 		BF03E8271F46D1E90070D6FD /* MFCharacterEventManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MFCharacterEventManager.swift; sourceTree = "<group>"; };
-		BF03E8601F46F79D0070D6FD /* 🌚 🌈🔫🌝-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "🌚 🌈🔫🌝-Bridging-Header.h"; sourceTree = "<group>"; };
+		BF03E8601F46F79D0070D6FD /* Sholes-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Sholes-Bridging-Header.h"; sourceTree = "<group>"; };
 		BF03E8651F46F7AB0070D6FD /* FIError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FIError.h; sourceTree = "<group>"; };
 		BF03E8661F46F7AB0070D6FD /* FIError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FIError.m; sourceTree = "<group>"; };
 		BF03E8671F46F7AB0070D6FD /* FISampleBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FISampleBuffer.h; sourceTree = "<group>"; };
@@ -464,7 +464,7 @@
 		626BF1A51F46B8FE00EDDD05 = {
 			isa = PBXGroup;
 			children = (
-				626BF1B01F46B8FE00EDDD05 /* 🌚 🌈🔫🌝 */,
+				626BF1B01F46B8FE00EDDD05 /* Sholes */,
 				626BF1AF1F46B8FE00EDDD05 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -472,12 +472,12 @@
 		626BF1AF1F46B8FE00EDDD05 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				626BF1AE1F46B8FE00EDDD05 /* 🌚 🌈🔫🌝.app */,
+				626BF1AE1F46B8FE00EDDD05 /* Sholes.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		626BF1B01F46B8FE00EDDD05 /* 🌚 🌈🔫🌝 */ = {
+		626BF1B01F46B8FE00EDDD05 /* Sholes */ = {
 			isa = PBXGroup;
 			children = (
 				0C7E881A1F528D5100A80E32 /* Views */,
@@ -495,7 +495,7 @@
 				BF03E8961F470E720070D6FD /* Output Handlers */,
 				BF03E8971F4717C50070D6FD /* Others */,
 			);
-			path = "🌚 🌈🔫🌝";
+			path = Sholes;
 			sourceTree = "<group>";
 		};
 		626F7D251F46D7B50058BFAA /* Sound */ = {
@@ -574,7 +574,7 @@
 				626BF1B51F46B8FE00EDDD05 /* Assets.xcassets */,
 				626BF1BA1F46B8FE00EDDD05 /* Info.plist */,
 				626BF1B71F46B8FE00EDDD05 /* Main.storyboard */,
-				BF03E8601F46F79D0070D6FD /* 🌚 🌈🔫🌝-Bridging-Header.h */,
+				BF03E8601F46F79D0070D6FD /* Sholes-Bridging-Header.h */,
 				626BF1B11F46B8FE00EDDD05 /* AppDelegate.swift */,
 				626BF1B31F46B8FE00EDDD05 /* ViewController.swift */,
 			);
@@ -599,9 +599,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		626BF1AD1F46B8FE00EDDD05 /* 🌚 🌈🔫🌝 */ = {
+		626BF1AD1F46B8FE00EDDD05 /* Sholes */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 626BF1BD1F46B8FE00EDDD05 /* Build configuration list for PBXNativeTarget "🌚 🌈🔫🌝" */;
+			buildConfigurationList = 626BF1BD1F46B8FE00EDDD05 /* Build configuration list for PBXNativeTarget "Sholes" */;
 			buildPhases = (
 				626BF1AA1F46B8FE00EDDD05 /* Sources */,
 				626BF1AB1F46B8FE00EDDD05 /* Frameworks */,
@@ -611,9 +611,9 @@
 			);
 			dependencies = (
 			);
-			name = "🌚 🌈🔫🌝";
+			name = Sholes;
 			productName = "🌚 🌈🔫🌝";
-			productReference = 626BF1AE1F46B8FE00EDDD05 /* 🌚 🌈🔫🌝.app */;
+			productReference = 626BF1AE1F46B8FE00EDDD05 /* Sholes.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -634,7 +634,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 626BF1A91F46B8FE00EDDD05 /* Build configuration list for PBXProject "🌚 🌈🔫🌝" */;
+			buildConfigurationList = 626BF1A91F46B8FE00EDDD05 /* Build configuration list for PBXProject "Sholes" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -647,7 +647,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				626BF1AD1F46B8FE00EDDD05 /* 🌚 🌈🔫🌝 */,
+				626BF1AD1F46B8FE00EDDD05 /* Sholes */,
 			);
 		};
 /* End PBXProject section */
@@ -917,11 +917,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = "🌚 🌈🔫🌝/Info.plist";
+				INFOPLIST_FILE = Sholes/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.mfrg.---------";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mfrg.sholes;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "🌚 🌈🔫🌝/🌚 🌈🔫🌝-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "Sholes/Sholes-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
@@ -933,11 +933,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = "🌚 🌈🔫🌝/Info.plist";
+				INFOPLIST_FILE = Sholes/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.mfrg.---------";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mfrg.sholes;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "🌚 🌈🔫🌝/🌚 🌈🔫🌝-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "Sholes/Sholes-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -945,7 +945,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		626BF1A91F46B8FE00EDDD05 /* Build configuration list for PBXProject "🌚 🌈🔫🌝" */ = {
+		626BF1A91F46B8FE00EDDD05 /* Build configuration list for PBXProject "Sholes" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				626BF1BB1F46B8FE00EDDD05 /* Debug */,
@@ -954,7 +954,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		626BF1BD1F46B8FE00EDDD05 /* Build configuration list for PBXNativeTarget "🌚 🌈🔫🌝" */ = {
+		626BF1BD1F46B8FE00EDDD05 /* Build configuration list for PBXNativeTarget "Sholes" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				626BF1BE1F46B8FE00EDDD05 /* Debug */,
