@@ -123,25 +123,26 @@
 		0C6F82961F52BFF9003D428F /* MFSynthesizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C6F828E1F52BFF9003D428F /* MFSynthesizer.swift */; };
 		0C6F82971F52BFF9003D428F /* MFSynthesizerOutputEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C6F828F1F52BFF9003D428F /* MFSynthesizerOutputEvent.swift */; };
 		0C6F82981F52BFFA003D428F /* MFXWLBOutputEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C6F82901F52BFF9003D428F /* MFXWLBOutputEvent.swift */; };
-		0C7E87C31F4792E700A80E32 /* command-line.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0C7E87C21F4792E700A80E32 /* command-line.plist */; };
-		0C7E87C91F47DC2F00A80E32 /* pentatonic.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0C7E87C81F47DC2F00A80E32 /* pentatonic.plist */; };
+		0C6F829B1F52C091003D428F /* MFConfigManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C6F829A1F52C091003D428F /* MFConfigManager.swift */; };
+		0C6F82A61F52C095003D428F /* command-line.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0C6F829D1F52C095003D428F /* command-line.plist */; };
+		0C6F82A71F52C095003D428F /* default-config.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0C6F829E1F52C095003D428F /* default-config.plist */; };
+		0C6F82A81F52C095003D428F /* easter-eggs.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0C6F829F1F52C095003D428F /* easter-eggs.plist */; };
+		0C6F82A91F52C095003D428F /* git.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0C6F82A01F52C095003D428F /* git.plist */; };
+		0C6F82AA1F52C095003D428F /* mechanical-keyboard.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0C6F82A11F52C095003D428F /* mechanical-keyboard.plist */; };
+		0C6F82AB1F52C095003D428F /* midi.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0C6F82A21F52C095003D428F /* midi.plist */; };
+		0C6F82AC1F52C095003D428F /* pentatonic.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0C6F82A31F52C095003D428F /* pentatonic.plist */; };
+		0C6F82AD1F52C095003D428F /* voice.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0C6F82A41F52C095003D428F /* voice.plist */; };
+		0C6F82AE1F52C095003D428F /* xwlb.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0C6F82A51F52C095003D428F /* xwlb.plist */; };
+		0C6F82B11F52C0A2003D428F /* MFBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C6F82B01F52C0A2003D428F /* MFBuffer.swift */; };
+		0C6F82B71F52C0EC003D428F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C6F82B31F52C0EC003D428F /* AppDelegate.swift */; };
+		0C6F82B81F52C0EC003D428F /* MFKeycodeMapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C6F82B41F52C0EC003D428F /* MFKeycodeMapping.swift */; };
+		0C6F82B91F52C0EC003D428F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C6F82B61F52C0EC003D428F /* ViewController.swift */; };
+		0C6F82BE1F52C119003D428F /* MFRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C6F82BC1F52C119003D428F /* MFRule.swift */; };
+		0C6F82BF1F52C119003D428F /* MFRuleItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C6F82BD1F52C119003D428F /* MFRuleItem.swift */; };
+		0C6F82C21F52C129003D428F /* MFProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C6F82C11F52C129003D428F /* MFProcessor.swift */; };
 		0C7E881C1F528D6700A80E32 /* MFMenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C7E881B1F528D6700A80E32 /* MFMenuItem.swift */; };
-		626BF1B21F46B8FE00EDDD05 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626BF1B11F46B8FE00EDDD05 /* AppDelegate.swift */; };
-		626BF1B41F46B8FE00EDDD05 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626BF1B31F46B8FE00EDDD05 /* ViewController.swift */; };
 		626BF1B61F46B8FE00EDDD05 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 626BF1B51F46B8FE00EDDD05 /* Assets.xcassets */; };
 		626BF1B91F46B8FE00EDDD05 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 626BF1B71F46B8FE00EDDD05 /* Main.storyboard */; };
-		626F7D371F4767290058BFAA /* MFKeycodeMapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626F7D361F4767290058BFAA /* MFKeycodeMapping.swift */; };
-		626F7D391F477D810058BFAA /* midi.plist in Resources */ = {isa = PBXBuildFile; fileRef = 626F7D381F477D810058BFAA /* midi.plist */; };
-		626F7D931F478C4B0058BFAA /* voice.plist in Resources */ = {isa = PBXBuildFile; fileRef = 626F7D901F478C4B0058BFAA /* voice.plist */; };
-		626F7D941F478C4B0058BFAA /* git.plist in Resources */ = {isa = PBXBuildFile; fileRef = 626F7D911F478C4B0058BFAA /* git.plist */; };
-		626F7DA51F47F9B40058BFAA /* xwlb.plist in Resources */ = {isa = PBXBuildFile; fileRef = 626F7DA41F47F9B40058BFAA /* xwlb.plist */; };
-		6AAC040E1F46E6DA00F1FD58 /* MFConfigManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AAC040B1F46E6DA00F1FD58 /* MFConfigManager.swift */; };
-		6AAC040F1F46E6DA00F1FD58 /* MFRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AAC040C1F46E6DA00F1FD58 /* MFRule.swift */; };
-		6AAC04101F46E6DA00F1FD58 /* MFRuleItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AAC040D1F46E6DA00F1FD58 /* MFRuleItem.swift */; };
-		BF03E89F1F4774CA0070D6FD /* easter-eggs.plist in Resources */ = {isa = PBXBuildFile; fileRef = BF03E89D1F4774CA0070D6FD /* easter-eggs.plist */; };
-		BF03E8A01F4774CA0070D6FD /* mechanical-keyboard.plist in Resources */ = {isa = PBXBuildFile; fileRef = BF03E89E1F4774CA0070D6FD /* mechanical-keyboard.plist */; };
-		BFFA0FA41F46BA75008E8C9C /* MFBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFFA0FA31F46BA75008E8C9C /* MFBuffer.swift */; };
-		BFFA0FA61F46BA93008E8C9C /* MFProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFFA0FA51F46BA93008E8C9C /* MFProcessor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -271,28 +272,29 @@
 		0C6F828E1F52BFF9003D428F /* MFSynthesizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MFSynthesizer.swift; sourceTree = "<group>"; };
 		0C6F828F1F52BFF9003D428F /* MFSynthesizerOutputEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MFSynthesizerOutputEvent.swift; sourceTree = "<group>"; };
 		0C6F82901F52BFF9003D428F /* MFXWLBOutputEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MFXWLBOutputEvent.swift; sourceTree = "<group>"; };
-		0C7E87C21F4792E700A80E32 /* command-line.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "command-line.plist"; sourceTree = "<group>"; };
-		0C7E87C81F47DC2F00A80E32 /* pentatonic.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = pentatonic.plist; sourceTree = "<group>"; };
+		0C6F829A1F52C091003D428F /* MFConfigManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MFConfigManager.swift; sourceTree = "<group>"; };
+		0C6F829D1F52C095003D428F /* command-line.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "command-line.plist"; sourceTree = "<group>"; };
+		0C6F829E1F52C095003D428F /* default-config.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "default-config.plist"; sourceTree = "<group>"; };
+		0C6F829F1F52C095003D428F /* easter-eggs.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "easter-eggs.plist"; sourceTree = "<group>"; };
+		0C6F82A01F52C095003D428F /* git.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = git.plist; sourceTree = "<group>"; };
+		0C6F82A11F52C095003D428F /* mechanical-keyboard.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "mechanical-keyboard.plist"; sourceTree = "<group>"; };
+		0C6F82A21F52C095003D428F /* midi.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = midi.plist; sourceTree = "<group>"; };
+		0C6F82A31F52C095003D428F /* pentatonic.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = pentatonic.plist; sourceTree = "<group>"; };
+		0C6F82A41F52C095003D428F /* voice.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = voice.plist; sourceTree = "<group>"; };
+		0C6F82A51F52C095003D428F /* xwlb.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = xwlb.plist; sourceTree = "<group>"; };
+		0C6F82B01F52C0A2003D428F /* MFBuffer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MFBuffer.swift; sourceTree = "<group>"; };
+		0C6F82B31F52C0EC003D428F /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0C6F82B41F52C0EC003D428F /* MFKeycodeMapping.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MFKeycodeMapping.swift; sourceTree = "<group>"; };
+		0C6F82B61F52C0EC003D428F /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0C6F82BA1F52C10C003D428F /* Sholes-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Sholes-Bridging-Header.h"; sourceTree = "<group>"; };
+		0C6F82BC1F52C119003D428F /* MFRule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MFRule.swift; sourceTree = "<group>"; };
+		0C6F82BD1F52C119003D428F /* MFRuleItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MFRuleItem.swift; sourceTree = "<group>"; };
+		0C6F82C11F52C129003D428F /* MFProcessor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MFProcessor.swift; sourceTree = "<group>"; };
 		0C7E881B1F528D6700A80E32 /* MFMenuItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MFMenuItem.swift; sourceTree = "<group>"; };
 		626BF1AE1F46B8FE00EDDD05 /* Sholes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sholes.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		626BF1B11F46B8FE00EDDD05 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		626BF1B31F46B8FE00EDDD05 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		626BF1B51F46B8FE00EDDD05 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		626BF1B81F46B8FE00EDDD05 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		626BF1BA1F46B8FE00EDDD05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		626F7D361F4767290058BFAA /* MFKeycodeMapping.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MFKeycodeMapping.swift; sourceTree = "<group>"; };
-		626F7D381F477D810058BFAA /* midi.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = midi.plist; sourceTree = "<group>"; };
-		626F7D901F478C4B0058BFAA /* voice.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = voice.plist; sourceTree = "<group>"; };
-		626F7D911F478C4B0058BFAA /* git.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = git.plist; sourceTree = "<group>"; };
-		626F7DA41F47F9B40058BFAA /* xwlb.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = xwlb.plist; sourceTree = "<group>"; };
-		6AAC040B1F46E6DA00F1FD58 /* MFConfigManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MFConfigManager.swift; sourceTree = "<group>"; };
-		6AAC040C1F46E6DA00F1FD58 /* MFRule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MFRule.swift; sourceTree = "<group>"; };
-		6AAC040D1F46E6DA00F1FD58 /* MFRuleItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MFRuleItem.swift; sourceTree = "<group>"; };
-		BF03E8601F46F79D0070D6FD /* Sholes-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Sholes-Bridging-Header.h"; sourceTree = "<group>"; };
-		BF03E89D1F4774CA0070D6FD /* easter-eggs.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "easter-eggs.plist"; sourceTree = "<group>"; };
-		BF03E89E1F4774CA0070D6FD /* mechanical-keyboard.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "mechanical-keyboard.plist"; sourceTree = "<group>"; };
-		BFFA0FA31F46BA75008E8C9C /* MFBuffer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MFBuffer.swift; sourceTree = "<group>"; };
-		BFFA0FA51F46BA93008E8C9C /* MFProcessor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MFProcessor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -556,6 +558,65 @@
 			path = "Output Handlers";
 			sourceTree = "<group>";
 		};
+		0C6F82991F52C091003D428F /* Configs */ = {
+			isa = PBXGroup;
+			children = (
+				0C6F829A1F52C091003D428F /* MFConfigManager.swift */,
+			);
+			path = Configs;
+			sourceTree = "<group>";
+		};
+		0C6F829C1F52C095003D428F /* Themes */ = {
+			isa = PBXGroup;
+			children = (
+				0C6F829D1F52C095003D428F /* command-line.plist */,
+				0C6F829E1F52C095003D428F /* default-config.plist */,
+				0C6F829F1F52C095003D428F /* easter-eggs.plist */,
+				0C6F82A01F52C095003D428F /* git.plist */,
+				0C6F82A11F52C095003D428F /* mechanical-keyboard.plist */,
+				0C6F82A21F52C095003D428F /* midi.plist */,
+				0C6F82A31F52C095003D428F /* pentatonic.plist */,
+				0C6F82A41F52C095003D428F /* voice.plist */,
+				0C6F82A51F52C095003D428F /* xwlb.plist */,
+			);
+			path = Themes;
+			sourceTree = "<group>";
+		};
+		0C6F82AF1F52C0A2003D428F /* Input Buffer */ = {
+			isa = PBXGroup;
+			children = (
+				0C6F82B01F52C0A2003D428F /* MFBuffer.swift */,
+			);
+			path = "Input Buffer";
+			sourceTree = "<group>";
+		};
+		0C6F82B21F52C0EC003D428F /* Misc */ = {
+			isa = PBXGroup;
+			children = (
+				0C6F82B31F52C0EC003D428F /* AppDelegate.swift */,
+				0C6F82B41F52C0EC003D428F /* MFKeycodeMapping.swift */,
+				0C6F82B61F52C0EC003D428F /* ViewController.swift */,
+			);
+			path = Misc;
+			sourceTree = "<group>";
+		};
+		0C6F82BB1F52C119003D428F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0C6F82BC1F52C119003D428F /* MFRule.swift */,
+				0C6F82BD1F52C119003D428F /* MFRuleItem.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		0C6F82C01F52C129003D428F /* Processors */ = {
+			isa = PBXGroup;
+			children = (
+				0C6F82C11F52C129003D428F /* MFProcessor.swift */,
+			);
+			path = Processors;
+			sourceTree = "<group>";
+		};
 		0C7E881A1F528D5100A80E32 /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -583,18 +644,17 @@
 		626BF1B01F46B8FE00EDDD05 /* Sholes */ = {
 			isa = PBXGroup;
 			children = (
+				0C6F82C01F52C129003D428F /* Processors */,
+				0C6F82BB1F52C119003D428F /* Models */,
+				0C6F82B21F52C0EC003D428F /* Misc */,
+				0C6F82AF1F52C0A2003D428F /* Input Buffer */,
+				0C6F829C1F52C095003D428F /* Themes */,
+				0C6F82991F52C091003D428F /* Configs */,
 				0C6F82881F52BFF9003D428F /* Output Handlers */,
 				0C6F82831F52BFB9003D428F /* Input Events */,
 				0C6F81D51F52BFB0003D428F /* Sounds */,
 				0C6F81931F52BF7D003D428F /* Libraries */,
 				0C7E881A1F528D5100A80E32 /* Views */,
-				BF03E8981F472DD80070D6FD /* Configs */,
-				6AAC040B1F46E6DA00F1FD58 /* MFConfigManager.swift */,
-				6AAC040C1F46E6DA00F1FD58 /* MFRule.swift */,
-				6AAC040D1F46E6DA00F1FD58 /* MFRuleItem.swift */,
-				BFFA0FA31F46BA75008E8C9C /* MFBuffer.swift */,
-				BFFA0FA51F46BA93008E8C9C /* MFProcessor.swift */,
-				626F7D361F4767290058BFAA /* MFKeycodeMapping.swift */,
 				BF03E8971F4717C50070D6FD /* Others */,
 			);
 			path = Sholes;
@@ -603,29 +663,12 @@
 		BF03E8971F4717C50070D6FD /* Others */ = {
 			isa = PBXGroup;
 			children = (
+				0C6F82BA1F52C10C003D428F /* Sholes-Bridging-Header.h */,
 				626BF1B51F46B8FE00EDDD05 /* Assets.xcassets */,
 				626BF1BA1F46B8FE00EDDD05 /* Info.plist */,
 				626BF1B71F46B8FE00EDDD05 /* Main.storyboard */,
-				BF03E8601F46F79D0070D6FD /* Sholes-Bridging-Header.h */,
-				626BF1B11F46B8FE00EDDD05 /* AppDelegate.swift */,
-				626BF1B31F46B8FE00EDDD05 /* ViewController.swift */,
 			);
 			name = Others;
-			sourceTree = "<group>";
-		};
-		BF03E8981F472DD80070D6FD /* Configs */ = {
-			isa = PBXGroup;
-			children = (
-				626F7DA41F47F9B40058BFAA /* xwlb.plist */,
-				0C7E87C81F47DC2F00A80E32 /* pentatonic.plist */,
-				626F7D901F478C4B0058BFAA /* voice.plist */,
-				626F7D911F478C4B0058BFAA /* git.plist */,
-				626F7D381F477D810058BFAA /* midi.plist */,
-				BF03E89E1F4774CA0070D6FD /* mechanical-keyboard.plist */,
-				BF03E89D1F4774CA0070D6FD /* easter-eggs.plist */,
-				0C7E87C21F4792E700A80E32 /* command-line.plist */,
-			);
-			path = Configs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -695,6 +738,7 @@
 				0C6F823E1F52BFB0003D428F /* p2.wav in Resources */,
 				0C6F82581F52BFB0003D428F /* I.wav in Resources */,
 				0C6F82491F52BFB0003D428F /* 3.wav in Resources */,
+				0C6F82A71F52C095003D428F /* default-config.plist in Resources */,
 				0C6F827E1F52BFB0003D428F /* b5.wav in Resources */,
 				0C6F82391F52BFB0003D428F /* keyboard.wav in Resources */,
 				0C6F82451F52BFB0003D428F /* p9.wav in Resources */,
@@ -702,6 +746,7 @@
 				0C6F82601F52BFB0003D428F /* Q.wav in Resources */,
 				0C6F82321F52BFB0003D428F /* exit.wav in Resources */,
 				0C6F82771F52BFB0003D428F /* b21.wav in Resources */,
+				0C6F82AA1F52C095003D428F /* mechanical-keyboard.plist in Resources */,
 				0C6F82731F52BFB0003D428F /* b18.wav in Resources */,
 				0C6F82541F52BFB0003D428F /* E.wav in Resources */,
 				0C6F82511F52BFB0003D428F /* B.wav in Resources */,
@@ -709,12 +754,8 @@
 				0C6F81BF1F52BF7D003D428F /* Info.plist in Resources */,
 				0C6F826D1F52BFB0003D428F /* b12.wav in Resources */,
 				0C6F825B1F52BFB0003D428F /* L.wav in Resources */,
-				626F7DA51F47F9B40058BFAA /* xwlb.plist in Resources */,
 				0C6F82631F52BFB0003D428F /* T.wav in Resources */,
-				626F7D941F478C4B0058BFAA /* git.plist in Resources */,
-				626F7D931F478C4B0058BFAA /* voice.plist in Resources */,
 				0C6F82761F52BFB0003D428F /* b20.wav in Resources */,
-				0C7E87C31F4792E700A80E32 /* command-line.plist in Resources */,
 				0C6F82441F52BFB0003D428F /* p8.wav in Resources */,
 				0C6F823F1F52BFB0003D428F /* p3.wav in Resources */,
 				0C6F826B1F52BFB0003D428F /* b10.wav in Resources */,
@@ -729,6 +770,8 @@
 				0C6F826E1F52BFB0003D428F /* b13.wav in Resources */,
 				0C6F824C1F52BFB0003D428F /* 6.wav in Resources */,
 				0C6F82701F52BFB0003D428F /* b15.wav in Resources */,
+				0C6F82AE1F52C095003D428F /* xwlb.plist in Resources */,
+				0C6F82A91F52C095003D428F /* git.plist in Resources */,
 				0C6F825E1F52BFB0003D428F /* O.wav in Resources */,
 				0C6F825C1F52BFB0003D428F /* M.wav in Resources */,
 				0C6F82621F52BFB0003D428F /* S.wav in Resources */,
@@ -738,6 +781,8 @@
 				0C6F824F1F52BFB0003D428F /* 9.wav in Resources */,
 				0C6F827A1F52BFB0003D428F /* b24.wav in Resources */,
 				0C6F823D1F52BFB0003D428F /* p10.wav in Resources */,
+				0C6F82AC1F52C095003D428F /* pentatonic.plist in Resources */,
+				0C6F82AD1F52C095003D428F /* voice.plist in Resources */,
 				0C6F82591F52BFB0003D428F /* J.wav in Resources */,
 				0C6F82571F52BFB0003D428F /* H.wav in Resources */,
 				0C6F827D1F52BFB0003D428F /* b4.wav in Resources */,
@@ -750,23 +795,22 @@
 				0C6F82461F52BFB0003D428F /* 0.wav in Resources */,
 				0C6F823C1F52BFB0003D428F /* p1.wav in Resources */,
 				0C6F82651F52BFB0003D428F /* V.wav in Resources */,
-				626F7D391F477D810058BFAA /* midi.plist in Resources */,
 				0C6F826A1F52BFB0003D428F /* b1.wav in Resources */,
 				0C6F82721F52BFB0003D428F /* b17.wav in Resources */,
+				0C6F82A81F52C095003D428F /* easter-eggs.plist in Resources */,
 				0C6F82691F52BFB0003D428F /* Z.wav in Resources */,
 				0C6F82361F52BFB0003D428F /* git_clone.wav in Resources */,
-				BF03E8A01F4774CA0070D6FD /* mechanical-keyboard.plist in Resources */,
 				0C6F827F1F52BFB0003D428F /* b6.wav in Resources */,
 				0C6F824B1F52BFB0003D428F /* 5.wav in Resources */,
 				0C6F82801F52BFB0003D428F /* b7.wav in Resources */,
 				0C6F82331F52BFB0003D428F /* force-push.wav in Resources */,
 				0C6F82531F52BFB0003D428F /* D.wav in Resources */,
-				BF03E89F1F4774CA0070D6FD /* easter-eggs.plist in Resources */,
 				0C6F82371F52BFB0003D428F /* git_commit.wav in Resources */,
 				0C6F826F1F52BFB0003D428F /* b14.wav in Resources */,
 				0C6F82551F52BFB0003D428F /* F.wav in Resources */,
 				626BF1B61F46B8FE00EDDD05 /* Assets.xcassets in Resources */,
 				0C6F825A1F52BFB0003D428F /* K.wav in Resources */,
+				0C6F82AB1F52C095003D428F /* midi.plist in Resources */,
 				0C6F82781F52BFB0003D428F /* b22.wav in Resources */,
 				0C6F82481F52BFB0003D428F /* 2.wav in Resources */,
 				0C6F82401F52BFB0003D428F /* p4.wav in Resources */,
@@ -778,11 +822,11 @@
 				0C6F823A1F52BFB0003D428F /* keyboard1.wav in Resources */,
 				0C6F824A1F52BFB0003D428F /* 4.wav in Resources */,
 				0C6F825D1F52BFB0003D428F /* N.wav in Resources */,
+				0C6F82A61F52C095003D428F /* command-line.plist in Resources */,
 				0C6F82431F52BFB0003D428F /* p7.wav in Resources */,
 				0C6F824D1F52BFB0003D428F /* 7.wav in Resources */,
 				0C6F82411F52BFB0003D428F /* p5.wav in Resources */,
 				626BF1B91F46B8FE00EDDD05 /* Main.storyboard in Resources */,
-				0C7E87C91F47DC2F00A80E32 /* pentatonic.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -793,9 +837,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				626F7D371F4767290058BFAA /* MFKeycodeMapping.swift in Sources */,
 				0C6F81BC1F52BF7D003D428F /* CharacterExtensions.swift in Sources */,
-				6AAC040F1F46E6DA00F1FD58 /* MFRule.swift in Sources */,
 				0C6F82971F52BFF9003D428F /* MFSynthesizerOutputEvent.swift in Sources */,
 				0C6F81CF1F52BF7D003D428F /* FISampleFormat.m in Sources */,
 				0C6F82861F52BFB9003D428F /* MFCharacterEventManager.swift in Sources */,
@@ -803,33 +845,35 @@
 				0C6F81CA1F52BF7D003D428F /* FIError.m in Sources */,
 				0C6F82951F52BFF9003D428F /* MFSoundPlayer.swift in Sources */,
 				0C6F81BE1F52BF7D003D428F /* StringExtensions.swift in Sources */,
-				626BF1B41F46B8FE00EDDD05 /* ViewController.swift in Sources */,
 				0C6F81C41F52BF7D003D428F /* FragmentToken.swift in Sources */,
+				0C6F82C21F52C129003D428F /* MFProcessor.swift in Sources */,
 				0C6F81C11F52BF7D003D428F /* IntervalNode.swift in Sources */,
 				0C6F82981F52BFFA003D428F /* MFXWLBOutputEvent.swift in Sources */,
 				0C6F82871F52BFB9003D428F /* MFKeyboardEventManager.swift in Sources */,
+				0C6F82B71F52C0EC003D428F /* AppDelegate.swift in Sources */,
+				0C6F82BF1F52C119003D428F /* MFRuleItem.swift in Sources */,
+				0C6F82B11F52C0A2003D428F /* MFBuffer.swift in Sources */,
 				0C6F81CD1F52BF7D003D428F /* FISampleDecoder.m in Sources */,
 				0C6F81BD1F52BF7D003D428F /* IntervalArrayExtensions.swift in Sources */,
 				0C6F82921F52BFF9003D428F /* MFOutputManager.swift in Sources */,
+				0C6F829B1F52C091003D428F /* MFConfigManager.swift in Sources */,
 				0C6F81C31F52BF7D003D428F /* Emit.swift in Sources */,
 				0C6F81C21F52BF7D003D428F /* IntervalTree.swift in Sources */,
-				BFFA0FA61F46BA93008E8C9C /* MFProcessor.swift in Sources */,
+				0C6F82BE1F52C119003D428F /* MFRule.swift in Sources */,
+				0C6F82B91F52C0EC003D428F /* ViewController.swift in Sources */,
 				0C6F81CB1F52BF7D003D428F /* FISampleBuffer.m in Sources */,
 				0C6F81C51F52BF7D003D428F /* MatchToken.swift in Sources */,
 				0C6F82961F52BFF9003D428F /* MFSynthesizer.swift in Sources */,
-				BFFA0FA41F46BA75008E8C9C /* MFBuffer.swift in Sources */,
+				0C6F82B81F52C0EC003D428F /* MFKeycodeMapping.swift in Sources */,
 				0C6F81C91F52BF7D003D428F /* TrieConfig.swift in Sources */,
 				0C6F81C71F52BF7D003D428F /* Token.swift in Sources */,
 				0C6F82931F52BFF9003D428F /* MFPentatonicOutputEvent.swift in Sources */,
 				0C6F82911F52BFF9003D428F /* MFOutputEvent.swift in Sources */,
-				6AAC040E1F46E6DA00F1FD58 /* MFConfigManager.swift in Sources */,
-				626BF1B21F46B8FE00EDDD05 /* AppDelegate.swift in Sources */,
 				0C6F81D11F52BF7D003D428F /* FISoundContext.m in Sources */,
 				0C6F81D41F52BF7D003D428F /* FISoundSource.m in Sources */,
 				0C6F81D31F52BF7D003D428F /* FISoundEngine.m in Sources */,
 				0C6F81D01F52BF7D003D428F /* FISound.m in Sources */,
 				0C7E881C1F528D6700A80E32 /* MFMenuItem.swift in Sources */,
-				6AAC04101F46E6DA00F1FD58 /* MFRuleItem.swift in Sources */,
 				0C6F81C81F52BF7D003D428F /* Trie.swift in Sources */,
 				0C6F81C01F52BF7D003D428F /* Interval.swift in Sources */,
 				0C6F81C61F52BF7D003D428F /* State.swift in Sources */,
