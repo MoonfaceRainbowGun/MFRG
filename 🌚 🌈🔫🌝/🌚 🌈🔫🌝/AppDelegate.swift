@@ -22,14 +22,9 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
 	
     func applicationWillFinishLaunching(_ notification: Notification) {
-        
-        UserDefaults.standard.removeObject(forKey: "record")
+		
         self.retrieveUserSettings()
-        
-        // test
-        MFKeycodeMapping.generateMapping()
-        
-        
+		
         self.configureMenu()
 
 		MFKeyboardEventManager.sharedInstance.startListening()
@@ -80,6 +75,11 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
 
     func themeDidSelect(sender: NSMenuItem) {
+		
+		defer {
+			self.saveUserSettings()
+		}
+		
         for menuItem in self.themeMenu.items {
             if menuItem == sender {
                 let tag = menuItem.tag
@@ -107,7 +107,6 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
     
     func terminateApplication() {
-        self.saveUserSettings()
         exit(0)
     }
     
@@ -116,7 +115,6 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {
-        self.saveUserSettings()
     }
 
 
